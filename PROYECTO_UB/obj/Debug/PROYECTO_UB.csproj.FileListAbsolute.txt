@@ -1,0 +1,43 @@
+c:\users\barbarita\documents\visual studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\bin\Debug\PROYECTO_UB.exe.config
+c:\users\barbarita\documents\visual studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.csprojResolveAssemblyReference.cache
+c:\users\barbarita\documents\visual studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.Form1.resources
+c:\users\barbarita\documents\visual studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.MDIParent1.resources
+c:\users\barbarita\documents\visual studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.Properties.Resources.resources
+c:\users\barbarita\documents\visual studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.csproj.GenerateResource.Cache
+c:\users\barbarita\documents\visual studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\bin\Debug\PROYECTO_UB.exe
+c:\users\barbarita\documents\visual studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\bin\Debug\PROYECTO_UB.pdb
+c:\users\barbarita\documents\visual studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.exe
+c:\users\barbarita\documents\visual studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.pdb
+C:\Users\Ma Du\Desktop\PROYECTO_UB\PROYECTO_UB\bin\Debug\PROYECTO_UB.exe.config
+C:\Users\Ma Du\Desktop\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.exe
+C:\Users\Ma Du\Desktop\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.pdb
+C:\Users\Ma Du\Desktop\PROYECTO_UB\PROYECTO_UB\bin\Debug\PROYECTO_UB.exe
+C:\Users\Ma Du\Desktop\PROYECTO_UB\PROYECTO_UB\bin\Debug\PROYECTO_UB.pdb
+C:\Users\Ma Du\Desktop\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.csprojResolveAssemblyReference.cache
+C:\Users\Ma Du\Desktop\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.MDIParent1.resources
+C:\Users\Ma Du\Desktop\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.Properties.Resources.resources
+C:\Users\Ma Du\Desktop\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.csproj.GenerateResource.Cache
+C:\Users\Ma Du\Desktop\PROYECTO_UB\PROYECTO_UB\bin\Debug\CapaNegocio.dll
+C:\Users\Ma Du\Desktop\PROYECTO_UB\PROYECTO_UB\bin\Debug\CapaDatos.dll
+C:\Users\Ma Du\Desktop\PROYECTO_UB\PROYECTO_UB\bin\Debug\CapaNegocio.pdb
+C:\Users\Ma Du\Desktop\PROYECTO_UB\PROYECTO_UB\bin\Debug\CapaDatos.pdb
+C:\Users\Barbara\Documents\Visual Studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\bin\Debug\PROYECTO_UB.exe.config
+C:\Users\Barbara\Documents\Visual Studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.exe
+C:\Users\Barbara\Documents\Visual Studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.pdb
+C:\Users\Barbara\Documents\Visual Studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\bin\Debug\PROYECTO_UB.exe
+C:\Users\Barbara\Documents\Visual Studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\bin\Debug\PROYECTO_UB.pdb
+C:\Users\Barbara\Documents\Visual Studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\bin\Debug\CapaNegocio.dll
+C:\Users\Barbara\Documents\Visual Studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\bin\Debug\CapaDatos.dll
+C:\Users\Barbara\Documents\Visual Studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\bin\Debug\CapaNegocio.pdb
+C:\Users\Barbara\Documents\Visual Studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\bin\Debug\CapaDatos.pdb
+C:\Users\Barbara\Documents\Visual Studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.csprojResolveAssemblyReference.cache
+C:\Users\Barbara\Documents\Visual Studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.Form1.resources
+C:\Users\Barbara\Documents\Visual Studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.MDIParent1.resources
+C:\Users\Barbara\Documents\Visual Studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.Properties.Resources.resources
+C:\Users\Barbara\Documents\Visual Studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.Ramos.resources
+C:\Users\Barbara\Documents\Visual Studio 2013\Projects\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.csproj.GenerateResource.Cache
+C:\Users\Ma Du\Desktop\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.Ramos.resources
+C:\Users\Ma Du\Desktop\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.Carreras.resources
+C:\Users\Ma Du\Documents\GitHub\ubb\PROYECTO_UB\PROYECTO_UB\bin\Debug\PROYECTO_UB.exe.config
+C:\Users\Ma Du\Documents\GitHub\ubb\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.exe
+C:\Users\Ma Du\Documents\GitHub\ubb\PROYECTO_UB\PROYECTO_UB\obj\Debug\PROYECTO_UB.pdb
