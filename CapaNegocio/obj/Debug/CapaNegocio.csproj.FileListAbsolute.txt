@@ -12,3 +12,10 @@ C:\Users\Barbara\Documents\Visual Studio 2013\Projects\PROYECTO_UB\CapaNegocio\b
 C:\Users\Barbara\Documents\Visual Studio 2013\Projects\PROYECTO_UB\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
 C:\Users\Barbara\Documents\Visual Studio 2013\Projects\PROYECTO_UB\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\Barbara\Documents\Visual Studio 2013\Projects\PROYECTO_UB\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\CapaNegocio\obj\Debug\CapaNegocio.pdb
