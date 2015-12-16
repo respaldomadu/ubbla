@@ -217,6 +217,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Bancos";
             this.Text = "Bancos";
+            this.Load += new System.EventHandler(this.Bancos_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
