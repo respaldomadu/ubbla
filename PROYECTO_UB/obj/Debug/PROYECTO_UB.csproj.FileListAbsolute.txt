@@ -56,3 +56,6 @@ C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.MDIPa
 C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Properties.Resources.resources
 C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Ramos.resources
 C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.csproj.GenerateResource.Cache
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\bin\Debug\PROYECTO_UB.exe.config
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.exe
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.pdb
