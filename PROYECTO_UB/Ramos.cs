@@ -158,7 +158,7 @@ namespace PROYECTO_UB
 
         private void txt_nombre_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Space))
             {
                 MessageBox.Show("Solo se permiten letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
@@ -224,6 +224,11 @@ namespace PROYECTO_UB
         private void txt_buscar_TextChanged(object sender, EventArgs e)
         {
             dataGridView1.DataSource = objRamo.Buscar(txt_buscar.Text);
+        }
+
+        private void txt_codigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
         }
     }
 }

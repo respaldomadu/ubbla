@@ -44,6 +44,8 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.mantenedorBancosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenedorComunasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -67,7 +69,9 @@
             this.mantenedorProfesoresToolStripMenuItem,
             this.mantenedorPlanificaciónToolStripMenuItem,
             this.mantenedorHorarioToolStripMenuItem,
-            this.mantenedorModulosToolStripMenuItem});
+            this.mantenedorModulosToolStripMenuItem,
+            this.mantenedorBancosToolStripMenuItem,
+            this.mantenedorComunasToolStripMenuItem});
             this.mantenedoresToolStripMenuItem.Name = "mantenedoresToolStripMenuItem";
             this.mantenedoresToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.mantenedoresToolStripMenuItem.Text = "Mantenedores";
@@ -77,6 +81,7 @@
             this.mantenedorCarrerasToolStripMenuItem.Name = "mantenedorCarrerasToolStripMenuItem";
             this.mantenedorCarrerasToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
             this.mantenedorCarrerasToolStripMenuItem.Text = "Mantenedor Carreras";
+            this.mantenedorCarrerasToolStripMenuItem.Click += new System.EventHandler(this.mantenedorCarrerasToolStripMenuItem_Click);
             // 
             // mantenedorRamosToolStripMenuItem
             // 
@@ -90,6 +95,7 @@
             this.mantenedorProfesoresToolStripMenuItem.Name = "mantenedorProfesoresToolStripMenuItem";
             this.mantenedorProfesoresToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
             this.mantenedorProfesoresToolStripMenuItem.Text = "Mantenedor Profesores";
+            this.mantenedorProfesoresToolStripMenuItem.Click += new System.EventHandler(this.mantenedorProfesoresToolStripMenuItem_Click);
             // 
             // mantenedorPlanificaciónToolStripMenuItem
             // 
@@ -154,6 +160,20 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
             // 
+            // mantenedorBancosToolStripMenuItem
+            // 
+            this.mantenedorBancosToolStripMenuItem.Name = "mantenedorBancosToolStripMenuItem";
+            this.mantenedorBancosToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.mantenedorBancosToolStripMenuItem.Text = "Mantenedor Bancos";
+            this.mantenedorBancosToolStripMenuItem.Click += new System.EventHandler(this.mantenedorBancosToolStripMenuItem_Click);
+            // 
+            // mantenedorComunasToolStripMenuItem
+            // 
+            this.mantenedorComunasToolStripMenuItem.Name = "mantenedorComunasToolStripMenuItem";
+            this.mantenedorComunasToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.mantenedorComunasToolStripMenuItem.Text = "Mantenedor Comunas";
+            this.mantenedorComunasToolStripMenuItem.Click += new System.EventHandler(this.mantenedorComunasToolStripMenuItem_Click);
+            // 
             // MDIParent1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -191,6 +211,8 @@
         private System.Windows.Forms.ToolStripMenuItem horasRealizadasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem porProfesorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem porAsignaturaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenedorBancosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenedorComunasToolStripMenuItem;
     }
 }
 
