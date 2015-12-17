@@ -19,7 +19,9 @@ namespace PROYECTO_UB
 
         private void btn_ag_comuna_Click(object sender, EventArgs e)
         {
-           
+            COMUNAS obj = new COMUNAS();
+            obj.ShowDialog();
+            CargarBanco();
         }
 
         private void btn_ag_banco_Click(object sender, EventArgs e)

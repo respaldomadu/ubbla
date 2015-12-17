@@ -37,6 +37,8 @@
             this.mantenedorPlanificaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenedorHorarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenedorModulosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenedorBancosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenedorComunasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.horasRealizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porProfesorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,8 +46,6 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.mantenedorBancosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mantenedorComunasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +60,7 @@
             this.menuStrip.Size = new System.Drawing.Size(632, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
+            this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip_ItemClicked);
             // 
             // mantenedoresToolStripMenuItem
             // 
@@ -115,6 +116,20 @@
             this.mantenedorModulosToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
             this.mantenedorModulosToolStripMenuItem.Text = "Mantenedor Modulos";
             // 
+            // mantenedorBancosToolStripMenuItem
+            // 
+            this.mantenedorBancosToolStripMenuItem.Name = "mantenedorBancosToolStripMenuItem";
+            this.mantenedorBancosToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.mantenedorBancosToolStripMenuItem.Text = "Mantenedor Bancos";
+            this.mantenedorBancosToolStripMenuItem.Click += new System.EventHandler(this.mantenedorBancosToolStripMenuItem_Click);
+            // 
+            // mantenedorComunasToolStripMenuItem
+            // 
+            this.mantenedorComunasToolStripMenuItem.Name = "mantenedorComunasToolStripMenuItem";
+            this.mantenedorComunasToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.mantenedorComunasToolStripMenuItem.Text = "Mantenedor Comunas";
+            this.mantenedorComunasToolStripMenuItem.Click += new System.EventHandler(this.mantenedorComunasToolStripMenuItem_Click);
+            // 
             // reportesToolStripMenuItem
             // 
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -159,20 +174,6 @@
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
-            // 
-            // mantenedorBancosToolStripMenuItem
-            // 
-            this.mantenedorBancosToolStripMenuItem.Name = "mantenedorBancosToolStripMenuItem";
-            this.mantenedorBancosToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.mantenedorBancosToolStripMenuItem.Text = "Mantenedor Bancos";
-            this.mantenedorBancosToolStripMenuItem.Click += new System.EventHandler(this.mantenedorBancosToolStripMenuItem_Click);
-            // 
-            // mantenedorComunasToolStripMenuItem
-            // 
-            this.mantenedorComunasToolStripMenuItem.Name = "mantenedorComunasToolStripMenuItem";
-            this.mantenedorComunasToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.mantenedorComunasToolStripMenuItem.Text = "Mantenedor Comunas";
-            this.mantenedorComunasToolStripMenuItem.Click += new System.EventHandler(this.mantenedorComunasToolStripMenuItem_Click);
             // 
             // MDIParent1
             // 

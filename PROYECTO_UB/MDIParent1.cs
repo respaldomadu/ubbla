@@ -123,8 +123,13 @@ namespace PROYECTO_UB
 
         private void mantenedorComunasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           // Comunas obj = new Comunas();
-         //   obj.ShowDialog();
+           COMUNAS obj = new COMUNAS();
+          obj.ShowDialog();
+        }
+
+        private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

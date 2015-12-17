@@ -44,8 +44,8 @@ namespace CapaNegocio
            String Mensaje = "";
            try
            {
-               lst.Add(new ClaseParametros("@CODIGO_CO", codigo));
-               lst.Add(new ClaseParametros("@NOMBRE_CO", nombre));
+               lst.Add(new ClaseParametros("@COD_COM", codigo));
+               lst.Add(new ClaseParametros("@NOMBRE_COM", nombre));
                lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
                objconexion.EjecutarSP("SP_ACTUALIZAR_COMUNAS", ref lst);
                Mensaje = lst[2].Valor.ToString();

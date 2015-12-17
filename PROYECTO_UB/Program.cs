@@ -16,7 +16,7 @@ namespace PROYECTO_UB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new COMUNAS());
+            Application.Run(new MDIParent1 ());
         }
     }
 }

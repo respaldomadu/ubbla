@@ -13,3 +13,8 @@ C:\Users\Barbara\Documents\GitHub\ubbla\CapaDatos\bin\Debug\CapaDatos.pdb
 C:\Users\Barbara\Documents\GitHub\ubbla\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
 C:\Users\Barbara\Documents\GitHub\ubbla\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\Barbara\Documents\GitHub\ubbla\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\CapaDatos\obj\Debug\CapaDatos.pdb
