@@ -118,6 +118,42 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_ag_comuna.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAbdEVYdFNvZnR3YXJlAGdpZjJwbmcgMC42IChiZXRhKardaZIAAAE2SURBVDhPnZExSwNBFITz
+        hyzUIoKIFmpEK3+GrYWFhQjaiEhE0NRpJYgoHhYRAiaKCqYQKxtBEU0wIBfuDImOmZe75+ayuSID37J7
+        uzPv7W0CQEhU5l5fzAWWc0NCIHOvLxxUmbsF7N/MBStVj8mEg1Q9uJ3H3nUK6eI0tgqTZiex0oDd0gy2
+        C1PYzI9jzUlqwOf9EqpXix3Kw11QEhBq/XwMq6ejwSqQX1J+XUfg3AzQEFbV1nmIVfOz/zgTHU6SqB6N
+        yLGuAFM0t/x3pVm7FL4rZ/hxi70BNKDpKmKs5YTGRxb+a0bwnnckyB7gPeg9o2Ya3acNgV1YA1r1shpt
+        5q/HFcF7O7YEtH8S7xZn5pMS7+UwJoBdtOGcd21ULqRlVqWR8Js1QJ/JhE9mIxowqMKAAUHiDzxmW2JW
+        CAraAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btn_ag_tipoCuenta.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAbdEVYdFNvZnR3YXJlAGdpZjJwbmcgMC42IChiZXRhKardaZIAAAE2SURBVDhPnZExSwNBFITz
+        hyzUIoKIFmpEK3+GrYWFhQjaiEhE0NRpJYgoHhYRAiaKCqYQKxtBEU0wIBfuDImOmZe75+ayuSID37J7
+        uzPv7W0CQEhU5l5fzAWWc0NCIHOvLxxUmbsF7N/MBStVj8mEg1Q9uJ3H3nUK6eI0tgqTZiex0oDd0gy2
+        C1PYzI9jzUlqwOf9EqpXix3Kw11QEhBq/XwMq6ejwSqQX1J+XUfg3AzQEFbV1nmIVfOz/zgTHU6SqB6N
+        yLGuAFM0t/x3pVm7FL4rZ/hxi70BNKDpKmKs5YTGRxb+a0bwnnckyB7gPeg9o2Ya3acNgV1YA1r1shpt
+        5q/HFcF7O7YEtH8S7xZn5pMS7+UwJoBdtOGcd21ULqRlVqWR8Js1QJ/JhE9mIxowqMKAAUHiDzxmW2JW
+        CAraAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btn_ag_banco.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAbdEVYdFNvZnR3YXJlAGdpZjJwbmcgMC42IChiZXRhKardaZIAAAE2SURBVDhPnZExSwNBFITz
+        hyzUIoKIFmpEK3+GrYWFhQjaiEhE0NRpJYgoHhYRAiaKCqYQKxtBEU0wIBfuDImOmZe75+ayuSID37J7
+        uzPv7W0CQEhU5l5fzAWWc0NCIHOvLxxUmbsF7N/MBStVj8mEg1Q9uJ3H3nUK6eI0tgqTZiex0oDd0gy2
+        C1PYzI9jzUlqwOf9EqpXix3Kw11QEhBq/XwMq6ejwSqQX1J+XUfg3AzQEFbV1nmIVfOz/zgTHU6SqB6N
+        yLGuAFM0t/x3pVm7FL4rZ/hxi70BNKDpKmKs5YTGRxb+a0bwnnckyB7gPeg9o2Ya3acNgV1YA1r1shpt
+        5q/HFcF7O7YEtH8S7xZn5pMS7+UwJoBdtOGcd21ULqRlVqWR8Js1QJ/JhE9mIxowqMKAAUHiDzxmW2JW
+        CAraAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="btn_agregar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAACH

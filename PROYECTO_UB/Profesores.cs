@@ -16,5 +16,29 @@ namespace PROYECTO_UB
         {
             InitializeComponent();
         }
+
+        private void btn_ag_comuna_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btn_ag_banco_Click(object sender, EventArgs e)
+        {
+            Bancos obj = new Bancos();
+            obj.ShowDialog();
+            CargarBanco();
+          
+        }
+        private void CargarBanco()
+        { 
+        
+        
+        
+        
+        }
+        private void Profesores_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

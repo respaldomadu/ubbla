@@ -95,5 +95,10 @@ namespace PROYECTO_UB
                 childForm.Close();
             }
         }
+
+        private void mantenedorRamosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

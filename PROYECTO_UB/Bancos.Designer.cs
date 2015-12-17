@@ -120,6 +120,7 @@
             this.btn_agregar.Text = "Agregar";
             this.btn_agregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
             // btn_actualizar
             // 
@@ -217,6 +218,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Bancos";
             this.Text = "Bancos";
+            this.Load += new System.EventHandler(this.Bancos_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);

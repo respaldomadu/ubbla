@@ -59,3 +59,20 @@ C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.cspro
 C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\bin\Debug\PROYECTO_UB.exe.config
 C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.exe
 C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.pdb
+C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Bancos.resources
+C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Profesores.resources
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\bin\Debug\PROYECTO_UB.exe
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\bin\Debug\PROYECTO_UB.pdb
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\bin\Debug\CapaNegocio.dll
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\bin\Debug\CapaDatos.dll
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\bin\Debug\CapaNegocio.pdb
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\bin\Debug\CapaDatos.pdb
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.csprojResolveAssemblyReference.cache
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Bancos.resources
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Carreras.resources
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.COMUNAS.resources
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.MDIParent1.resources
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Profesores.resources
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Properties.Resources.resources
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Ramos.resources
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.csproj.GenerateResource.Cache
