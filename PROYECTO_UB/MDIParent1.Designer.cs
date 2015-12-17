@@ -83,6 +83,7 @@
             this.mantenedorRamosToolStripMenuItem.Name = "mantenedorRamosToolStripMenuItem";
             this.mantenedorRamosToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
             this.mantenedorRamosToolStripMenuItem.Text = "Mantenedor Ramos";
+            this.mantenedorRamosToolStripMenuItem.Click += new System.EventHandler(this.mantenedorRamosToolStripMenuItem_Click);
             // 
             // mantenedorProfesoresToolStripMenuItem
             // 
