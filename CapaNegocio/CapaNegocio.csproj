@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClaseCarreras.cs" />
+    <Compile Include="ClaseComunas.cs" />
     <Compile Include="ClaseProfesores.cs" />
     <Compile Include="ClaseRamos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
