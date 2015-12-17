@@ -21,7 +21,7 @@ namespace PROYECTO_UB
 
         private void Bancos_Load(object sender, EventArgs e)
         {
-
+            ListarBanco();
         }
         private void ListarBanco()
         {
