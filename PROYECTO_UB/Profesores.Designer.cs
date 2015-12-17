@@ -30,28 +30,31 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profesores));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btn_ag_comuna = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.btn_ag_tipoCuenta = new System.Windows.Forms.Button();
+            this.btn_ag_banco = new System.Windows.Forms.Button();
+            this.cBox_banco = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cBox_cuenta = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_Ncta = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cBox_comuna = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txt_celular = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_apm = new System.Windows.Forms.TextBox();
+            this.txt_app = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_dv = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_rut = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -65,13 +68,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txt_buscar = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_busapp = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txt_busapm = new System.Windows.Forms.TextBox();
             this.btn_excel = new System.Windows.Forms.Button();
-            this.btn_ag_comuna = new System.Windows.Forms.Button();
-            this.btn_ag_banco = new System.Windows.Forms.Button();
-            this.btn_ag_tipoCuenta = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -84,18 +84,18 @@
             this.groupBox2.Controls.Add(this.btn_ag_comuna);
             this.groupBox2.Controls.Add(this.groupBox3);
             this.groupBox2.Controls.Add(this.groupBox4);
-            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.cBox_comuna);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.txt_celular);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.dateTimePicker1);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.txt_apm);
+            this.groupBox2.Controls.Add(this.txt_app);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.txt_dv);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.txt_rut);
             this.groupBox2.Controls.Add(this.label1);
@@ -106,16 +106,26 @@
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             // 
+            // btn_ag_comuna
+            // 
+            this.btn_ag_comuna.Image = ((System.Drawing.Image)(resources.GetObject("btn_ag_comuna.Image")));
+            this.btn_ag_comuna.Location = new System.Drawing.Point(157, 168);
+            this.btn_ag_comuna.Name = "btn_ag_comuna";
+            this.btn_ag_comuna.Size = new System.Drawing.Size(30, 26);
+            this.btn_ag_comuna.TabIndex = 26;
+            this.btn_ag_comuna.UseVisualStyleBackColor = true;
+            this.btn_ag_comuna.Click += new System.EventHandler(this.btn_ag_comuna_Click);
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.btn_ag_tipoCuenta);
             this.groupBox3.Controls.Add(this.btn_ag_banco);
-            this.groupBox3.Controls.Add(this.comboBox3);
+            this.groupBox3.Controls.Add(this.cBox_banco);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.comboBox1);
+            this.groupBox3.Controls.Add(this.cBox_cuenta);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.textBox1);
+            this.groupBox3.Controls.Add(this.txt_Ncta);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(5, 200);
             this.groupBox3.Name = "groupBox3";
@@ -123,14 +133,33 @@
             this.groupBox3.TabIndex = 21;
             this.groupBox3.TabStop = false;
             // 
-            // comboBox3
+            // btn_ag_tipoCuenta
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(6, 28);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(100, 26);
-            this.comboBox3.TabIndex = 10;
+            this.btn_ag_tipoCuenta.Image = ((System.Drawing.Image)(resources.GetObject("btn_ag_tipoCuenta.Image")));
+            this.btn_ag_tipoCuenta.Location = new System.Drawing.Point(370, 29);
+            this.btn_ag_tipoCuenta.Name = "btn_ag_tipoCuenta";
+            this.btn_ag_tipoCuenta.Size = new System.Drawing.Size(30, 23);
+            this.btn_ag_tipoCuenta.TabIndex = 28;
+            this.btn_ag_tipoCuenta.UseVisualStyleBackColor = true;
+            // 
+            // btn_ag_banco
+            // 
+            this.btn_ag_banco.Image = ((System.Drawing.Image)(resources.GetObject("btn_ag_banco.Image")));
+            this.btn_ag_banco.Location = new System.Drawing.Point(109, 29);
+            this.btn_ag_banco.Name = "btn_ag_banco";
+            this.btn_ag_banco.Size = new System.Drawing.Size(30, 23);
+            this.btn_ag_banco.TabIndex = 27;
+            this.btn_ag_banco.UseVisualStyleBackColor = true;
+            this.btn_ag_banco.Click += new System.EventHandler(this.btn_ag_banco_Click);
+            // 
+            // cBox_banco
+            // 
+            this.cBox_banco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.cBox_banco.FormattingEnabled = true;
+            this.cBox_banco.Location = new System.Drawing.Point(6, 28);
+            this.cBox_banco.Name = "cBox_banco";
+            this.cBox_banco.Size = new System.Drawing.Size(100, 26);
+            this.cBox_banco.TabIndex = 10;
             // 
             // label6
             // 
@@ -142,14 +171,14 @@
             this.label6.TabIndex = 9;
             this.label6.Text = " Banco";
             // 
-            // comboBox1
+            // cBox_cuenta
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(273, 28);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(94, 26);
-            this.comboBox1.TabIndex = 8;
+            this.cBox_cuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.cBox_cuenta.FormattingEnabled = true;
+            this.cBox_cuenta.Location = new System.Drawing.Point(273, 28);
+            this.cBox_cuenta.Name = "cBox_cuenta";
+            this.cBox_cuenta.Size = new System.Drawing.Size(94, 26);
+            this.cBox_cuenta.TabIndex = 8;
             // 
             // label5
             // 
@@ -171,14 +200,14 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "N° Cuenta";
             // 
-            // textBox1
+            // txt_Ncta
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(143, 28);
-            this.textBox1.MaxLength = 20;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 26);
-            this.textBox1.TabIndex = 4;
+            this.txt_Ncta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Ncta.Location = new System.Drawing.Point(143, 28);
+            this.txt_Ncta.MaxLength = 20;
+            this.txt_Ncta.Name = "txt_Ncta";
+            this.txt_Ncta.Size = new System.Drawing.Size(125, 26);
+            this.txt_Ncta.TabIndex = 4;
             // 
             // groupBox4
             // 
@@ -213,14 +242,14 @@
             this.radioButton2.Text = "Masculino";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // comboBox2
+            // cBox_comuna
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(5, 168);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(150, 26);
-            this.comboBox2.TabIndex = 11;
+            this.cBox_comuna.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.cBox_comuna.FormattingEnabled = true;
+            this.cBox_comuna.Location = new System.Drawing.Point(5, 168);
+            this.cBox_comuna.Name = "cBox_comuna";
+            this.cBox_comuna.Size = new System.Drawing.Size(150, 26);
+            this.cBox_comuna.TabIndex = 11;
             // 
             // label13
             // 
@@ -232,13 +261,16 @@
             this.label13.TabIndex = 24;
             this.label13.Text = "Comuna";
             // 
-            // textBox7
+            // txt_celular
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(192, 123);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(219, 26);
-            this.textBox7.TabIndex = 23;
+            this.txt_celular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_celular.Location = new System.Drawing.Point(192, 123);
+            this.txt_celular.MaxLength = 9;
+            this.txt_celular.Name = "txt_celular";
+            this.txt_celular.Size = new System.Drawing.Size(219, 26);
+            this.txt_celular.TabIndex = 23;
+            this.txt_celular.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.txt_celular.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox7_KeyPress);
             // 
             // label12
             // 
@@ -289,23 +321,25 @@
             this.label9.TabIndex = 16;
             this.label9.Text = "Apellido Materno";
             // 
-            // textBox6
+            // txt_apm
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(192, 76);
-            this.textBox6.MaxLength = 30;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(219, 26);
-            this.textBox6.TabIndex = 15;
+            this.txt_apm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_apm.Location = new System.Drawing.Point(192, 76);
+            this.txt_apm.MaxLength = 30;
+            this.txt_apm.Name = "txt_apm";
+            this.txt_apm.Size = new System.Drawing.Size(219, 26);
+            this.txt_apm.TabIndex = 15;
+            this.txt_apm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
             // 
-            // textBox5
+            // txt_app
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(7, 76);
-            this.textBox5.MaxLength = 30;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(179, 26);
-            this.textBox5.TabIndex = 14;
+            this.txt_app.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_app.Location = new System.Drawing.Point(7, 76);
+            this.txt_app.MaxLength = 30;
+            this.txt_app.Name = "txt_app";
+            this.txt_app.Size = new System.Drawing.Size(179, 26);
+            this.txt_app.TabIndex = 14;
+            this.txt_app.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
             // 
             // label7
             // 
@@ -316,14 +350,14 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "-";
             // 
-            // textBox4
+            // txt_dv
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(157, 28);
-            this.textBox4.MaxLength = 1;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(29, 26);
-            this.textBox4.TabIndex = 11;
+            this.txt_dv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_dv.Location = new System.Drawing.Point(157, 28);
+            this.txt_dv.MaxLength = 1;
+            this.txt_dv.Name = "txt_dv";
+            this.txt_dv.Size = new System.Drawing.Size(29, 26);
+            this.txt_dv.TabIndex = 11;
             // 
             // label2
             // 
@@ -343,6 +377,8 @@
             this.txt_rut.Name = "txt_rut";
             this.txt_rut.Size = new System.Drawing.Size(138, 26);
             this.txt_rut.TabIndex = 2;
+            this.txt_rut.TextChanged += new System.EventHandler(this.txt_rut_TextChanged);
+            this.txt_rut.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_rut_KeyPress);
             // 
             // label1
             // 
@@ -362,6 +398,7 @@
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(219, 26);
             this.txt_nombre.TabIndex = 2;
+            this.txt_nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nombre_KeyPress);
             // 
             // groupBox1
             // 
@@ -387,6 +424,7 @@
             this.btn_agregar.Text = "Agregar";
             this.btn_agregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
             // btn_actualizar
             // 
@@ -470,13 +508,13 @@
             this.label3.TabIndex = 24;
             this.label3.Text = "Apellido Paterno";
             // 
-            // textBox3
+            // txt_busapp
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(563, 24);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(128, 26);
-            this.textBox3.TabIndex = 23;
+            this.txt_busapp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_busapp.Location = new System.Drawing.Point(563, 24);
+            this.txt_busapp.Name = "txt_busapp";
+            this.txt_busapp.Size = new System.Drawing.Size(128, 26);
+            this.txt_busapp.TabIndex = 23;
             // 
             // label14
             // 
@@ -488,13 +526,13 @@
             this.label14.TabIndex = 27;
             this.label14.Text = "Apellido Materno";
             // 
-            // textBox8
+            // txt_busapm
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(696, 24);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(128, 26);
-            this.textBox8.TabIndex = 26;
+            this.txt_busapm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_busapm.Location = new System.Drawing.Point(696, 24);
+            this.txt_busapm.Name = "txt_busapm";
+            this.txt_busapm.Size = new System.Drawing.Size(128, 26);
+            this.txt_busapm.TabIndex = 26;
             // 
             // btn_excel
             // 
@@ -507,45 +545,16 @@
             this.btn_excel.TabIndex = 25;
             this.btn_excel.UseVisualStyleBackColor = true;
             // 
-            // btn_ag_comuna
-            // 
-            this.btn_ag_comuna.Image = ((System.Drawing.Image)(resources.GetObject("btn_ag_comuna.Image")));
-            this.btn_ag_comuna.Location = new System.Drawing.Point(157, 168);
-            this.btn_ag_comuna.Name = "btn_ag_comuna";
-            this.btn_ag_comuna.Size = new System.Drawing.Size(30, 26);
-            this.btn_ag_comuna.TabIndex = 26;
-            this.btn_ag_comuna.UseVisualStyleBackColor = true;
-            this.btn_ag_comuna.Click += new System.EventHandler(this.btn_ag_comuna_Click);
-            // 
-            // btn_ag_banco
-            // 
-            this.btn_ag_banco.Image = ((System.Drawing.Image)(resources.GetObject("btn_ag_banco.Image")));
-            this.btn_ag_banco.Location = new System.Drawing.Point(109, 29);
-            this.btn_ag_banco.Name = "btn_ag_banco";
-            this.btn_ag_banco.Size = new System.Drawing.Size(30, 23);
-            this.btn_ag_banco.TabIndex = 27;
-            this.btn_ag_banco.UseVisualStyleBackColor = true;
-            this.btn_ag_banco.Click += new System.EventHandler(this.btn_ag_banco_Click);
-            // 
-            // btn_ag_tipoCuenta
-            // 
-            this.btn_ag_tipoCuenta.Image = ((System.Drawing.Image)(resources.GetObject("btn_ag_tipoCuenta.Image")));
-            this.btn_ag_tipoCuenta.Location = new System.Drawing.Point(370, 29);
-            this.btn_ag_tipoCuenta.Name = "btn_ag_tipoCuenta";
-            this.btn_ag_tipoCuenta.Size = new System.Drawing.Size(30, 23);
-            this.btn_ag_tipoCuenta.TabIndex = 28;
-            this.btn_ag_tipoCuenta.UseVisualStyleBackColor = true;
-            // 
             // Profesores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(865, 340);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.txt_busapm);
             this.Controls.Add(this.btn_excel);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txt_busapp);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txt_buscar);
             this.Controls.Add(this.dataGridView1);
@@ -571,27 +580,27 @@
 
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cBox_banco;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cBox_cuenta;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_Ncta;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cBox_comuna;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txt_celular;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_apm;
+        private System.Windows.Forms.TextBox txt_app;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_dv;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_rut;
         private System.Windows.Forms.Label label1;
@@ -605,9 +614,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txt_buscar;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_busapp;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txt_busapm;
         private System.Windows.Forms.Button btn_excel;
         private System.Windows.Forms.Button btn_ag_comuna;
         private System.Windows.Forms.Button btn_ag_tipoCuenta;

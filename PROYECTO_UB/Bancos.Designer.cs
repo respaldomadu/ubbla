@@ -59,6 +59,7 @@
             this.groupBox2.Size = new System.Drawing.Size(358, 110);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // label2
             // 
@@ -74,9 +75,11 @@
             // 
             this.txt_codigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_codigo.Location = new System.Drawing.Point(6, 28);
+            this.txt_codigo.MaxLength = 6;
             this.txt_codigo.Name = "txt_codigo";
             this.txt_codigo.Size = new System.Drawing.Size(156, 26);
             this.txt_codigo.TabIndex = 2;
+            this.txt_codigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_codigo_KeyPress);
             // 
             // label1
             // 
@@ -92,9 +95,11 @@
             // 
             this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nombre.Location = new System.Drawing.Point(6, 76);
+            this.txt_nombre.MaxLength = 20;
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(346, 26);
             this.txt_nombre.TabIndex = 2;
+            this.txt_nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nombre_KeyPress);
             // 
             // groupBox1
             // 
@@ -149,6 +154,7 @@
             this.btn_limpiar.Text = "Limpiar";
             this.btn_limpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_limpiar.UseVisualStyleBackColor = true;
+            this.btn_limpiar.Click += new System.EventHandler(this.btn_limpiar_Click);
             // 
             // btn_eliminar
             // 
@@ -176,6 +182,7 @@
             this.btn_excel.Size = new System.Drawing.Size(32, 26);
             this.btn_excel.TabIndex = 13;
             this.btn_excel.UseVisualStyleBackColor = true;
+            this.btn_excel.Click += new System.EventHandler(this.btn_excel_Click);
             // 
             // label3
             // 
@@ -194,6 +201,7 @@
             this.txt_buscar.Name = "txt_buscar";
             this.txt_buscar.Size = new System.Drawing.Size(195, 26);
             this.txt_buscar.TabIndex = 11;
+            this.txt_buscar.TextChanged += new System.EventHandler(this.txt_buscar_TextChanged);
             // 
             // dataGridView1
             // 
@@ -219,6 +227,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_buscar);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Bancos";
             this.Text = "Bancos";
             this.Load += new System.EventHandler(this.Bancos_Load);

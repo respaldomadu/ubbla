@@ -225,6 +225,11 @@ namespace PROYECTO_UB
         {
             dataGridView1.DataSource = objRamo.Buscar(txt_buscar.Text);
         }
+
+        private void txt_codigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
     }
 }
 

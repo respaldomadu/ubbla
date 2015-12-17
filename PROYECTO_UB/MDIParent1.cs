@@ -98,7 +98,33 @@ namespace PROYECTO_UB
 
         private void mantenedorRamosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Ramos obj = new Ramos();
+            obj.ShowDialog();
+           
+        }
 
+        private void mantenedorCarrerasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Carreras obj = new Carreras();
+            obj.ShowDialog();
+        }
+
+        private void mantenedorProfesoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Profesores obj = new Profesores();
+            obj.ShowDialog();
+        }
+
+        private void mantenedorBancosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Bancos obj = new Bancos();
+            obj.ShowDialog();
+        }
+
+        private void mantenedorComunasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           // Comunas obj = new Comunas();
+         //   obj.ShowDialog();
         }
     }
 }

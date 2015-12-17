@@ -88,7 +88,7 @@ namespace CapaNegocio
             List<ClaseParametros> lst = new List<ClaseParametros>();
             try
             {
-                lst.Add(new ClaseParametros("@NOMBRE_B", nombre));
+                lst.Add(new ClaseParametros("@NOMBRE_B", textoUsuario));
                 dt = objconexion.Listado("SP_BUSCAR_BANCOS", lst);
             }
             catch (Exception ex)
