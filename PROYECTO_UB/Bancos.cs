@@ -61,5 +61,42 @@ namespace PROYECTO_UB
             ListarBanco();
             Limpiar();
         }
+
+        private void btn_actualizar_Click(object sender, EventArgs e)
+        {
+            if (txt_nombre.Text == "")
+            {
+                MessageBox.Show("Ingrese el Nonbre", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txt_nombre.Focus();
+                return;
+            }
+
+            objBanco.codigo = txt_codigo.Text;
+            objBanco.nombre = txt_nombre.Text;
+            objBanco.ActualizarBanco();
+            MessageBox.Show(objBanco.ActualizarBanco(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ListarBanco();
+            Limpiar();
+        }
+
+        private void btn_eliminar_Click(object sender, EventArgs e)
+        {
+
+            objBanco.codigo = txt_codigo.Text;
+            objBanco.EliminarBanco();
+            MessageBox.Show(objBanco.EliminarBanco(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ListarBanco();
+            Limpiar();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txt_codigo.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            txt_nombre.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            txt_codigo.Enabled = false;
+            btn_actualizar.Enabled = true;
+            btn_eliminar.Enabled = true;
+            btn_agregar.Enabled = false;
+        }
     }
 }

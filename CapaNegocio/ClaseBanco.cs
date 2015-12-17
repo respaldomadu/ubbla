@@ -19,7 +19,7 @@ namespace CapaNegocio
 
         public DataTable Listado()
         {
-            return objconexion.Listado("SP_LISTAR_BANCO", null);
+            return objconexion.Listado("SP_LISTAR_BANCOS", null);
         }
 
         public String RegistrarBanco()
@@ -50,9 +50,9 @@ namespace CapaNegocio
             try
             {
                 lst.Add(new ClaseParametros("@COD_BCO", codigo));
-                lst.Add(new ClaseParametros("@NOMBRE_B", nombre));
+                lst.Add(new ClaseParametros("@NOMBRE_BCO", nombre));
                 lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
-                objconexion.EjecutarSP("SP_ACTUALIZAR_BANCO", ref lst);
+                objconexion.EjecutarSP("SP_ACTUALIZAR_BANCOS", ref lst);
                 Mensaje = lst[2].Valor.ToString();
             }
             catch (Exception)
@@ -72,7 +72,7 @@ namespace CapaNegocio
             {
                 lst.Add(new ClaseParametros("@COD_BCO", codigo));
                 lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
-                objconexion.EjecutarSP("SP_ELIMINAR_BANCO", ref lst);
+                objconexion.EjecutarSP("SP_ELIMINAR_BANCOS", ref lst);
                 Mensaje = lst[1].Valor.ToString();
             }
             catch (Exception)
@@ -89,7 +89,7 @@ namespace CapaNegocio
             try
             {
                 lst.Add(new ClaseParametros("@NOMBRE_B", nombre));
-                dt = objconexion.Listado("SP_BUSCAR_BANCO", lst);
+                dt = objconexion.Listado("SP_BUSCAR_BANCOS", lst);
             }
             catch (Exception ex)
             {
