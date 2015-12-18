@@ -36,7 +36,7 @@ namespace PROYECTO_UB
              btn_eliminar.Enabled = false;
              btn_agregar.Enabled = true;
              txt_codigo.Enabled = true;
-
+             txt_codigo.Text = objCuenta.MAYOR().ToString();
          }
         private void txt_codigo_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -75,12 +75,7 @@ namespace PROYECTO_UB
 
         private void btn_agregar_Click(object sender, EventArgs e)
         {
-            if (txt_codigo.Text == "")
-            {
-                MessageBox.Show("Ingrese el Codigo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txt_codigo.Focus();
-                return;
-            }
+            txt_codigo.Text = objCuenta.MAYOR().ToString();
 
             if (txt_nombre.Text == "")
             {
@@ -109,7 +104,7 @@ namespace PROYECTO_UB
             objCuenta.nombre = txt_nombre.Text;
             objCuenta.ActualizarCTA();
             MessageBox.Show(objCuenta.ActualizarCTA(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            
+            ListarCuentas();
             Limpiar();
         }
 
