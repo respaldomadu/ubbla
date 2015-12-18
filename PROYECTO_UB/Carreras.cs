@@ -137,7 +137,12 @@ namespace PROYECTO_UB
 
         private void txt_codigo_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (!(e.KeyChar != (char)Keys.Space))
+            {
+                MessageBox.Show("NO SE ACEPTAN ESPACIOS", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
         }
 
 
