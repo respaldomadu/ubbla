@@ -46,5 +46,10 @@ namespace PROYECTO_UB
                 return;
             }
         }
+
+        private void TIPO_CUENTAS_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

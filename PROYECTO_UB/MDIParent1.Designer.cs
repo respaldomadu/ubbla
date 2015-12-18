@@ -46,6 +46,7 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.mantenedorTipoCuentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -72,7 +73,8 @@
             this.mantenedorHorarioToolStripMenuItem,
             this.mantenedorModulosToolStripMenuItem,
             this.mantenedorBancosToolStripMenuItem,
-            this.mantenedorComunasToolStripMenuItem});
+            this.mantenedorComunasToolStripMenuItem,
+            this.mantenedorTipoCuentaToolStripMenuItem});
             this.mantenedoresToolStripMenuItem.Name = "mantenedoresToolStripMenuItem";
             this.mantenedoresToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.mantenedoresToolStripMenuItem.Text = "Mantenedores";
@@ -175,6 +177,13 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
             // 
+            // mantenedorTipoCuentaToolStripMenuItem
+            // 
+            this.mantenedorTipoCuentaToolStripMenuItem.Name = "mantenedorTipoCuentaToolStripMenuItem";
+            this.mantenedorTipoCuentaToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.mantenedorTipoCuentaToolStripMenuItem.Text = "Mantenedor Tipo cuenta";
+            this.mantenedorTipoCuentaToolStripMenuItem.Click += new System.EventHandler(this.mantenedorTipoCuentaToolStripMenuItem_Click);
+            // 
             // MDIParent1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -214,6 +223,7 @@
         private System.Windows.Forms.ToolStripMenuItem porAsignaturaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenedorBancosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenedorComunasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenedorTipoCuentaToolStripMenuItem;
     }
 }
 

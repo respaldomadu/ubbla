@@ -131,5 +131,11 @@ namespace PROYECTO_UB
         {
 
         }
+
+        private void mantenedorTipoCuentaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TIPO_CUENTAS obj = new TIPO_CUENTAS();
+            obj.ShowDialog();
+        }
     }
 }
