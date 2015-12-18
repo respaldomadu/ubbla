@@ -35,7 +35,7 @@ namespace PROYECTO_UB
              btn_actualizar.Enabled = false;
              btn_eliminar.Enabled = false;
              btn_agregar.Enabled = true;
-             txt_codigo.Enabled = true;
+             txt_codigo.Enabled = false;
              txt_codigo.Text = objCuenta.MAYOR().ToString();
          }
         private void txt_codigo_KeyPress(object sender, KeyPressEventArgs e)
@@ -92,7 +92,7 @@ namespace PROYECTO_UB
         }
 
         private void btn_actualizar_Click(object sender, EventArgs e)
-        {
+        {     
             if (txt_nombre.Text == "")
             {
                 MessageBox.Show("Ingrese el Nombre", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
