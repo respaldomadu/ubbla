@@ -86,6 +86,12 @@
     <Compile Include="Ramos.Designer.cs">
       <DependentUpon>Ramos.cs</DependentUpon>
     </Compile>
+    <Compile Include="TIPO_CUENTAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TIPO_CUENTAS.Designer.cs">
+      <DependentUpon>TIPO_CUENTAS.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Bancos.resx">
       <DependentUpon>Bancos.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +118,9 @@
     </Compile>
     <EmbeddedResource Include="Ramos.resx">
       <DependentUpon>Ramos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TIPO_CUENTAS.resx">
+      <DependentUpon>TIPO_CUENTAS.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
