@@ -19,7 +19,18 @@ namespace CapaNegocio
        {
            return objconexion.Listado("SP_LISTAR_COMUNA", null);
        }
+       public int MAYOR()
+       {
 
+           string MAX = "0";
+           DataTable datos = new DataTable();
+           datos = Listado();
+           if (datos.Rows.Count != 0)
+           {
+               MAX = datos.AsEnumerable().Max(row => row[0]).ToString();
+
+           } return int.Parse(MAX) + 1;
+       }
        public String RegistrarComunas()
        {
            List<ClaseParametros> lst = new List<ClaseParametros>();

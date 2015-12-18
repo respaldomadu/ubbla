@@ -21,7 +21,18 @@ namespace CapaNegocio
         {
             return objconexion.Listado("SP_LISTAR_BANCOS", null);
         }
+        public int MAYOR()
+        {
 
+            string MAX = "0";
+            DataTable datos = new DataTable();
+            datos = Listado();
+            if (datos.Rows.Count != 0)
+            {
+                MAX = datos.AsEnumerable().Max(row => row[0]).ToString();
+
+            } return int.Parse(MAX) + 1;
+        }
         public String RegistrarBanco()
         {
             List<ClaseParametros> lst = new List<ClaseParametros>();
