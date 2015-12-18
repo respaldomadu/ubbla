@@ -16,5 +16,10 @@ namespace PROYECTO_UB
         {
             InitializeComponent();
         }
+
+        private void TIPO_CUENTAS_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
