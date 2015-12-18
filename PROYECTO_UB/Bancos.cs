@@ -22,6 +22,7 @@ namespace PROYECTO_UB
         private void Bancos_Load(object sender, EventArgs e)
         {
             ListarBanco();
+            txt_codigo.Text = objBanco.MAYOR().ToString();
         }
         private void ListarBanco()
         {
@@ -35,7 +36,8 @@ namespace PROYECTO_UB
             btn_actualizar.Enabled = false;
             btn_eliminar.Enabled = false;
             btn_agregar.Enabled = true;
-            txt_codigo.Enabled = true;
+            txt_codigo.Enabled = false;
+            txt_codigo.Text = objBanco.MAYOR().ToString();
 
         }
         private void btn_agregar_Click(object sender, EventArgs e)
@@ -131,9 +133,9 @@ namespace PROYECTO_UB
 
         private void txt_nombre_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != (char)Keys.Space))
             {
-                MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Solo se permiten letras", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
                 return;
             }

@@ -25,6 +25,7 @@ namespace PROYECTO_UB
         private void COMUNAS_Load(object sender, EventArgs e)
         {
             ListarComunas();
+            txt_codigo.Text = objComunas.MAYOR().ToString();
         }
         private void Limpiar()
         {
@@ -34,8 +35,8 @@ namespace PROYECTO_UB
             btn_actualizar.Enabled = false;
             btn_eliminar.Enabled = false;
             btn_agregar.Enabled = true;
-            txt_codigo.Enabled = true;
-
+            txt_codigo.Enabled = false;
+            txt_codigo.Text = objComunas.MAYOR().ToString();
         }
 
         private void btn_limpiar_Click(object sender, EventArgs e)
@@ -139,6 +140,11 @@ namespace PROYECTO_UB
                 e.Handled = true;
                 return;
             }
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
         }
 
      
