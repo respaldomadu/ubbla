@@ -122,6 +122,7 @@
             this.btn_agregar.Text = "Agregar";
             this.btn_agregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
             // btn_actualizar
             // 
@@ -136,6 +137,7 @@
             this.btn_actualizar.Text = "Modificar";
             this.btn_actualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_actualizar.UseVisualStyleBackColor = true;
+            this.btn_actualizar.Click += new System.EventHandler(this.btn_actualizar_Click);
             // 
             // btn_limpiar
             // 
@@ -149,6 +151,7 @@
             this.btn_limpiar.Text = "Limpiar";
             this.btn_limpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_limpiar.UseVisualStyleBackColor = true;
+            this.btn_limpiar.Click += new System.EventHandler(this.btn_limpiar_Click);
             // 
             // btn_eliminar
             // 
@@ -164,6 +167,7 @@
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
             // dataGridView1
             // 
@@ -176,6 +180,7 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(233, 133);
             this.dataGridView1.TabIndex = 13;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // txt_buscar
             // 
@@ -184,6 +189,7 @@
             this.txt_buscar.Name = "txt_buscar";
             this.txt_buscar.Size = new System.Drawing.Size(195, 26);
             this.txt_buscar.TabIndex = 14;
+            this.txt_buscar.TextChanged += new System.EventHandler(this.txt_buscar_TextChanged);
             this.txt_buscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_buscar_KeyPress);
             // 
             // label3
@@ -206,6 +212,7 @@
             this.btn_excel.Size = new System.Drawing.Size(32, 26);
             this.btn_excel.TabIndex = 16;
             this.btn_excel.UseVisualStyleBackColor = true;
+            this.btn_excel.Click += new System.EventHandler(this.btn_excel_Click);
             // 
             // TIPO_CUENTAS
             // 
