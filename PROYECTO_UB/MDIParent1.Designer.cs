@@ -39,6 +39,7 @@
             this.mantenedorModulosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenedorBancosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenedorComunasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenedorTipoCuentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.horasRealizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porProfesorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,7 +47,7 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.mantenedorTipoCuentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenedorNacionalidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -74,7 +75,8 @@
             this.mantenedorModulosToolStripMenuItem,
             this.mantenedorBancosToolStripMenuItem,
             this.mantenedorComunasToolStripMenuItem,
-            this.mantenedorTipoCuentaToolStripMenuItem});
+            this.mantenedorTipoCuentaToolStripMenuItem,
+            this.mantenedorNacionalidadToolStripMenuItem});
             this.mantenedoresToolStripMenuItem.Name = "mantenedoresToolStripMenuItem";
             this.mantenedoresToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.mantenedoresToolStripMenuItem.Text = "Mantenedores";
@@ -132,6 +134,13 @@
             this.mantenedorComunasToolStripMenuItem.Text = "Mantenedor Comunas";
             this.mantenedorComunasToolStripMenuItem.Click += new System.EventHandler(this.mantenedorComunasToolStripMenuItem_Click);
             // 
+            // mantenedorTipoCuentaToolStripMenuItem
+            // 
+            this.mantenedorTipoCuentaToolStripMenuItem.Name = "mantenedorTipoCuentaToolStripMenuItem";
+            this.mantenedorTipoCuentaToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.mantenedorTipoCuentaToolStripMenuItem.Text = "Mantenedor Tipo cuenta";
+            this.mantenedorTipoCuentaToolStripMenuItem.Click += new System.EventHandler(this.mantenedorTipoCuentaToolStripMenuItem_Click);
+            // 
             // reportesToolStripMenuItem
             // 
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -177,12 +186,12 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
             // 
-            // mantenedorTipoCuentaToolStripMenuItem
+            // mantenedorNacionalidadToolStripMenuItem
             // 
-            this.mantenedorTipoCuentaToolStripMenuItem.Name = "mantenedorTipoCuentaToolStripMenuItem";
-            this.mantenedorTipoCuentaToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.mantenedorTipoCuentaToolStripMenuItem.Text = "Mantenedor Tipo cuenta";
-            this.mantenedorTipoCuentaToolStripMenuItem.Click += new System.EventHandler(this.mantenedorTipoCuentaToolStripMenuItem_Click);
+            this.mantenedorNacionalidadToolStripMenuItem.Name = "mantenedorNacionalidadToolStripMenuItem";
+            this.mantenedorNacionalidadToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.mantenedorNacionalidadToolStripMenuItem.Text = "Mantenedor Nacionalidad";
+            this.mantenedorNacionalidadToolStripMenuItem.Click += new System.EventHandler(this.mantenedorNacionalidadToolStripMenuItem_Click);
             // 
             // MDIParent1
             // 
@@ -224,6 +233,7 @@
         private System.Windows.Forms.ToolStripMenuItem mantenedorBancosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenedorComunasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenedorTipoCuentaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenedorNacionalidadToolStripMenuItem;
     }
 }
 

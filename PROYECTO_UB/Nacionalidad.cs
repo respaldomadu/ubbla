@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaNegocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,23 +8,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaNegocio;
+
 namespace PROYECTO_UB
 {
-    public partial class Carreras : Form
+    public partial class Nacionalidad : Form
     {
-        private ClaseCarreras objCarreras = new ClaseCarreras();
-        public Carreras()
+        private ClaseNacionalidad objNacio = new ClaseNacionalidad();
+        public Nacionalidad()
         {
             InitializeComponent();
         }
-        private void ListarCarrera()
+        private void ListarNacionalidades()
         {
-            dataGridView1.DataSource = objCarreras.Listado();
+            dataGridView1.DataSource = objNacio.Listado();
         }
-        private void Form1_Load(object sender, EventArgs e)
+        private void Nacionalidad_Load(object sender, EventArgs e)
         {
-            ListarCarrera();
+            ListarNacionalidades();
+            txt_codigo.Text = objNacio.MAYOR().ToString();
+
         }
         private void Limpiar()
         {
@@ -33,6 +36,7 @@ namespace PROYECTO_UB
             btn_actualizar.Enabled = false;
             btn_eliminar.Enabled = false;
             btn_agregar.Enabled = true;
+            txt_codigo.Text = objNacio.MAYOR().ToString();
             
 
         }
@@ -44,23 +48,18 @@ namespace PROYECTO_UB
 
         private void btn_agregar_Click(object sender, EventArgs e)
         {
-            if (txt_codigo.Text == "")
-            {
-                MessageBox.Show("Ingrese el Codigo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txt_codigo.Focus();
-                return; }
-
+          
             if (txt_nombre.Text == "")
             {
-                MessageBox.Show("Ingrese el Nombre", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ingrese el Nacionalidad", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txt_nombre.Focus();
                 return;
-             }
+            }
 
-            objCarreras.codigo = txt_codigo.Text;
-            objCarreras.nombre = txt_nombre.Text;
-            MessageBox.Show(objCarreras.RegistrarCarreras(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            ListarCarrera();
+            objNacio.codigo = int.Parse(txt_codigo.Text);
+            objNacio.nacionalidad = txt_nombre.Text;
+            MessageBox.Show(objNacio.RegistrarNacionalidad(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ListarNacionalidades();
             Limpiar();
         }
 
@@ -68,31 +67,31 @@ namespace PROYECTO_UB
         {
             if (txt_nombre.Text == "")
             {
-                MessageBox.Show("Ingrese el Nombre", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ingrese Nacionalidad", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txt_nombre.Focus();
                 return;
             }
-            
-            objCarreras.codigo = txt_codigo.Text;
-            objCarreras.nombre = txt_nombre.Text;
-            objCarreras.ActualizarCarreras();
-            MessageBox.Show(objCarreras.ActualizarCarreras(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            ListarCarrera();
+
+            objNacio.codigo =int.Parse( txt_codigo.Text);
+            objNacio.nacionalidad = txt_nombre.Text;
+            objNacio.ActualizarNacionalidad();
+            MessageBox.Show(objNacio.ActualizarNacionalidad(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ListarNacionalidades();
             Limpiar();
         }
 
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
-            objCarreras.codigo = txt_codigo.Text;
-            objCarreras.EliminarCarreras();
-            MessageBox.Show(objCarreras.EliminarCarreras(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            ListarCarrera();
+            objNacio.codigo = int.Parse(txt_codigo.Text);
+            objNacio.EliminarNacionalidad();
+            MessageBox.Show(objNacio.EliminarNacionalidad(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ListarNacionalidades();
             Limpiar();
         }
 
         private void txt_buscar_TextChanged(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = objCarreras.Buscar(txt_buscar.Text);
+            dataGridView1.DataSource = objNacio.Buscar(txt_buscar.Text);
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -129,25 +128,6 @@ namespace PROYECTO_UB
                 return;
             }
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void txt_codigo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!(e.KeyChar != (char)Keys.Space))
-            {
-                MessageBox.Show("NO SE ACEPTAN ESPACIOS", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
-        }
-
-
-
-
 
     }
 }

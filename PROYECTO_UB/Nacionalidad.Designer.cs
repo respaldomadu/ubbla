@@ -1,6 +1,6 @@
 ﻿namespace PROYECTO_UB
 {
-    partial class Comunas
+    partial class Nacionalidad
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Comunas));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Nacionalidad));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_codigo = new System.Windows.Forms.TextBox();
@@ -39,10 +39,10 @@
             this.btn_actualizar = new System.Windows.Forms.Button();
             this.btn_limpiar = new System.Windows.Forms.Button();
             this.btn_eliminar = new System.Windows.Forms.Button();
-            this.btn_excel = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_buscar = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btn_excel = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -54,12 +54,11 @@
             this.groupBox2.Controls.Add(this.txt_codigo);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txt_nombre);
-            this.groupBox2.Location = new System.Drawing.Point(1, 3);
+            this.groupBox2.Location = new System.Drawing.Point(5, -1);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(358, 110);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // label2
             // 
@@ -79,7 +78,6 @@
             this.txt_codigo.Name = "txt_codigo";
             this.txt_codigo.Size = new System.Drawing.Size(156, 26);
             this.txt_codigo.TabIndex = 2;
-            this.txt_codigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_codigo_KeyPress);
             // 
             // label1
             // 
@@ -106,7 +104,7 @@
             this.groupBox1.Controls.Add(this.btn_actualizar);
             this.groupBox1.Controls.Add(this.btn_limpiar);
             this.groupBox1.Controls.Add(this.btn_eliminar);
-            this.groupBox1.Location = new System.Drawing.Point(1, 118);
+            this.groupBox1.Location = new System.Drawing.Point(5, 116);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(358, 60);
             this.groupBox1.TabIndex = 11;
@@ -171,32 +169,20 @@
             this.btn_eliminar.UseVisualStyleBackColor = true;
             this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
-            // btn_excel
-            // 
-            this.btn_excel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_excel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_excel.Image = ((System.Drawing.Image)(resources.GetObject("btn_excel.Image")));
-            this.btn_excel.Location = new System.Drawing.Point(568, 21);
-            this.btn_excel.Name = "btn_excel";
-            this.btn_excel.Size = new System.Drawing.Size(32, 26);
-            this.btn_excel.TabIndex = 15;
-            this.btn_excel.UseVisualStyleBackColor = true;
-            this.btn_excel.Click += new System.EventHandler(this.btn_excel_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(367, 5);
+            this.label3.Location = new System.Drawing.Point(367, 1);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 15);
-            this.label3.TabIndex = 14;
+            this.label3.TabIndex = 12;
             this.label3.Text = "Nombre";
             // 
             // txt_buscar
             // 
             this.txt_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_buscar.Location = new System.Drawing.Point(367, 21);
+            this.txt_buscar.Location = new System.Drawing.Point(369, 16);
             this.txt_buscar.Name = "txt_buscar";
             this.txt_buscar.Size = new System.Drawing.Size(195, 26);
             this.txt_buscar.TabIndex = 13;
@@ -208,28 +194,40 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(367, 47);
+            this.dataGridView1.Location = new System.Drawing.Point(369, 42);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(233, 133);
-            this.dataGridView1.TabIndex = 12;
+            this.dataGridView1.TabIndex = 14;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // COMUNAS
+            // btn_excel
+            // 
+            this.btn_excel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_excel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_excel.Image = ((System.Drawing.Image)(resources.GetObject("btn_excel.Image")));
+            this.btn_excel.Location = new System.Drawing.Point(570, 15);
+            this.btn_excel.Name = "btn_excel";
+            this.btn_excel.Size = new System.Drawing.Size(32, 26);
+            this.btn_excel.TabIndex = 15;
+            this.btn_excel.UseVisualStyleBackColor = true;
+            this.btn_excel.Click += new System.EventHandler(this.btn_excel_Click);
+            // 
+            // Nacionalidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(607, 186);
             this.Controls.Add(this.btn_excel);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txt_buscar);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.txt_buscar);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
-            this.Name = "COMUNAS";
-            this.Text = "Mantenedor Comunas";
-            this.Load += new System.EventHandler(this.COMUNAS_Load);
+            this.Name = "Nacionalidad";
+            this.Text = "Nacionalidad";
+            this.Load += new System.EventHandler(this.Nacionalidad_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -251,9 +249,9 @@
         private System.Windows.Forms.Button btn_actualizar;
         private System.Windows.Forms.Button btn_limpiar;
         private System.Windows.Forms.Button btn_eliminar;
-        private System.Windows.Forms.Button btn_excel;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_buscar;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btn_excel;
     }
 }

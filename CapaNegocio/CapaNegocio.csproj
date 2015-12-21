@@ -45,6 +45,7 @@
     <Compile Include="ClaseBanco.cs" />
     <Compile Include="ClaseCarreras.cs" />
     <Compile Include="ClaseComunas.cs" />
+    <Compile Include="ClaseNacionalidad.cs" />
     <Compile Include="ClaseProfesores.cs" />
     <Compile Include="ClaseRamos.cs" />
     <Compile Include="ClaseTipoCuenta.cs" />
