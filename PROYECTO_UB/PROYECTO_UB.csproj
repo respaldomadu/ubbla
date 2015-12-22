@@ -59,11 +59,18 @@
     <Compile Include="Carreras.Designer.cs">
       <DependentUpon>Carreras.cs</DependentUpon>
     </Compile>
+    <Compile Include="Configuracion.cs" />
     <Compile Include="Comunas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Comunas.Designer.cs">
       <DependentUpon>Comunas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuraciones.Designer.cs">
+      <DependentUpon>Configuraciones.cs</DependentUpon>
     </Compile>
     <Compile Include="global.cs" />
     <Compile Include="MDIParent1.cs">
@@ -106,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Comunas.resx">
       <DependentUpon>Comunas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuraciones.resx">
+      <DependentUpon>Configuraciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDIParent1.resx">
       <DependentUpon>MDIParent1.cs</DependentUpon>
