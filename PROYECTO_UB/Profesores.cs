@@ -47,6 +47,11 @@ namespace PROYECTO_UB
             txt_celular.Text = "";
             txt_Ncta.Text = "";
             txt_email.Text = "";
+            cBox_est_civil.Text = "";
+            cBox_banco.Text = "";
+            cBox_comuna.Text = "";
+            cBoxNacionalidad.Text = "";
+            cBox_cuenta.Text = "";
             radioButton1.Checked = false;
             radioButton2.Checked = false;
             btn_actualizar.Enabled = false;
@@ -140,6 +145,7 @@ namespace PROYECTO_UB
         }
         private void llenarCombobox()
         {
+            
             cBox_comuna.DataSource = objComuna.Listado();
             cBox_comuna.ValueMember = "CODIGO";
             cBox_comuna.DisplayMember = "COMUNA";
@@ -218,6 +224,16 @@ namespace PROYECTO_UB
             {
                 MessageBox.Show("Seleccione el Tipo de Cuenta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 cBox_cuenta.Focus();
+                return;
+            }
+            if (radioButton1.Checked == true || radioButton2.Checked == true )
+            {
+               
+            }
+            else
+            {
+                MessageBox.Show("Indique Sexo");
+                groupBox4.Focus();
                 return;
             }
             if (this.cBoxNacionalidad.Text == "")

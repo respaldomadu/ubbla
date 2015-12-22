@@ -132,6 +132,7 @@
             // 
             // cBoxNacionalidad
             // 
+            this.cBoxNacionalidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBoxNacionalidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.cBoxNacionalidad.FormattingEnabled = true;
             this.cBoxNacionalidad.Location = new System.Drawing.Point(195, 253);
@@ -141,6 +142,7 @@
             // 
             // cBox_est_civil
             // 
+            this.cBox_est_civil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBox_est_civil.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.cBox_est_civil.FormattingEnabled = true;
             this.cBox_est_civil.Location = new System.Drawing.Point(4, 253);
@@ -236,6 +238,7 @@
             // 
             // cBox_banco
             // 
+            this.cBox_banco.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBox_banco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.cBox_banco.FormattingEnabled = true;
             this.cBox_banco.Location = new System.Drawing.Point(6, 28);
@@ -255,6 +258,7 @@
             // 
             // cBox_cuenta
             // 
+            this.cBox_cuenta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBox_cuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.cBox_cuenta.FormattingEnabled = true;
             this.cBox_cuenta.Location = new System.Drawing.Point(273, 28);
@@ -326,6 +330,7 @@
             // 
             // cBox_comuna
             // 
+            this.cBox_comuna.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBox_comuna.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.cBox_comuna.FormattingEnabled = true;
             this.cBox_comuna.Location = new System.Drawing.Point(5, 168);
