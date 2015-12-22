@@ -20,6 +20,7 @@ namespace PROYECTO_UB
         private ClaseNacionalidad objNacio = new ClaseNacionalidad();
         String Femenino = "";
         String Masculino = "";
+        
         public Profesores()
         {
             InitializeComponent();
@@ -36,17 +37,18 @@ namespace PROYECTO_UB
         private void Limpiar()
         {
             txt_rut.Text = "";
-            txt_nombre.Text = "";
-            txt_buscar.Text = "";
             txt_dv.Text = "";
+            txt_nombre.Text = "";
+            txt_app.Text = "";
+            txt_apm.Text = "";
+            txt_buscar.Text = "";
             txt_busapm.Text = "";
             txt_busapp.Text = "";
             txt_celular.Text = "";
             txt_Ncta.Text = "";
+            txt_email.Text = "";
             radioButton1.Checked = false;
             radioButton2.Checked = false;
-            txt_email.Text = "";
-            
             btn_actualizar.Enabled = false;
             btn_eliminar.Enabled = false;
             btn_agregar.Enabled = true;
@@ -64,24 +66,11 @@ namespace PROYECTO_UB
         {
             Bancos obj = new Bancos();
             obj.ShowDialog();
-            CargarBanco();
+            //CargarBanco();
             llenarCombobox();
           
         }
-        private void CargarBanco()
-        { 
-        
-        
-        
-        
-        }
-        
-
-        private void txt_rut_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+   
         private void txt_rut_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
@@ -89,6 +78,38 @@ namespace PROYECTO_UB
                 MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
                 return;
+            }
+
+            if (e.KeyChar == (char)Keys.Enter)
+            { 
+                 DataTable dt = new DataTable();
+                dt = objProfesor.Cargar(txt_rut.Text);
+
+                if (txt_rut.Text == "")
+                    return;
+                if (dt.Rows.Count != 0)
+                {
+                    txt_dv.Text = dt.Rows[0].ItemArray[1].ToString();
+                    txt_nombre.Text = dt.Rows[0].ItemArray[2].ToString();
+                    txt_app.Text = dt.Rows[0].ItemArray[3].ToString();
+                    txt_apm.Text = dt.Rows[0].ItemArray[4].ToString();
+                    dateTimePicker1.Text = dt.Rows[0].ItemArray[5].ToString();
+                    cBox_comuna.Text = dt.Rows[0].ItemArray[6].ToString();
+                    cBoxNacionalidad.Text = dt.Rows[0].ItemArray[7].ToString();
+                    radioButton1.Checked = dt.Rows[0].ItemArray[8].ToString() == "Femenino" ? true : false;
+                    radioButton2.Checked = dt.Rows[0].ItemArray[8].ToString() == "Masculino" ? true : false;
+                    cBox_est_civil.Text = dt.Rows[0].ItemArray[9].ToString();
+                    txt_celular.Text= dt.Rows[0].ItemArray[10].ToString();
+                    txt_email.Text = dt.Rows[0].ItemArray[11].ToString();
+                    txt_Ncta.Text = dt.Rows[0].ItemArray[12].ToString();
+                    cBox_cuenta.Text = dt.Rows[0].ItemArray[13].ToString();
+                    cBox_banco.Text = dt.Rows[0].ItemArray[14].ToString();         
+                    txt_rut.Enabled = false;
+                    btn_agregar.Enabled = false;
+                    btn_actualizar.Enabled = true;
+                    btn_eliminar.Enabled = true;
+                    btn_limpiar.Enabled = true;
+                }
             }
         }
 
@@ -152,7 +173,7 @@ namespace PROYECTO_UB
 
             if (txt_nombre.Text == "")
             {
-                MessageBox.Show("Ingrese el Nonbre", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ingrese el Nombre", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txt_nombre.Focus();
                 return;
             }
@@ -211,12 +232,7 @@ namespace PROYECTO_UB
                 txt_email.Focus();
                 return;
             }
-            if (!(radioButton1.Checked) || (radioButton2.Checked))
-            {
-                MessageBox.Show("Indique Sexo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.groupBox4.Focus();
-                return;
-            }
+           
             if (this.cBox_est_civil.Text == "")
             {
                 MessageBox.Show("Seleccione el Estado Civil", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -284,7 +300,7 @@ namespace PROYECTO_UB
 
             if (txt_nombre.Text == "")
             {
-                MessageBox.Show("Ingrese el Nonbre", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ingrese el Nombre", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txt_nombre.Focus();
                 return;
             }
@@ -325,6 +341,15 @@ namespace PROYECTO_UB
                 txt_Ncta.Focus();
                 return;
             }
+            if (radioButton1.Checked == true || radioButton2.Checked == true )
+            {
+                MessageBox.Show("Usted selecciono Uno !!");
+            }
+            else
+            {
+                MessageBox.Show("Usted no a seleccionado nada !!");
+                return;
+            }
             if (this.cBox_cuenta.Text == "")
             {
                 MessageBox.Show("Seleccione el Tipo de Cuenta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -343,12 +368,7 @@ namespace PROYECTO_UB
                 txt_email.Focus();
                 return;
             }
-            if (!(radioButton1.Checked) || (radioButton2.Checked))
-            {
-                MessageBox.Show("Indique Sexo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.groupBox4.Focus();
-                return;
-            }
+            
             if (this.cBox_est_civil.Text == "")
             {
                 MessageBox.Show("Seleccione el Estado Civil", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -396,22 +416,31 @@ namespace PROYECTO_UB
             Limpiar();
         }
 
-        private void txt_buscar_TextChanged(object sender, EventArgs e)
-        {
-            dataGridView1.DataSource = objProfesor.Buscar(txt_buscar.Text);
-            dataGridView1.DataSource = objProfesor.Buscar(txt_busapp.Text);
-            dataGridView1.DataSource = objProfesor.Buscar(txt_busapm.Text);
-        }
+      
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            /*txt_rut = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            txt_nombre.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-            txt_
-            
+            txt_rut.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            txt_dv.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            txt_nombre.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            txt_app.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            txt_apm.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+            dateTimePicker1.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+            cBox_comuna.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+            cBoxNacionalidad.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+            radioButton1.Checked = dataGridView1.SelectedRows[0].Cells[8].Value.ToString() == "Femenino" ? true : false;
+            radioButton2.Checked = dataGridView1.SelectedRows[0].Cells[8].Value.ToString() == "Masculino" ? true : false;
+            cBox_est_civil.Text = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
+            txt_celular.Text = dataGridView1.SelectedRows[0].Cells[10].Value.ToString();
+            txt_email.Text = dataGridView1.SelectedRows[0].Cells[11].Value.ToString();
+            txt_Ncta.Text = dataGridView1.SelectedRows[0].Cells[12].Value.ToString();
+            cBox_cuenta.Text = dataGridView1.SelectedRows[0].Cells[13].Value.ToString();
+            cBox_banco.Text = dataGridView1.SelectedRows[0].Cells[14].Value.ToString();
+           
             btn_actualizar.Enabled = true;
             btn_eliminar.Enabled = true;
-            btn_agregar.Enabled = false;*/
+            btn_agregar.Enabled = false;
+            btn_limpiar.Enabled = true;
         }
 
         private void btn_excel_Click(object sender, EventArgs e)
@@ -459,7 +488,13 @@ namespace PROYECTO_UB
             }
         }
 
-       
+        private void txt_buscar_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = objProfesor.Buscar(txt_buscar.Text,txt_busapp.Text,txt_busapm.Text);
+           
+           
+        }
+
         }
     }
 

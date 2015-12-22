@@ -458,7 +458,6 @@
             this.txt_rut.Name = "txt_rut";
             this.txt_rut.Size = new System.Drawing.Size(138, 26);
             this.txt_rut.TabIndex = 2;
-            this.txt_rut.TextChanged += new System.EventHandler(this.txt_rut_TextChanged);
             this.txt_rut.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_rut_KeyPress);
             // 
             // label1
@@ -602,6 +601,7 @@
             this.txt_busapp.Name = "txt_busapp";
             this.txt_busapp.Size = new System.Drawing.Size(128, 26);
             this.txt_busapp.TabIndex = 23;
+            this.txt_busapp.TextChanged += new System.EventHandler(this.txt_buscar_TextChanged);
             this.txt_busapp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_busapp_KeyPress);
             // 
             // label14
@@ -621,6 +621,7 @@
             this.txt_busapm.Name = "txt_busapm";
             this.txt_busapm.Size = new System.Drawing.Size(128, 26);
             this.txt_busapm.TabIndex = 26;
+            this.txt_busapm.TextChanged += new System.EventHandler(this.txt_buscar_TextChanged);
             this.txt_busapm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_busapm_KeyPress);
             // 
             // btn_excel

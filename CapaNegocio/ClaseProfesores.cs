@@ -110,15 +110,15 @@ namespace CapaNegocio
             }
             return Mensaje;
         }
-        public DataTable Buscar(String textoUsuario)
+        public DataTable Buscar(String nombre,String apellidoP, String materno)
         {
             DataTable dt = new DataTable();
             List<ClaseParametros> lst = new List<ClaseParametros>();
             try
             {
-                lst.Add(new ClaseParametros("@NOMBRE_PROFESOR", textoUsuario));
-                lst.Add(new ClaseParametros("@AP_PAT", textoUsuario));
-                lst.Add(new ClaseParametros("@AP_MAT", textoUsuario));
+                lst.Add(new ClaseParametros("@NOMBRE", nombre));
+                lst.Add(new ClaseParametros("@APELLIDO_P", apellidoP));
+                lst.Add(new ClaseParametros("@APELLIDO_M", materno));
 
                 dt = objconexion.Listado("SP_BUSCAR_PROFESOR", lst);
             }
@@ -128,7 +128,22 @@ namespace CapaNegocio
             }
             return dt;
         }
+        public DataTable Cargar(String textoUsuario)
+        {
+            DataTable dt = new DataTable();
+            List<ClaseParametros> lst = new List<ClaseParametros>();
+            try
+            {
+                lst.Add(new ClaseParametros("@RUT", textoUsuario));
 
+                dt = objconexion.Listado("SP_CARGAR_PROFESORES", lst);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return dt;
+        }
 
     }
 }
