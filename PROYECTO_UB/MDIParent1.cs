@@ -143,5 +143,13 @@ namespace PROYECTO_UB
             Nacionalidad obj = new Nacionalidad();
             obj.ShowDialog();
         }
+
+        
+
+        private void mantenedorPlanificaciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Planificaciones obj = new Planificaciones();
+            obj.ShowDialog();
+        }
     }
 }

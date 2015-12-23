@@ -118,7 +118,6 @@
             // 
             // txt_codigo
             // 
-            this.txt_codigo.Enabled = false;
             this.txt_codigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_codigo.Location = new System.Drawing.Point(6, 28);
             this.txt_codigo.Name = "txt_codigo";
