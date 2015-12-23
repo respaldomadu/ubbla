@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaNegocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,7 +12,9 @@ namespace PROYECTO_UB
 {
     public partial class Planificaciones : Form
     {
-       
+       private ClaseProfesores p = new ClaseProfesores();
+       private ClaseRamos r = new ClaseRamos();
+       private ClaseCarreras c = new ClaseCarreras();
         public Planificaciones()
         {
             InitializeComponent();
@@ -32,6 +35,23 @@ namespace PROYECTO_UB
         }
         private void Planificaciones_Load(object sender, EventArgs e)
         {
+            llenar();
+        }
+        private void llenar()
+        {
+            c_box_ramo.DataSource = r.Listado();
+            c_box_ramo.ValueMember = "CODIGO";
+            c_box_ramo.DisplayMember = "RAMO";
+
+            c_box_carrera.DataSource = c.Listado();
+            c_box_carrera.ValueMember = "CODIGO";
+            c_box_carrera.DisplayMember = "CARRERA";
+                       
+         }
+        private void txt_rut_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+         
 
         }
     }
