@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CapaNegocio
 {
-    class ClaseNacionalidad
+  public   class ClaseNacionalidad
     {
         public ClaseConexion objconexion = new ClaseConexion();
 
