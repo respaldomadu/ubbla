@@ -123,7 +123,7 @@ namespace PROYECTO_UB
 
         private void mantenedorComunasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           COMUNAS obj = new COMUNAS();
+           Comunas obj = new Comunas();
           obj.ShowDialog();
         }
 
@@ -135,6 +135,12 @@ namespace PROYECTO_UB
         private void mantenedorTipoCuentaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TIPO_CUENTAS obj = new TIPO_CUENTAS();
+            obj.ShowDialog();
+        }
+
+        private void mantenedorNacionalidadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Nacionalidad obj = new Nacionalidad();
             obj.ShowDialog();
         }
     }

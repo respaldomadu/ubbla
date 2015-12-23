@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace PROYECTO_UB
 {
-    public partial class COMUNAS : Form
+    public partial class Comunas : Form
     {
         private ClaseComunas objComunas = new ClaseComunas();
-        public COMUNAS()
+        public Comunas()
         {
             InitializeComponent();
         }

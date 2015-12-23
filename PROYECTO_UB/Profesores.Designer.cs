@@ -30,6 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profesores));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btn_ag_nac = new System.Windows.Forms.Button();
+            this.cBoxNacionalidad = new System.Windows.Forms.ComboBox();
+            this.cBox_est_civil = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txt_email = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.btn_ag_comuna = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btn_ag_tipoCuenta = new System.Windows.Forms.Button();
@@ -81,6 +88,13 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btn_ag_nac);
+            this.groupBox2.Controls.Add(this.cBoxNacionalidad);
+            this.groupBox2.Controls.Add(this.cBox_est_civil);
+            this.groupBox2.Controls.Add(this.label17);
+            this.groupBox2.Controls.Add(this.txt_email);
+            this.groupBox2.Controls.Add(this.label16);
+            this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.btn_ag_comuna);
             this.groupBox2.Controls.Add(this.groupBox3);
             this.groupBox2.Controls.Add(this.groupBox4);
@@ -100,11 +114,80 @@
             this.groupBox2.Controls.Add(this.txt_rut);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txt_nombre);
-            this.groupBox2.Location = new System.Drawing.Point(1, 0);
+            this.groupBox2.Location = new System.Drawing.Point(1, -1);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(419, 273);
+            this.groupBox2.Size = new System.Drawing.Size(419, 340);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
+            // 
+            // btn_ag_nac
+            // 
+            this.btn_ag_nac.Image = ((System.Drawing.Image)(resources.GetObject("btn_ag_nac.Image")));
+            this.btn_ag_nac.Location = new System.Drawing.Point(381, 253);
+            this.btn_ag_nac.Name = "btn_ag_nac";
+            this.btn_ag_nac.Size = new System.Drawing.Size(30, 23);
+            this.btn_ag_nac.TabIndex = 29;
+            this.btn_ag_nac.UseVisualStyleBackColor = true;
+            this.btn_ag_nac.Click += new System.EventHandler(this.btn_ag_nac_Click);
+            // 
+            // cBoxNacionalidad
+            // 
+            this.cBoxNacionalidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cBoxNacionalidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.cBoxNacionalidad.FormattingEnabled = true;
+            this.cBoxNacionalidad.Location = new System.Drawing.Point(195, 253);
+            this.cBoxNacionalidad.Name = "cBoxNacionalidad";
+            this.cBoxNacionalidad.Size = new System.Drawing.Size(180, 26);
+            this.cBoxNacionalidad.TabIndex = 33;
+            // 
+            // cBox_est_civil
+            // 
+            this.cBox_est_civil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cBox_est_civil.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.cBox_est_civil.FormattingEnabled = true;
+            this.cBox_est_civil.Location = new System.Drawing.Point(4, 253);
+            this.cBox_est_civil.Name = "cBox_est_civil";
+            this.cBox_est_civil.Size = new System.Drawing.Size(181, 26);
+            this.cBox_est_civil.TabIndex = 29;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(3, 194);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(43, 15);
+            this.label17.TabIndex = 32;
+            this.label17.Text = "E-mail";
+            // 
+            // txt_email
+            // 
+            this.txt_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_email.Location = new System.Drawing.Point(5, 210);
+            this.txt_email.MaxLength = 80;
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(405, 26);
+            this.txt_email.TabIndex = 31;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(192, 238);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(80, 15);
+            this.label16.TabIndex = 30;
+            this.label16.Text = "Nacionalidad";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(1, 238);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(70, 15);
+            this.label15.TabIndex = 28;
+            this.label15.Text = "Estado Civil";
             // 
             // btn_ag_comuna
             // 
@@ -127,7 +210,7 @@
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.txt_Ncta);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(5, 200);
+            this.groupBox3.Location = new System.Drawing.Point(5, 274);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(406, 63);
             this.groupBox3.TabIndex = 21;
@@ -141,6 +224,7 @@
             this.btn_ag_tipoCuenta.Size = new System.Drawing.Size(30, 23);
             this.btn_ag_tipoCuenta.TabIndex = 28;
             this.btn_ag_tipoCuenta.UseVisualStyleBackColor = true;
+            this.btn_ag_tipoCuenta.Click += new System.EventHandler(this.btn_ag_tipoCuenta_Click);
             // 
             // btn_ag_banco
             // 
@@ -154,6 +238,7 @@
             // 
             // cBox_banco
             // 
+            this.cBox_banco.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBox_banco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.cBox_banco.FormattingEnabled = true;
             this.cBox_banco.Location = new System.Drawing.Point(6, 28);
@@ -173,6 +258,7 @@
             // 
             // cBox_cuenta
             // 
+            this.cBox_cuenta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBox_cuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.cBox_cuenta.FormattingEnabled = true;
             this.cBox_cuenta.Location = new System.Drawing.Point(273, 28);
@@ -244,6 +330,7 @@
             // 
             // cBox_comuna
             // 
+            this.cBox_comuna.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBox_comuna.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.cBox_comuna.FormattingEnabled = true;
             this.cBox_comuna.Location = new System.Drawing.Point(5, 168);
@@ -269,8 +356,7 @@
             this.txt_celular.Name = "txt_celular";
             this.txt_celular.Size = new System.Drawing.Size(219, 26);
             this.txt_celular.TabIndex = 23;
-            this.txt_celular.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
-            this.txt_celular.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox7_KeyPress);
+            this.txt_celular.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_celular_KeyPress);
             // 
             // label12
             // 
@@ -334,7 +420,7 @@
             // txt_app
             // 
             this.txt_app.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_app.Location = new System.Drawing.Point(7, 76);
+            this.txt_app.Location = new System.Drawing.Point(6, 76);
             this.txt_app.MaxLength = 30;
             this.txt_app.Name = "txt_app";
             this.txt_app.Size = new System.Drawing.Size(179, 26);
@@ -377,7 +463,6 @@
             this.txt_rut.Name = "txt_rut";
             this.txt_rut.Size = new System.Drawing.Size(138, 26);
             this.txt_rut.TabIndex = 2;
-            this.txt_rut.TextChanged += new System.EventHandler(this.txt_rut_TextChanged);
             this.txt_rut.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_rut_KeyPress);
             // 
             // label1
@@ -406,7 +491,7 @@
             this.groupBox1.Controls.Add(this.btn_actualizar);
             this.groupBox1.Controls.Add(this.btn_limpiar);
             this.groupBox1.Controls.Add(this.btn_eliminar);
-            this.groupBox1.Location = new System.Drawing.Point(1, 279);
+            this.groupBox1.Location = new System.Drawing.Point(1, 345);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(419, 60);
             this.groupBox1.TabIndex = 13;
@@ -439,6 +524,7 @@
             this.btn_actualizar.Text = "Modificar";
             this.btn_actualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_actualizar.UseVisualStyleBackColor = true;
+            this.btn_actualizar.Click += new System.EventHandler(this.btn_actualizar_Click);
             // 
             // btn_limpiar
             // 
@@ -452,6 +538,7 @@
             this.btn_limpiar.Text = "Limpiar";
             this.btn_limpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_limpiar.UseVisualStyleBackColor = true;
+            this.btn_limpiar.Click += new System.EventHandler(this.btn_limpiar_Click);
             // 
             // btn_eliminar
             // 
@@ -467,6 +554,7 @@
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
             // dataGridView1
             // 
@@ -479,6 +567,7 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(430, 281);
             this.dataGridView1.TabIndex = 18;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // label8
             // 
@@ -497,6 +586,8 @@
             this.txt_buscar.Name = "txt_buscar";
             this.txt_buscar.Size = new System.Drawing.Size(128, 26);
             this.txt_buscar.TabIndex = 20;
+            this.txt_buscar.TextChanged += new System.EventHandler(this.txt_buscar_TextChanged);
+            this.txt_buscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_buscar_KeyPress);
             // 
             // label3
             // 
@@ -515,6 +606,8 @@
             this.txt_busapp.Name = "txt_busapp";
             this.txt_busapp.Size = new System.Drawing.Size(128, 26);
             this.txt_busapp.TabIndex = 23;
+            this.txt_busapp.TextChanged += new System.EventHandler(this.txt_buscar_TextChanged);
+            this.txt_busapp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_busapp_KeyPress);
             // 
             // label14
             // 
@@ -533,6 +626,8 @@
             this.txt_busapm.Name = "txt_busapm";
             this.txt_busapm.Size = new System.Drawing.Size(128, 26);
             this.txt_busapm.TabIndex = 26;
+            this.txt_busapm.TextChanged += new System.EventHandler(this.txt_buscar_TextChanged);
+            this.txt_busapm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_busapm_KeyPress);
             // 
             // btn_excel
             // 
@@ -544,12 +639,13 @@
             this.btn_excel.Size = new System.Drawing.Size(32, 26);
             this.btn_excel.TabIndex = 25;
             this.btn_excel.UseVisualStyleBackColor = true;
+            this.btn_excel.Click += new System.EventHandler(this.btn_excel_Click);
             // 
             // Profesores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(865, 340);
+            this.ClientSize = new System.Drawing.Size(865, 412);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.txt_busapm);
             this.Controls.Add(this.btn_excel);
@@ -621,5 +717,12 @@
         private System.Windows.Forms.Button btn_ag_comuna;
         private System.Windows.Forms.Button btn_ag_tipoCuenta;
         private System.Windows.Forms.Button btn_ag_banco;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.ComboBox cBoxNacionalidad;
+        private System.Windows.Forms.ComboBox cBox_est_civil;
+        private System.Windows.Forms.Button btn_ag_nac;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txt_email;
     }
 }
