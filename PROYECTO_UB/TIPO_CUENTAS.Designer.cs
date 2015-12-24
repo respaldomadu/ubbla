@@ -227,7 +227,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Name = "TIPO_CUENTAS";
-            this.Text = "TIPO_CUENTAS";
+            this.Text = "TIPO CUENTAS";
             this.Load += new System.EventHandler(this.TIPO_CUENTAS_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

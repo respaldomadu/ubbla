@@ -52,6 +52,7 @@ namespace PROYECTO_UB
             cBox_comuna.Text = "";
             cBoxNacionalidad.Text = "";
             cBox_cuenta.Text = "";
+            txt_rut.Enabled= true;
             radioButton1.Checked = false;
             radioButton2.Checked = false;
             btn_actualizar.Enabled = false;
@@ -509,6 +510,11 @@ namespace PROYECTO_UB
             dataGridView1.DataSource = objProfesor.Buscar(txt_buscar.Text,txt_busapp.Text,txt_busapm.Text);
            
            
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
         }

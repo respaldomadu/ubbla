@@ -144,9 +144,11 @@ namespace PROYECTO_UB
             obj.ShowDialog();
         }
 
-        private void mantenedorConfiguracionesToolStripMenuItem_Click(object sender, EventArgs e)
+        
+
+        private void mantenedorPlanificaciónToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Configuraciones obj = new Configuraciones();
+            Planificaciones obj = new Planificaciones();
             obj.ShowDialog();
         }
     }
