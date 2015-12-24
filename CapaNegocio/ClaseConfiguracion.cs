@@ -11,7 +11,7 @@ namespace CapaNegocio
    public class ClaseConfiguracion
     {
         public ClaseConexion objconexion = new ClaseConexion();
-
+       
         public String ActualizarConfiguracion(int anio, int periodo)
         {
             List<ClaseParametros> lst = new List<ClaseParametros>();
@@ -22,7 +22,7 @@ namespace CapaNegocio
                 lst.Add(new ClaseParametros("@PERIODO", periodo));
                 lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
                 objconexion.EjecutarSP("SP_ACTUALIZAR_CONFIGURACIONES", ref lst);
-                Mensaje = lst[3].Valor.ToString();
+                Mensaje = lst[2].Valor.ToString();
             }
             catch (Exception)
             {

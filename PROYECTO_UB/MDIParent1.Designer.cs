@@ -40,6 +40,7 @@
             this.mantenedorBancosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenedorComunasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenedorTipoCuentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenedorNacionalidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.horasRealizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porProfesorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,7 +48,7 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.mantenedorNacionalidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenedorConfiguracionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -76,7 +77,8 @@
             this.mantenedorBancosToolStripMenuItem,
             this.mantenedorComunasToolStripMenuItem,
             this.mantenedorTipoCuentaToolStripMenuItem,
-            this.mantenedorNacionalidadToolStripMenuItem});
+            this.mantenedorNacionalidadToolStripMenuItem,
+            this.mantenedorConfiguracionesToolStripMenuItem});
             this.mantenedoresToolStripMenuItem.Name = "mantenedoresToolStripMenuItem";
             this.mantenedoresToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.mantenedoresToolStripMenuItem.Text = "Mantenedores";
@@ -84,62 +86,69 @@
             // mantenedorCarrerasToolStripMenuItem
             // 
             this.mantenedorCarrerasToolStripMenuItem.Name = "mantenedorCarrerasToolStripMenuItem";
-            this.mantenedorCarrerasToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.mantenedorCarrerasToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.mantenedorCarrerasToolStripMenuItem.Text = "Mantenedor Carreras";
             this.mantenedorCarrerasToolStripMenuItem.Click += new System.EventHandler(this.mantenedorCarrerasToolStripMenuItem_Click);
             // 
             // mantenedorRamosToolStripMenuItem
             // 
             this.mantenedorRamosToolStripMenuItem.Name = "mantenedorRamosToolStripMenuItem";
-            this.mantenedorRamosToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.mantenedorRamosToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.mantenedorRamosToolStripMenuItem.Text = "Mantenedor Ramos";
             this.mantenedorRamosToolStripMenuItem.Click += new System.EventHandler(this.mantenedorRamosToolStripMenuItem_Click);
             // 
             // mantenedorProfesoresToolStripMenuItem
             // 
             this.mantenedorProfesoresToolStripMenuItem.Name = "mantenedorProfesoresToolStripMenuItem";
-            this.mantenedorProfesoresToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.mantenedorProfesoresToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.mantenedorProfesoresToolStripMenuItem.Text = "Mantenedor Profesores";
             this.mantenedorProfesoresToolStripMenuItem.Click += new System.EventHandler(this.mantenedorProfesoresToolStripMenuItem_Click);
             // 
             // mantenedorPlanificaciónToolStripMenuItem
             // 
             this.mantenedorPlanificaciónToolStripMenuItem.Name = "mantenedorPlanificaciónToolStripMenuItem";
-            this.mantenedorPlanificaciónToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.mantenedorPlanificaciónToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.mantenedorPlanificaciónToolStripMenuItem.Text = "Mantenedor Planificación ";
             // 
             // mantenedorHorarioToolStripMenuItem
             // 
             this.mantenedorHorarioToolStripMenuItem.Name = "mantenedorHorarioToolStripMenuItem";
-            this.mantenedorHorarioToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.mantenedorHorarioToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.mantenedorHorarioToolStripMenuItem.Text = "Mantenedor Horario";
             // 
             // mantenedorModulosToolStripMenuItem
             // 
             this.mantenedorModulosToolStripMenuItem.Name = "mantenedorModulosToolStripMenuItem";
-            this.mantenedorModulosToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.mantenedorModulosToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.mantenedorModulosToolStripMenuItem.Text = "Mantenedor Modulos";
             // 
             // mantenedorBancosToolStripMenuItem
             // 
             this.mantenedorBancosToolStripMenuItem.Name = "mantenedorBancosToolStripMenuItem";
-            this.mantenedorBancosToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.mantenedorBancosToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.mantenedorBancosToolStripMenuItem.Text = "Mantenedor Bancos";
             this.mantenedorBancosToolStripMenuItem.Click += new System.EventHandler(this.mantenedorBancosToolStripMenuItem_Click);
             // 
             // mantenedorComunasToolStripMenuItem
             // 
             this.mantenedorComunasToolStripMenuItem.Name = "mantenedorComunasToolStripMenuItem";
-            this.mantenedorComunasToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.mantenedorComunasToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.mantenedorComunasToolStripMenuItem.Text = "Mantenedor Comunas";
             this.mantenedorComunasToolStripMenuItem.Click += new System.EventHandler(this.mantenedorComunasToolStripMenuItem_Click);
             // 
             // mantenedorTipoCuentaToolStripMenuItem
             // 
             this.mantenedorTipoCuentaToolStripMenuItem.Name = "mantenedorTipoCuentaToolStripMenuItem";
-            this.mantenedorTipoCuentaToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
+            this.mantenedorTipoCuentaToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.mantenedorTipoCuentaToolStripMenuItem.Text = "Mantenedor Tipo cuenta";
             this.mantenedorTipoCuentaToolStripMenuItem.Click += new System.EventHandler(this.mantenedorTipoCuentaToolStripMenuItem_Click);
+            // 
+            // mantenedorNacionalidadToolStripMenuItem
+            // 
+            this.mantenedorNacionalidadToolStripMenuItem.Name = "mantenedorNacionalidadToolStripMenuItem";
+            this.mantenedorNacionalidadToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.mantenedorNacionalidadToolStripMenuItem.Text = "Mantenedor Nacionalidad";
+            this.mantenedorNacionalidadToolStripMenuItem.Click += new System.EventHandler(this.mantenedorNacionalidadToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -186,12 +195,12 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
             // 
-            // mantenedorNacionalidadToolStripMenuItem
+            // mantenedorConfiguracionesToolStripMenuItem
             // 
-            this.mantenedorNacionalidadToolStripMenuItem.Name = "mantenedorNacionalidadToolStripMenuItem";
-            this.mantenedorNacionalidadToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
-            this.mantenedorNacionalidadToolStripMenuItem.Text = "Mantenedor Nacionalidad";
-            this.mantenedorNacionalidadToolStripMenuItem.Click += new System.EventHandler(this.mantenedorNacionalidadToolStripMenuItem_Click);
+            this.mantenedorConfiguracionesToolStripMenuItem.Name = "mantenedorConfiguracionesToolStripMenuItem";
+            this.mantenedorConfiguracionesToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.mantenedorConfiguracionesToolStripMenuItem.Text = "Mantenedor Configuraciones";
+            this.mantenedorConfiguracionesToolStripMenuItem.Click += new System.EventHandler(this.mantenedorConfiguracionesToolStripMenuItem_Click);
             // 
             // MDIParent1
             // 
@@ -234,6 +243,7 @@
         private System.Windows.Forms.ToolStripMenuItem mantenedorComunasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenedorTipoCuentaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenedorNacionalidadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenedorConfiguracionesToolStripMenuItem;
     }
 }
 
