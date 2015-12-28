@@ -42,7 +42,8 @@ namespace PROYECTO_UB
         {
             llenarComboPeriodo();
             Configuracion.datos();
-           
+            txt_anio.Text = Configuracion.anio.ToString();
+            //cBox_periodo.Text = Configuracion.periodo.ToString;
         }
         private void llenarComboPeriodo() {
            

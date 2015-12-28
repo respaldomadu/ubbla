@@ -108,7 +108,22 @@ namespace CapaNegocio
 
 
 
+        public DataTable Cargar(String textoUsuario)
+        {
+            DataTable dt = new DataTable();
+            List<ClaseParametros> lst = new List<ClaseParametros>();
+            try
+            {
+                lst.Add(new ClaseParametros("@COD_RA", textoUsuario));
 
+                dt = objconexion.Listado("SP_CARGAR_RAMOS", lst);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return dt;
+        }
 
 
 

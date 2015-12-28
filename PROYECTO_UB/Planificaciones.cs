@@ -12,58 +12,70 @@ namespace PROYECTO_UB
 {
     public partial class Planificaciones : Form
     {
-       private ClaseProfesores p = new ClaseProfesores();
-       private ClaseRamos r = new ClaseRamos();
-       private ClaseCarreras c = new ClaseCarreras();
-       private this.clasePl c = new ClaseCarreras();
+       private ClaseProfesores objPro = new ClaseProfesores();
+       private ClasePlanificacion objPlan = new ClasePlanificacion();
+       private ClaseCarreras objCa = new ClaseCarreras();
+       private ClaseRamos objRam = new ClaseRamos();
+       
+       
         public Planificaciones()
         {
             InitializeComponent();
         }
 
-        private void btn_ag_banco_Click(object sender, EventArgs e)
+        private void btn_ag_pro_Click(object sender, EventArgs e)
         {
-            Buscar_Per obj = new Buscar_Per();
+            Buscar_Profesor obj = new Buscar_Profesor();
             obj.ShowDialog();
-            paso();
-            txt_rut.Focus();
-          
+            txt_rut.Text = Buscar_Profesor.rut;
+            DataTable dt = new DataTable();
+            dt = objPro.Cargar(txt_rut.Text);
+
+            if (dt.Rows.Count == 1)
+            {
+                txt_dv.Text = dt.Rows[0].ItemArray[1].ToString();
+                txt_nombre.Text = dt.Rows[0].ItemArray[2].ToString();
+                txt_app.Text = dt.Rows[0].ItemArray[3].ToString();
+                txt_apm.Text = dt.Rows[0].ItemArray[4].ToString();
+            }
+
         }
-       private  void paso() {
-         
-           txt_rut.Text = Buscar_Per.rut;
-           txt_dv.Text = Buscar_Per.dv;
-           txt_nombre.Text = Buscar_Per.nombre;
-           txt_app.Text = Buscar_Per.apellidop;
-           txt_apm.Text = Buscar_Per.apellidom;
-        
-        }
+       
+      
         private void Planificaciones_Load(object sender, EventArgs e)
         {
-            llenar();
+           // ListarPlanificacion();
+            label_anio.Text = Configuracion.anio.ToString();
         }
-        private void llenar()
+         private void btn_ag_carre_Click(object sender, EventArgs e)
         {
-           
-            c_box_ramo.DataSource = r.Listado();
-            c_box_ramo.ValueMember = "CODIGO";
-            c_box_ramo.DisplayMember = "RAMO";
+            BuscarCarrera obj = new BuscarCarrera();
+            obj.ShowDialog();
+            txt_cod_carr.Text = BuscarCarrera.codigo;
+            DataTable dt = new DataTable();
+            dt = objCa.Cargar(txt_cod_carr.Text);
 
-            c_box_carrera.DataSource = c.Listado();
-            c_box_carrera.ValueMember = "CODIGO";
-            c_box_carrera.DisplayMember = "CARRERA";
-            comboBox1.Items.Add("1");
-            comboBox1.Items.Add("2");
-            
-                       
-         }
-        private void txt_rut_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            
-         
+            if (dt.Rows.Count == 1)
+            {
+                txt_nom_carr.Text= dt.Rows[0].ItemArray[1].ToString();
+            }
 
         }
+        private void btn_ag_asig_Click(object sender, EventArgs e)
+        {
+            Buscar_Ramos obj = new Buscar_Ramos();
+            obj.ShowDialog();
+            txt_cod_asig.Text = Buscar_Ramos.codigo;
+            DataTable dt = new DataTable();
+            dt = objRam.Cargar(txt_cod_asig.Text);
 
+            if (dt.Rows.Count == 1)
+            {
+
+                txt_nom_asig.Text = dt.Rows[0].ItemArray[1].ToString();
+
+            }
+        }
         private void btn_agregar_Click(object sender, EventArgs e)
         {
             if (txt_rut.Text == "" || txt_dv.Text == "")
@@ -93,67 +105,15 @@ namespace PROYECTO_UB
                 return;
             }
           
+            MessageBox.Show(objPlan.RegistrarPlanificacion(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             
-
-            if (this.c_box_carrera.Text == "")
-            {
-                MessageBox.Show("Seleccione el Estado Civil", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                c_box_carrera.Focus();
-                return;
-            }
-            if (this.c_box_ramo.Text == "")
-            {
-                MessageBox.Show("Seleccione el Estado Civil", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                c_box_ramo.Focus();
-                return;
-            }
-            if (this.comboBox1.Text == "")
-            {
-                MessageBox.Show("Seleccione el Estado Civil", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                comboBox1.Focus();
-                return;
-            }
-            if (this.txt_anio.Text == "")
-            {
-                MessageBox.Show("Seleccione el Estado Civil", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txt_anio.Focus();
-                return;
-            }
-            if (this.txt_semestre.Text == "")
-            {
-                MessageBox.Show("Seleccione el Estado Civil", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txt_semestre.Focus();
-                return;
-            }
-            objProfesor.rut = txt_rut.Text;
-            objProfesor.dv = txt_dv.Text;
-            objProfesor.nombre = txt_nombre.Text;
-            objProfesor.apellido_p = txt_app.Text;
-            objProfesor.apellido_m = txt_apm.Text;
-            objProfesor.fecha_ncto = dateTimePicker1.Value;
-            objProfesor.celular = int.Parse(txt_celular.Text);
-            objProfesor.cod_comuna = int.Parse(cBox_comuna.SelectedValue.ToString());
-
-            bool isChecked = radioButton1.Checked;
-            if (isChecked)
-            {
-                Femenino = radioButton1.Text;
-                objProfesor.sexo = radioButton1.Text;
-            }
-            else
-            {
-                Masculino = radioButton2.Text;
-                objProfesor.sexo = radioButton2.Text;
-            }
-            objProfesor.mail = txt_email.Text;
-            objProfesor.estado_civil = cBox_est_civil.Text;
-            objProfesor.cod_nacio = int.Parse(cBoxNacionalidad.SelectedValue.ToString());
-            objProfesor.cod_banco = int.Parse(cBox_banco.SelectedValue.ToString());
-            objProfesor.num_cta = txt_Ncta.Text;
-            objProfesor.cod_cta = int.Parse(cBox_cuenta.SelectedValue.ToString());
-            MessageBox.Show(objProfesor.RegistrarProfesores(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            ListarProfesores();
-            Limpiar();
+       
         }
+
+        
+
+       
+
+       
     }
 }

@@ -53,9 +53,23 @@
     <Compile Include="Bancos.Designer.cs">
       <DependentUpon>Bancos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Buscar_Per.cs" />
-    <Compile Include="Buscar_Per.Designer.cs">
-      <DependentUpon>Buscar_Per.cs</DependentUpon>
+    <Compile Include="BuscarCarrera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarCarrera.Designer.cs">
+      <DependentUpon>BuscarCarrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar_Profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buscar_Profesor.Designer.cs">
+      <DependentUpon>Buscar_Profesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar_Ramos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buscar_Ramos.Designer.cs">
+      <DependentUpon>Buscar_Ramos.cs</DependentUpon>
     </Compile>
     <Compile Include="Carreras.cs">
       <SubType>Form</SubType>
@@ -118,8 +132,14 @@
     <EmbeddedResource Include="Bancos.resx">
       <DependentUpon>Bancos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Buscar_Per.resx">
-      <DependentUpon>Buscar_Per.cs</DependentUpon>
+    <EmbeddedResource Include="BuscarCarrera.resx">
+      <DependentUpon>BuscarCarrera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buscar_Profesor.resx">
+      <DependentUpon>Buscar_Profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buscar_Ramos.resx">
+      <DependentUpon>Buscar_Ramos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Carreras.resx">
       <DependentUpon>Carreras.cs</DependentUpon>

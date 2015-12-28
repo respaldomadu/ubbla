@@ -95,7 +95,22 @@ namespace CapaNegocio
             }
             return dt;
         }
+        public DataTable Cargar(String textoUsuario)
+        {
+            DataTable dt = new DataTable();
+            List<ClaseParametros> lst = new List<ClaseParametros>();
+            try
+            {
+                lst.Add(new ClaseParametros("@COD", textoUsuario));
 
+                dt = objconexion.Listado("SP_CARGAR_CARRERAS", lst);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return dt;
+        }
 
     }
 }

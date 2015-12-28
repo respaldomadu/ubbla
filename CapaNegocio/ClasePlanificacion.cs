@@ -19,24 +19,14 @@ namespace CapaNegocio
         public int anio { get; set; }
         public int periodo { get; set; }
         public int seccion { get; set; }
+        public int HORAS { get; set; }
         
         public DataTable Listado()
         {
             return objconexion.Listado("SP_LISTAR_COMUNA", null);
         }
-        public int MAYOR()
-        {
-
-            string MAX = "0";
-            DataTable datos = new DataTable();
-            datos = Listado();
-            if (datos.Rows.Count != 0)
-            {
-                MAX = datos.AsEnumerable().Max(row => row[0]).ToString();
-
-            } return int.Parse(MAX) + 1;
-        }
-        public String Registrarplanificacion()
+       
+        public String RegistrarPlanificacion()
         {
             List<ClaseParametros> lst = new List<ClaseParametros>();
             String Mensaje = "";
@@ -49,6 +39,7 @@ namespace CapaNegocio
                 lst.Add(new ClaseParametros("@ANIO", anio));
                 lst.Add(new ClaseParametros("@PERIODO", periodo));
                 lst.Add(new ClaseParametros("@SECCION", seccion));
+                lst.Add(new ClaseParametros("@HORAS_RA", seccion));
                 lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
                 objconexion.EjecutarSP("SP_INGRESAR_PLANIFICACION", ref lst);
                 Mensaje = lst[7].Valor.ToString();
