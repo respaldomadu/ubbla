@@ -33,7 +33,13 @@
             this.txt_rut = new System.Windows.Forms.TextBox();
             this.btn_ag_banco = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_apm = new System.Windows.Forms.TextBox();
+            this.txt_app = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_nombre = new System.Windows.Forms.TextBox();
             this.txt_dv = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -47,12 +53,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_anio = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txt_apm = new System.Windows.Forms.TextBox();
-            this.txt_app = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txt_nombre = new System.Windows.Forms.TextBox();
             this.btn_agregar = new System.Windows.Forms.Button();
             this.btn_actualizar = new System.Windows.Forms.Button();
             this.btn_limpiar = new System.Windows.Forms.Button();
@@ -123,6 +123,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Profesor";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(16, 108);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(97, 15);
+            this.label10.TabIndex = 38;
+            this.label10.Text = "Apellido Paterno";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -132,6 +142,53 @@
             this.label7.Size = new System.Drawing.Size(15, 20);
             this.label7.TabIndex = 29;
             this.label7.Text = "-";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(16, 151);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(100, 15);
+            this.label9.TabIndex = 37;
+            this.label9.Text = "Apellido Materno";
+            // 
+            // txt_apm
+            // 
+            this.txt_apm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_apm.Location = new System.Drawing.Point(18, 166);
+            this.txt_apm.MaxLength = 30;
+            this.txt_apm.Name = "txt_apm";
+            this.txt_apm.Size = new System.Drawing.Size(219, 26);
+            this.txt_apm.TabIndex = 36;
+            // 
+            // txt_app
+            // 
+            this.txt_app.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_app.Location = new System.Drawing.Point(17, 123);
+            this.txt_app.MaxLength = 30;
+            this.txt_app.Name = "txt_app";
+            this.txt_app.Size = new System.Drawing.Size(179, 26);
+            this.txt_app.TabIndex = 35;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(16, 63);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 15);
+            this.label8.TabIndex = 34;
+            this.label8.Text = "Nombre";
+            // 
+            // txt_nombre
+            // 
+            this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nombre.Location = new System.Drawing.Point(18, 79);
+            this.txt_nombre.MaxLength = 30;
+            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.Size = new System.Drawing.Size(219, 26);
+            this.txt_nombre.TabIndex = 33;
             // 
             // txt_dv
             // 
@@ -159,6 +216,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(219, 36);
             this.comboBox1.Name = "comboBox1";
@@ -194,6 +252,7 @@
             // 
             // c_box_carrera
             // 
+            this.c_box_carrera.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.c_box_carrera.FormattingEnabled = true;
             this.c_box_carrera.Location = new System.Drawing.Point(13, 36);
             this.c_box_carrera.Name = "c_box_carrera";
@@ -202,6 +261,7 @@
             // 
             // c_box_ramo
             // 
+            this.c_box_ramo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.c_box_ramo.FormattingEnabled = true;
             this.c_box_ramo.Location = new System.Drawing.Point(121, 36);
             this.c_box_ramo.Name = "c_box_ramo";
@@ -253,63 +313,6 @@
             this.txt_anio.Size = new System.Drawing.Size(100, 20);
             this.txt_anio.TabIndex = 1;
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(16, 108);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(97, 15);
-            this.label10.TabIndex = 38;
-            this.label10.Text = "Apellido Paterno";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(16, 151);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(100, 15);
-            this.label9.TabIndex = 37;
-            this.label9.Text = "Apellido Materno";
-            // 
-            // txt_apm
-            // 
-            this.txt_apm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_apm.Location = new System.Drawing.Point(18, 166);
-            this.txt_apm.MaxLength = 30;
-            this.txt_apm.Name = "txt_apm";
-            this.txt_apm.Size = new System.Drawing.Size(219, 26);
-            this.txt_apm.TabIndex = 36;
-            // 
-            // txt_app
-            // 
-            this.txt_app.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_app.Location = new System.Drawing.Point(17, 123);
-            this.txt_app.MaxLength = 30;
-            this.txt_app.Name = "txt_app";
-            this.txt_app.Size = new System.Drawing.Size(179, 26);
-            this.txt_app.TabIndex = 35;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(16, 63);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 15);
-            this.label8.TabIndex = 34;
-            this.label8.Text = "Nombre";
-            // 
-            // txt_nombre
-            // 
-            this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombre.Location = new System.Drawing.Point(18, 79);
-            this.txt_nombre.MaxLength = 30;
-            this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(219, 26);
-            this.txt_nombre.TabIndex = 33;
-            // 
             // btn_agregar
             // 
             this.btn_agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -322,6 +325,7 @@
             this.btn_agregar.Text = "Agregar";
             this.btn_agregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
             // btn_actualizar
             // 
