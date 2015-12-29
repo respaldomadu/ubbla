@@ -46,6 +46,7 @@
     <Compile Include="ClaseCarreras.cs" />
     <Compile Include="ClaseComunas.cs" />
     <Compile Include="ClaseConfiguracion.cs" />
+    <Compile Include="ClaseModulo.cs" />
     <Compile Include="ClaseNacionalidad.cs" />
     <Compile Include="ClasePlanificacion.cs" />
     <Compile Include="ClaseProfesores.cs" />

@@ -41,6 +41,7 @@
             this.mantenedorComunasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenedorTipoCuentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenedorNacionalidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenedorConfiguracionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.horasRealizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porProfesorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,7 +49,6 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.mantenedorConfiguracionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -122,6 +122,7 @@
             this.mantenedorModulosToolStripMenuItem.Name = "mantenedorModulosToolStripMenuItem";
             this.mantenedorModulosToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.mantenedorModulosToolStripMenuItem.Text = "Mantenedor Modulos";
+            this.mantenedorModulosToolStripMenuItem.Click += new System.EventHandler(this.mantenedorModulosToolStripMenuItem_Click);
             // 
             // mantenedorBancosToolStripMenuItem
             // 
@@ -150,6 +151,13 @@
             this.mantenedorNacionalidadToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.mantenedorNacionalidadToolStripMenuItem.Text = "Mantenedor Nacionalidad";
             this.mantenedorNacionalidadToolStripMenuItem.Click += new System.EventHandler(this.mantenedorNacionalidadToolStripMenuItem_Click);
+            // 
+            // mantenedorConfiguracionesToolStripMenuItem
+            // 
+            this.mantenedorConfiguracionesToolStripMenuItem.Name = "mantenedorConfiguracionesToolStripMenuItem";
+            this.mantenedorConfiguracionesToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.mantenedorConfiguracionesToolStripMenuItem.Text = "Mantenedor Configuraciones";
+            this.mantenedorConfiguracionesToolStripMenuItem.Click += new System.EventHandler(this.mantenedorConfiguracionesToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -195,13 +203,6 @@
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
-            // 
-            // mantenedorConfiguracionesToolStripMenuItem
-            // 
-            this.mantenedorConfiguracionesToolStripMenuItem.Name = "mantenedorConfiguracionesToolStripMenuItem";
-            this.mantenedorConfiguracionesToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
-            this.mantenedorConfiguracionesToolStripMenuItem.Text = "Mantenedor Configuraciones";
-            this.mantenedorConfiguracionesToolStripMenuItem.Click += new System.EventHandler(this.mantenedorConfiguracionesToolStripMenuItem_Click);
             // 
             // MDIParent1
             // 
