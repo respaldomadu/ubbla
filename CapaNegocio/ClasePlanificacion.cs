@@ -32,16 +32,16 @@ namespace CapaNegocio
             String Mensaje = "";
             try
             {
-                lst.Add(new ClaseParametros("@COD_PLANI", codigo));
+                
                 lst.Add(new ClaseParametros("@RUT_P", rut));
                 lst.Add(new ClaseParametros("@COD_RAMO", codigoR));
-                lst.Add(new ClaseParametros("@COD_CARRERA", rut));
+                lst.Add(new ClaseParametros("@COD_CARRERA", codigoC));
                 lst.Add(new ClaseParametros("@ANIO", anio));
                 lst.Add(new ClaseParametros("@PERIODO", periodo));
                 lst.Add(new ClaseParametros("@SECCION", seccion));
                 lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
                 objconexion.EjecutarSP("SP_INGRESAR_PLANIFICACION", ref lst);
-                Mensaje = lst[7].Valor.ToString();
+                Mensaje = lst[6].Valor.ToString();
             }
             catch (Exception)
             {
