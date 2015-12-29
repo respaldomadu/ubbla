@@ -41,7 +41,7 @@
             this.btn_excel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_excel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_excel.Image = ((System.Drawing.Image)(resources.GetObject("btn_excel.Image")));
-            this.btn_excel.Location = new System.Drawing.Point(404, 13);
+            this.btn_excel.Location = new System.Drawing.Point(443, 13);
             this.btn_excel.Name = "btn_excel";
             this.btn_excel.Size = new System.Drawing.Size(32, 27);
             this.btn_excel.TabIndex = 45;
@@ -62,8 +62,9 @@
             this.txt_buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_buscar.Location = new System.Drawing.Point(7, 14);
             this.txt_buscar.Name = "txt_buscar";
-            this.txt_buscar.Size = new System.Drawing.Size(391, 26);
+            this.txt_buscar.Size = new System.Drawing.Size(429, 26);
             this.txt_buscar.TabIndex = 43;
+            this.txt_buscar.TextChanged += new System.EventHandler(this.txt_buscar_TextChanged);
             // 
             // dataGridView1
             // 
@@ -74,7 +75,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(430, 202);
+            this.dataGridView1.Size = new System.Drawing.Size(467, 202);
             this.dataGridView1.TabIndex = 42;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -82,7 +83,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(446, 247);
+            this.ClientSize = new System.Drawing.Size(486, 247);
             this.Controls.Add(this.btn_excel);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txt_buscar);
