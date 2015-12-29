@@ -32,10 +32,10 @@
             this.CB_DIA = new System.Windows.Forms.ComboBox();
             this.CB_INICIO = new System.Windows.Forms.ComboBox();
             this.CB_FIN = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.CODIGO = new System.Windows.Forms.Label();
+            this.NOMBRE = new System.Windows.Forms.Label();
+            this.INICIO = new System.Windows.Forms.Label();
+            this.FIN = new System.Windows.Forms.Label();
             this.TXT_COD = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_agregar = new System.Windows.Forms.Button();
@@ -77,41 +77,41 @@
             this.CB_FIN.Size = new System.Drawing.Size(64, 21);
             this.CB_FIN.TabIndex = 2;
             // 
-            // label1
+            // CODIGO
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.CODIGO.AutoSize = true;
+            this.CODIGO.Location = new System.Drawing.Point(13, 39);
+            this.CODIGO.Name = "CODIGO";
+            this.CODIGO.Size = new System.Drawing.Size(49, 13);
+            this.CODIGO.TabIndex = 3;
+            this.CODIGO.Text = "CODIGO";
             // 
-            // label2
+            // NOMBRE
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 86);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "label2";
+            this.NOMBRE.AutoSize = true;
+            this.NOMBRE.Location = new System.Drawing.Point(13, 86);
+            this.NOMBRE.Name = "NOMBRE";
+            this.NOMBRE.Size = new System.Drawing.Size(25, 13);
+            this.NOMBRE.TabIndex = 4;
+            this.NOMBRE.Text = "DIA";
             // 
-            // label3
+            // INICIO
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 135);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "label3";
+            this.INICIO.AutoSize = true;
+            this.INICIO.Location = new System.Drawing.Point(13, 135);
+            this.INICIO.Name = "INICIO";
+            this.INICIO.Size = new System.Drawing.Size(39, 13);
+            this.INICIO.TabIndex = 5;
+            this.INICIO.Text = "INICIO";
             // 
-            // label4
+            // FIN
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(87, 135);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "label4";
+            this.FIN.AutoSize = true;
+            this.FIN.Location = new System.Drawing.Point(87, 135);
+            this.FIN.Name = "FIN";
+            this.FIN.Size = new System.Drawing.Size(24, 13);
+            this.FIN.TabIndex = 6;
+            this.FIN.Text = "FIN";
             // 
             // TXT_COD
             // 
@@ -241,10 +241,10 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.TXT_COD);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.FIN);
+            this.Controls.Add(this.INICIO);
+            this.Controls.Add(this.NOMBRE);
+            this.Controls.Add(this.CODIGO);
             this.Controls.Add(this.CB_FIN);
             this.Controls.Add(this.CB_INICIO);
             this.Controls.Add(this.CB_DIA);
@@ -263,10 +263,10 @@
         private System.Windows.Forms.ComboBox CB_DIA;
         private System.Windows.Forms.ComboBox CB_INICIO;
         private System.Windows.Forms.ComboBox CB_FIN;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label CODIGO;
+        private System.Windows.Forms.Label NOMBRE;
+        private System.Windows.Forms.Label INICIO;
+        private System.Windows.Forms.Label FIN;
         private System.Windows.Forms.TextBox TXT_COD;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btn_agregar;
