@@ -126,22 +126,7 @@ namespace CapaNegocio
         }
 
 
-
-
-
-
-
-
-
-
     }
-
-
-
-
-
-
-
 
 
 }

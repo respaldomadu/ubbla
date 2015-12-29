@@ -33,6 +33,7 @@
             this.txt_rut = new System.Windows.Forms.TextBox();
             this.btn_ag_pro = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cBox_seccion = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txt_horas = new System.Windows.Forms.TextBox();
@@ -63,7 +64,7 @@
             this.txt_buscar = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.btn_agregar = new System.Windows.Forms.Button();
+            this.btn_guardar = new System.Windows.Forms.Button();
             this.btn_actualizar = new System.Windows.Forms.Button();
             this.btn_limpiar = new System.Windows.Forms.Button();
             this.btn_eliminar = new System.Windows.Forms.Button();
@@ -72,11 +73,10 @@
             this.label_anio = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
+            this.labelperiodo = new System.Windows.Forms.ToolStripLabel();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.cBox_seccion = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox5.SuspendLayout();
@@ -145,6 +145,16 @@
             this.groupBox1.Size = new System.Drawing.Size(510, 283);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
+            // 
+            // cBox_seccion
+            // 
+            this.cBox_seccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cBox_seccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.cBox_seccion.FormattingEnabled = true;
+            this.cBox_seccion.Location = new System.Drawing.Point(180, 242);
+            this.cBox_seccion.Name = "cBox_seccion";
+            this.cBox_seccion.Size = new System.Drawing.Size(94, 26);
+            this.cBox_seccion.TabIndex = 53;
             // 
             // label15
             // 
@@ -422,7 +432,7 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.btn_agregar);
+            this.groupBox5.Controls.Add(this.btn_guardar);
             this.groupBox5.Controls.Add(this.btn_actualizar);
             this.groupBox5.Controls.Add(this.btn_limpiar);
             this.groupBox5.Controls.Add(this.btn_eliminar);
@@ -432,18 +442,19 @@
             this.groupBox5.TabIndex = 46;
             this.groupBox5.TabStop = false;
             // 
-            // btn_agregar
+            // btn_guardar
             // 
-            this.btn_agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_agregar.Image = ((System.Drawing.Image)(resources.GetObject("btn_agregar.Image")));
-            this.btn_agregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_agregar.Location = new System.Drawing.Point(271, 14);
-            this.btn_agregar.Name = "btn_agregar";
-            this.btn_agregar.Size = new System.Drawing.Size(81, 38);
-            this.btn_agregar.TabIndex = 5;
-            this.btn_agregar.Text = "Agregar";
-            this.btn_agregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_guardar.Image = ((System.Drawing.Image)(resources.GetObject("btn_guardar.Image")));
+            this.btn_guardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_guardar.Location = new System.Drawing.Point(271, 14);
+            this.btn_guardar.Name = "btn_guardar";
+            this.btn_guardar.Size = new System.Drawing.Size(81, 38);
+            this.btn_guardar.TabIndex = 5;
+            this.btn_guardar.Text = "Agregar";
+            this.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_guardar.UseVisualStyleBackColor = true;
+            this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click_1);
             // 
             // btn_actualizar
             // 
@@ -494,7 +505,7 @@
             this.label_anio,
             this.toolStripSeparator1,
             this.toolStripLabel3,
-            this.toolStripLabel4});
+            this.labelperiodo});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(532, 25);
@@ -510,8 +521,7 @@
             // label_anio
             // 
             this.label_anio.Name = "label_anio";
-            this.label_anio.Size = new System.Drawing.Size(48, 22);
-            this.label_anio.Text = "aññooo";
+            this.label_anio.Size = new System.Drawing.Size(0, 22);
             // 
             // toolStripSeparator1
             // 
@@ -524,11 +534,10 @@
             this.toolStripLabel3.Size = new System.Drawing.Size(59, 22);
             this.toolStripLabel3.Text = "PERIODO:";
             // 
-            // toolStripLabel4
+            // labelperiodo
             // 
-            this.toolStripLabel4.Name = "toolStripLabel4";
-            this.toolStripLabel4.Size = new System.Drawing.Size(54, 22);
-            this.toolStripLabel4.Text = "peeriodo";
+            this.labelperiodo.Name = "labelperiodo";
+            this.labelperiodo.Size = new System.Drawing.Size(0, 22);
             // 
             // button3
             // 
@@ -567,16 +576,6 @@
             this.label5.Size = new System.Drawing.Size(48, 15);
             this.label5.TabIndex = 54;
             this.label5.Text = "Carrera";
-            // 
-            // cBox_seccion
-            // 
-            this.cBox_seccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cBox_seccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.cBox_seccion.FormattingEnabled = true;
-            this.cBox_seccion.Location = new System.Drawing.Point(180, 242);
-            this.cBox_seccion.Name = "cBox_seccion";
-            this.cBox_seccion.Size = new System.Drawing.Size(94, 26);
-            this.cBox_seccion.TabIndex = 53;
             // 
             // Planificaciones
             // 
@@ -627,7 +626,7 @@
         private System.Windows.Forms.TextBox txt_buscar;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button btn_agregar;
+        private System.Windows.Forms.Button btn_guardar;
         private System.Windows.Forms.Button btn_actualizar;
         private System.Windows.Forms.Button btn_limpiar;
         private System.Windows.Forms.Button btn_eliminar;
@@ -636,7 +635,7 @@
         private System.Windows.Forms.ToolStripLabel label_anio;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel3;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel4;
+        private System.Windows.Forms.ToolStripLabel labelperiodo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_nom_asig;
         private System.Windows.Forms.Button btn_ag_asig;

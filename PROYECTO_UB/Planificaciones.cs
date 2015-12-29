@@ -16,6 +16,7 @@ namespace PROYECTO_UB
        private ClasePlanificacion objPlan = new ClasePlanificacion();
        private ClaseCarreras objCa = new ClaseCarreras();
        private ClaseRamos objRam = new ClaseRamos();
+      // ClaseConfiguracion objConfig = new ClaseConfiguracion();
        
        
         public Planificaciones()
@@ -43,13 +44,30 @@ namespace PROYECTO_UB
             }
 
         }
-       
+        private void Limpiar() {
+            txt_rut.Text = "";
+            txt_nombre.Text = "";
+            txt_cod_asig.Text = "";
+            txt_cod_carr.Text = "";
+            txt_dv.Text = "";
+            txt_horas.Text = "";
+            txt_apm.Text = "";
+            txt_app.Text = "";
+            txt_nom_carr.Text = "";
+            txt_nom_asig.Text = "";
+        }
+        private void ListarPlanificaciones()
+        {
+            dataGridView1.DataSource = objPlan.Listado();
+        }
       
         private void Planificaciones_Load(object sender, EventArgs e)
         {
-           // ListarPlanificacion();
+            Configuracion.datos();
+            ListarPlanificaciones();
             llenarCombo();
             label_anio.Text = Configuracion.anio.ToString();
+            labelperiodo.Text = Configuracion.periodo.ToString();
         }
          private void btn_ag_carre_Click(object sender, EventArgs e)
         {
@@ -70,6 +88,7 @@ namespace PROYECTO_UB
             Buscar_Ramos obj = new Buscar_Ramos();
             obj.ShowDialog();
             txt_cod_asig.Text = Buscar_Ramos.codigo;
+            
             DataTable dt = new DataTable();
             dt = objRam.Cargar(txt_cod_asig.Text);
 
@@ -77,10 +96,13 @@ namespace PROYECTO_UB
             {
 
                 txt_nom_asig.Text = dt.Rows[0].ItemArray[1].ToString();
-
+               
             }
+          
         }
-        private void btn_agregar_Click(object sender, EventArgs e)
+        
+
+        private void btn_guardar_Click_1(object sender, EventArgs e)
         {
             if (txt_rut.Text == "" || txt_dv.Text == "")
             {
@@ -108,16 +130,20 @@ namespace PROYECTO_UB
                 txt_apm.Focus();
                 return;
             }
-          
+
+            objPlan.rut = txt_rut.Text;
+            objPlan.codigoC = txt_cod_carr.Text;
+            objPlan.codigoR = txt_cod_asig.Text;
+            objPlan.seccion = int.Parse(cBox_seccion.Text);
+            objPlan.anio = int.Parse(label_anio.Text);
+            objPlan.periodo = int.Parse(labelperiodo.Text);
             MessageBox.Show(objPlan.RegistrarPlanificacion(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            
-       
+            ListarPlanificaciones();
+            Limpiar();
         }
 
+       
+
         
-
-       
-
-       
     }
 }

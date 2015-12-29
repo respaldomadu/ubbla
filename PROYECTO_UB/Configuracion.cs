@@ -20,7 +20,7 @@ namespace PROYECTO_UB
             dt = objconfi.Listado();
 
             anio = int.Parse(dt.Rows[0].ItemArray[0].ToString());
-        
+            periodo = int.Parse(dt.Rows[0].ItemArray[1].ToString());
         }
     }
 }

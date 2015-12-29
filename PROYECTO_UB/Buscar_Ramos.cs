@@ -15,6 +15,7 @@ namespace PROYECTO_UB
     {
         ClaseRamos objRa = new ClaseRamos();
         public static string codigo = "";
+       
         public Buscar_Ramos()
         {
             InitializeComponent();
@@ -27,11 +28,12 @@ namespace PROYECTO_UB
         {
             ListarRamos();
             codigo = "";
-        }
 
+        }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             codigo = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+           
             this.Close();
         }
 

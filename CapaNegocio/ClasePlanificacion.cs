@@ -23,7 +23,7 @@ namespace CapaNegocio
         
         public DataTable Listado()
         {
-            return objconexion.Listado("SP_LISTAR_COMUNA", null);
+            return objconexion.Listado("SP_LISTAR_PLANIFICACION", null);
         }
        
         public String RegistrarPlanificacion()
@@ -107,21 +107,6 @@ namespace CapaNegocio
             }
             return dt;
         }
-        public DataTable Cargar(String textoUsuario)
-        {
-            DataTable dt = new DataTable();
-            List<ClaseParametros> lst = new List<ClaseParametros>();
-            try
-            {
-                lst.Add(new ClaseParametros("@RUT", textoUsuario));
-
-                dt = objconexion.Listado("SP_CARGAR_PROFESORES", lst);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            return dt;
-        }
+       
     }
 }
