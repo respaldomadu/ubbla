@@ -33,7 +33,6 @@
             this.txt_rut = new System.Windows.Forms.TextBox();
             this.btn_ag_pro = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cBox_seccion = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txt_horas = new System.Windows.Forms.TextBox();
@@ -96,6 +95,7 @@
             // 
             // txt_rut
             // 
+            this.txt_rut.Enabled = false;
             this.txt_rut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_rut.Location = new System.Drawing.Point(18, 34);
             this.txt_rut.MaxLength = 8;
@@ -115,7 +115,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.cBox_seccion);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.txt_horas);
@@ -146,16 +145,6 @@
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
             // 
-            // cBox_seccion
-            // 
-            this.cBox_seccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cBox_seccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.cBox_seccion.FormattingEnabled = true;
-            this.cBox_seccion.Location = new System.Drawing.Point(180, 242);
-            this.cBox_seccion.Name = "cBox_seccion";
-            this.cBox_seccion.Size = new System.Drawing.Size(94, 26);
-            this.cBox_seccion.TabIndex = 53;
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -178,6 +167,7 @@
             // 
             // txt_horas
             // 
+            this.txt_horas.Enabled = false;
             this.txt_horas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_horas.Location = new System.Drawing.Point(16, 242);
             this.txt_horas.MaxLength = 8;
@@ -197,6 +187,7 @@
             // 
             // txt_nom_asig
             // 
+            this.txt_nom_asig.Enabled = false;
             this.txt_nom_asig.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nom_asig.Location = new System.Drawing.Point(180, 188);
             this.txt_nom_asig.MaxLength = 30;
@@ -226,6 +217,7 @@
             // 
             // txt_cod_asig
             // 
+            this.txt_cod_asig.Enabled = false;
             this.txt_cod_asig.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cod_asig.Location = new System.Drawing.Point(16, 188);
             this.txt_cod_asig.MaxLength = 8;
@@ -245,6 +237,7 @@
             // 
             // txt_nom_carr
             // 
+            this.txt_nom_carr.Enabled = false;
             this.txt_nom_carr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nom_carr.Location = new System.Drawing.Point(181, 138);
             this.txt_nom_carr.MaxLength = 30;
@@ -274,6 +267,7 @@
             // 
             // txt_cod_carr
             // 
+            this.txt_cod_carr.Enabled = false;
             this.txt_cod_carr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cod_carr.Location = new System.Drawing.Point(17, 138);
             this.txt_cod_carr.MaxLength = 8;
@@ -313,6 +307,7 @@
             // 
             // txt_apm
             // 
+            this.txt_apm.Enabled = false;
             this.txt_apm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_apm.Location = new System.Drawing.Point(261, 87);
             this.txt_apm.MaxLength = 30;
@@ -322,6 +317,7 @@
             // 
             // txt_app
             // 
+            this.txt_app.Enabled = false;
             this.txt_app.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_app.Location = new System.Drawing.Point(17, 87);
             this.txt_app.MaxLength = 30;
@@ -341,6 +337,7 @@
             // 
             // txt_nombre
             // 
+            this.txt_nombre.Enabled = false;
             this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nombre.Location = new System.Drawing.Point(261, 34);
             this.txt_nombre.MaxLength = 30;
@@ -350,6 +347,7 @@
             // 
             // txt_dv
             // 
+            this.txt_dv.Enabled = false;
             this.txt_dv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_dv.Location = new System.Drawing.Point(172, 34);
             this.txt_dv.MaxLength = 1;
@@ -652,6 +650,5 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txt_horas;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox cBox_seccion;
     }
 }

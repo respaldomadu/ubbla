@@ -38,7 +38,7 @@ namespace CapaNegocio
                 lst.Add(new ClaseParametros("@COD_CARRERA", codigoC));
                 lst.Add(new ClaseParametros("@ANIO", anio));
                 lst.Add(new ClaseParametros("@PERIODO", periodo));
-                lst.Add(new ClaseParametros("@SECCION", seccion));
+                //lst.Add(new ClaseParametros("@SECCION", seccion));
                 lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
                 objconexion.EjecutarSP("SP_INGRESAR_PLANIFICACION", ref lst);
                 Mensaje = lst[6].Valor.ToString();

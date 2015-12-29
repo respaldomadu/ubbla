@@ -16,17 +16,13 @@ namespace PROYECTO_UB
        private ClasePlanificacion objPlan = new ClasePlanificacion();
        private ClaseCarreras objCa = new ClaseCarreras();
        private ClaseRamos objRam = new ClaseRamos();
-      // ClaseConfiguracion objConfig = new ClaseConfiguracion();
-       
+     
        
         public Planificaciones()
         {
             InitializeComponent();
         }
-        private void llenarCombo(){
-            cBox_seccion.Items.Add("1");
-            cBox_seccion.Items.Add("2");
-    }
+        
         private void btn_ag_pro_Click(object sender, EventArgs e)
         {
             Buscar_Profesor obj = new Buscar_Profesor();
@@ -65,7 +61,7 @@ namespace PROYECTO_UB
         {
             Configuracion.datos();
             ListarPlanificaciones();
-            llenarCombo();
+           
             label_anio.Text = Configuracion.anio.ToString();
             labelperiodo.Text = Configuracion.periodo.ToString();
         }
@@ -96,7 +92,7 @@ namespace PROYECTO_UB
             {
 
                 txt_nom_asig.Text = dt.Rows[0].ItemArray[1].ToString();
-               
+                txt_horas.Text = dt.Rows[0].ItemArray[2].ToString();
             }
           
         }
@@ -130,11 +126,12 @@ namespace PROYECTO_UB
                 txt_apm.Focus();
                 return;
             }
+            
 
             objPlan.rut = txt_rut.Text;
             objPlan.codigoC = txt_cod_carr.Text;
             objPlan.codigoR = txt_cod_asig.Text;
-            objPlan.seccion = int.Parse(cBox_seccion.Text);
+            
             objPlan.anio = int.Parse(label_anio.Text);
             objPlan.periodo = int.Parse(labelperiodo.Text);
             MessageBox.Show(objPlan.RegistrarPlanificacion(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -142,6 +139,7 @@ namespace PROYECTO_UB
             Limpiar();
         }
 
+       
        
 
         
