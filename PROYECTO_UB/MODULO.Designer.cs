@@ -160,6 +160,7 @@
             this.btn_actualizar.Text = "Modificar";
             this.btn_actualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_actualizar.UseVisualStyleBackColor = true;
+            this.btn_actualizar.Click += new System.EventHandler(this.btn_actualizar_Click);
             // 
             // btn_limpiar
             // 
@@ -173,6 +174,7 @@
             this.btn_limpiar.Text = "Limpiar";
             this.btn_limpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_limpiar.UseVisualStyleBackColor = true;
+            this.btn_limpiar.Click += new System.EventHandler(this.btn_limpiar_Click);
             // 
             // btn_eliminar
             // 
@@ -188,6 +190,7 @@
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
             // btn_excel
             // 
@@ -199,6 +202,7 @@
             this.btn_excel.Size = new System.Drawing.Size(32, 26);
             this.btn_excel.TabIndex = 13;
             this.btn_excel.UseVisualStyleBackColor = true;
+            this.btn_excel.Click += new System.EventHandler(this.btn_excel_Click_1);
             // 
             // label5
             // 
@@ -229,12 +233,13 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(233, 133);
             this.dataGridView1.TabIndex = 10;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // MODULO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(617, 261);
+            this.ClientSize = new System.Drawing.Size(431, 261);
             this.Controls.Add(this.btn_excel);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txt_buscar);
