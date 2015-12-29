@@ -22,7 +22,10 @@ namespace PROYECTO_UB
         {
             InitializeComponent();
         }
-
+        private void llenarCombo(){
+            cBox_seccion.Items.Add("1");
+            cBox_seccion.Items.Add("2");
+    }
         private void btn_ag_pro_Click(object sender, EventArgs e)
         {
             Buscar_Profesor obj = new Buscar_Profesor();
@@ -45,6 +48,7 @@ namespace PROYECTO_UB
         private void Planificaciones_Load(object sender, EventArgs e)
         {
            // ListarPlanificacion();
+            llenarCombo();
             label_anio.Text = Configuracion.anio.ToString();
         }
          private void btn_ag_carre_Click(object sender, EventArgs e)
@@ -100,7 +104,7 @@ namespace PROYECTO_UB
 
             if (txt_apm.Text == "")
             {
-                MessageBox.Show("Ingrese Apellido paterno", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ingrese Apellido materno", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txt_apm.Focus();
                 return;
             }

@@ -28,7 +28,7 @@ namespace PROYECTO_UB
         private void Buscar_Profesor_Load(object sender, EventArgs e)
         {
             ListarProfesores();
-           // rut = "";
+            rut = "";
             
         }
 

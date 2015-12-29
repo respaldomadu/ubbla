@@ -19,7 +19,7 @@ namespace CapaNegocio
         public int anio { get; set; }
         public int periodo { get; set; }
         public int seccion { get; set; }
-        public int HORAS { get; set; }
+       
         
         public DataTable Listado()
         {
@@ -39,7 +39,6 @@ namespace CapaNegocio
                 lst.Add(new ClaseParametros("@ANIO", anio));
                 lst.Add(new ClaseParametros("@PERIODO", periodo));
                 lst.Add(new ClaseParametros("@SECCION", seccion));
-                lst.Add(new ClaseParametros("@HORAS_RA", seccion));
                 lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
                 objconexion.EjecutarSP("SP_INGRESAR_PLANIFICACION", ref lst);
                 Mensaje = lst[7].Valor.ToString();
@@ -49,6 +48,80 @@ namespace CapaNegocio
                 throw;
             }
             return Mensaje;
+        }
+        public String ActualizarProfesores()
+        {
+            List<ClaseParametros> lst = new List<ClaseParametros>();
+            String Mensaje = "";
+            try
+            {
+                lst.Add(new ClaseParametros("@COD_PLANI", codigo));
+                lst.Add(new ClaseParametros("@RUT_P", rut));
+                lst.Add(new ClaseParametros("@COD_RAMO", codigoR));
+                lst.Add(new ClaseParametros("@COD_CARRERA", codigoC));
+                lst.Add(new ClaseParametros("@ANIO", anio));
+                lst.Add(new ClaseParametros("@PERIODO", periodo));
+                lst.Add(new ClaseParametros("@SECCION", seccion));
+                lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
+                objconexion.EjecutarSP("SP_ACTUALIZAR_PLANIFICACION", ref lst);
+                Mensaje = lst[7].Valor.ToString();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return Mensaje;
+        }
+        public String EliminarProfesores()
+        {
+            List<ClaseParametros> lst = new List<ClaseParametros>();
+            String Mensaje = "";
+            try
+            {
+                lst.Add(new ClaseParametros("@COD_PLA", codigo));
+                lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
+                objconexion.EjecutarSP("SP_ELIMINAR_PROFESOR", ref lst);
+                Mensaje = lst[1].Valor.ToString();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return Mensaje;
+        }
+        public DataTable Buscar(String nombre, String apellidoP, String materno)
+        {
+            DataTable dt = new DataTable();
+            List<ClaseParametros> lst = new List<ClaseParametros>();
+            try
+            {
+                lst.Add(new ClaseParametros("@COD_RAMO", codigoR));
+                lst.Add(new ClaseParametros("@COD_CARRERA", codigoC));
+                lst.Add(new ClaseParametros("@RUT_P", rut));
+
+                dt = objconexion.Listado("SP_BUSCAR_PLANIFICACION", lst);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return dt;
+        }
+        public DataTable Cargar(String textoUsuario)
+        {
+            DataTable dt = new DataTable();
+            List<ClaseParametros> lst = new List<ClaseParametros>();
+            try
+            {
+                lst.Add(new ClaseParametros("@RUT", textoUsuario));
+
+                dt = objconexion.Listado("SP_CARGAR_PROFESORES", lst);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return dt;
         }
     }
 }
