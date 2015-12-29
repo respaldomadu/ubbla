@@ -157,5 +157,11 @@ namespace PROYECTO_UB
             Configuraciones obj = new Configuraciones();
             obj.ShowDialog();
         }
+
+        private void mantenedorModulosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MODULO obj = new MODULO();
+            obj.ShowDialog();
+        }
     }
 }

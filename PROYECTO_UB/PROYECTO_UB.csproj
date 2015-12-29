@@ -97,6 +97,12 @@
     <Compile Include="MDIParent1.Designer.cs">
       <DependentUpon>MDIParent1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MODULO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULO.Designer.cs">
+      <DependentUpon>MODULO.cs</DependentUpon>
+    </Compile>
     <Compile Include="Nacionalidad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MDIParent1.resx">
       <DependentUpon>MDIParent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULO.resx">
+      <DependentUpon>MODULO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Nacionalidad.resx">
       <DependentUpon>Nacionalidad.cs</DependentUpon>
