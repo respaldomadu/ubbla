@@ -34,5 +34,10 @@ namespace PROYECTO_UB
             codigo = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             this.Close();
         }
+
+        private void txt_buscar_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = objRa.Buscar(txt_buscar.Text);
+        }
     }
 }

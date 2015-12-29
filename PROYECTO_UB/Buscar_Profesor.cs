@@ -37,5 +37,22 @@ namespace PROYECTO_UB
             rut = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             this.Close();
         }
+
+       
+
+        private void txt_buscar_TextChanged_1(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = objProfesor.Buscar(txt_buscar.Text, txt_busapp.Text, txt_busapm.Text);
+        }
+
+        private void txt_busapm_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = objProfesor.Buscar(txt_buscar.Text, txt_busapp.Text, txt_busapm.Text);
+        }
+
+        private void txt_busapp_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = objProfesor.Buscar(txt_buscar.Text, txt_busapp.Text, txt_busapm.Text);
+        }
     }
 }
