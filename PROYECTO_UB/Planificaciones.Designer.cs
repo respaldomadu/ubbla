@@ -33,6 +33,7 @@
             this.txt_rut = new System.Windows.Forms.TextBox();
             this.btn_ag_pro = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_seccion = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txt_horas = new System.Windows.Forms.TextBox();
@@ -115,6 +116,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_seccion);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.txt_horas);
@@ -144,6 +146,15 @@
             this.groupBox1.Size = new System.Drawing.Size(510, 283);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
+            // 
+            // txt_seccion
+            // 
+            this.txt_seccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_seccion.Location = new System.Drawing.Point(181, 242);
+            this.txt_seccion.MaxLength = 8;
+            this.txt_seccion.Name = "txt_seccion";
+            this.txt_seccion.Size = new System.Drawing.Size(106, 26);
+            this.txt_seccion.TabIndex = 53;
             // 
             // label15
             // 
@@ -427,6 +438,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(500, 224);
             this.dataGridView1.TabIndex = 45;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // groupBox5
             // 
@@ -650,5 +662,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txt_horas;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txt_seccion;
     }
 }
