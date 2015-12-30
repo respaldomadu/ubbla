@@ -37,7 +37,7 @@ namespace PROYECTO_UB
 
             CB_INICIO.Items.Add("08:00");
             CB_INICIO.Items.Add("08:45");
-            CB_INICIO.Items.Add("00:40");
+            CB_INICIO.Items.Add("09:40");
             CB_INICIO.Items.Add("10:25");
             CB_INICIO.Items.Add("11:20");
             CB_INICIO.Items.Add("12:05");
@@ -84,7 +84,20 @@ namespace PROYECTO_UB
             CB_DIA.Items.Add("SABADO");
         }
 
-     
+        private void Limpiar() {
+
+            TXT_COD.Text = "";
+            CB_INICIO.SelectedIndex = -1;
+            CB_FIN.SelectedIndex = -1;
+            CB_DIA.SelectedIndex = -1;
+            this.TXT_COD.Text = objmo.MAYOR().ToString();
+            btn_actualizar.Enabled = false;
+            btn_eliminar.Enabled = false;
+            btn_agregar.Enabled = true;
+         
+         
+        
+        }
 
         private void btn_excel_Click(object sender, EventArgs e)
         {
@@ -121,7 +134,76 @@ namespace PROYECTO_UB
 
             MessageBox.Show(objmo.RegistrarModulo(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ListarModulo();
-            //Limpiar();
+            Limpiar();
+        }
+
+        private void btn_actualizar_Click(object sender, EventArgs e)
+        {
+
+            if (this.CB_INICIO.Text == "")
+            {
+                MessageBox.Show("Ingrese el inicio", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.CB_INICIO.Focus();
+                return;
+            }
+            if (this.CB_FIN.Text == "")
+            {
+                MessageBox.Show("Ingrese el fin", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.CB_FIN.Focus();
+                return;
+            }
+            if (this.CB_DIA.Text == "")
+            {
+                MessageBox.Show("Ingrese el DIA", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.CB_DIA.Focus();
+                return;
+            }
+            objmo.codigo = int.Parse(this.TXT_COD.Text);
+            objmo.inicio = CB_INICIO.Text;
+            objmo.fin = CB_FIN.Text;
+            objmo.dia = CB_DIA.Text;
+
+            MessageBox.Show(objmo.ActualizarModulo(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ListarModulo();
+            Limpiar();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            TXT_COD.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            CB_INICIO.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            CB_FIN.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            CB_DIA.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+        
+            btn_actualizar.Enabled = true;
+            btn_eliminar.Enabled = true;
+            btn_agregar.Enabled = false;
+        }
+
+        private void btn_eliminar_Click(object sender, EventArgs e)
+        {
+            objmo.codigo = int.Parse(this.TXT_COD.Text);
+         
+
+            MessageBox.Show(objmo.EliminarModulo(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ListarModulo();
+            Limpiar();
+        }
+
+        private void btn_limpiar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+            
+        }
+
+        private void btn_excel_Click_1(object sender, EventArgs e)
+        {
+            global.GridAExcel(dataGridView1);
+        }
+
+        private void txt_buscar_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = objmo.Buscar(txt_buscar.Text);
         }
 
     }
