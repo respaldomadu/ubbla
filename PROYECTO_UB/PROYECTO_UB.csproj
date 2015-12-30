@@ -162,6 +162,9 @@
     <EmbeddedResource Include="Configuraciones.resx">
       <DependentUpon>Configuraciones.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HORARIO.resx">
+      <DependentUpon>HORARIO.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MDIParent1.resx">
       <DependentUpon>MDIParent1.cs</DependentUpon>
     </EmbeddedResource>
