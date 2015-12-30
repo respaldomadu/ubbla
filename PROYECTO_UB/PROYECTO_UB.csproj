@@ -91,6 +91,12 @@
       <DependentUpon>Configuraciones.cs</DependentUpon>
     </Compile>
     <Compile Include="global.cs" />
+    <Compile Include="HORARIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HORARIO.Designer.cs">
+      <DependentUpon>HORARIO.cs</DependentUpon>
+    </Compile>
     <Compile Include="MDIParent1.cs">
       <SubType>Form</SubType>
     </Compile>
