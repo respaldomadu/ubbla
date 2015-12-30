@@ -65,7 +65,6 @@ namespace PROYECTO_UB
            
             label_anio.Text = Configuracion.anio.ToString();
             labelperiodo.Text = Configuracion.periodo.ToString();
-           
         }
          private void btn_ag_carre_Click(object sender, EventArgs e)
         {
@@ -128,25 +127,8 @@ namespace PROYECTO_UB
                 txt_apm.Focus();
                 return;
             }
-            if (txt_cod_carr.Text == "")
-            {
-                MessageBox.Show("Seleccione Codigo Carrera", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txt_apm.Focus();
-                return;
-            }
-            if (txt_cod_asig.Text== "")
-            {
-                MessageBox.Show("Seleccione Codigo Asignatura", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txt_apm.Focus();
-                return;
-            }
-            if (txt_seccion.Text == "")
-            {
-                MessageBox.Show("Ingrese Sección", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txt_apm.Focus();
-                return;
-            }
-           
+            
+
             objPlan.rut = txt_rut.Text;
             objPlan.codigoC = txt_cod_carr.Text;
             objPlan.codigoR = txt_cod_asig.Text;
@@ -160,7 +142,6 @@ namespace PROYECTO_UB
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            label_cod_plani.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             txt_rut.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
             txt_dv.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
             txt_nombre.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
@@ -202,39 +183,24 @@ namespace PROYECTO_UB
 
             if (txt_apm.Text == "")
             {
-                MessageBox.Show("Ingrese Apellido materno", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ingrese Apellido paterno", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txt_apm.Focus();
                 return;
             }
-            if (txt_cod_carr.Text == "")
-            {
-                MessageBox.Show("Seleccione Codigo Carrera", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txt_apm.Focus();
-                return;
-            }
-            if (txt_cod_asig.Text == "")
-            {
-                MessageBox.Show("Seleccione Codigo Asignatura", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txt_apm.Focus();
-                return;
-            }
-            if (txt_seccion.Text == "")
-            {
-                MessageBox.Show("Ingrese Sección", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txt_apm.Focus();
-                return;
-            }
-            objPlan.codigo =int.Parse(label_cod_plani.Text);
+
             objPlan.rut = txt_rut.Text;
             objPlan.codigoC = txt_cod_carr.Text;
             objPlan.codigoR = txt_cod_asig.Text;
             objPlan.seccion = int.Parse(txt_seccion.Text);
             objPlan.anio = int.Parse(label_anio.Text);
             objPlan.periodo = int.Parse(labelperiodo.Text);
-            objPlan.ActualizarPlanificacion();
-            MessageBox.Show(objPlan.ActualizarPlanificacion(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            ListarPlanificaciones();
-            Limpiar();
+
+            
+            
+            //objPlan.ActualizarProfesores();
+            //MessageBox.Show(objProfesor.ActualizarProfesores(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //ListarProfesores();
+            //Limpiar();
         }
 
     }
