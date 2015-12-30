@@ -201,5 +201,10 @@ namespace PROYECTO_UB
             global.GridAExcel(dataGridView1);
         }
 
+        private void txt_buscar_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = objmo.Buscar(txt_buscar.Text);
+        }
+
     }
 }
