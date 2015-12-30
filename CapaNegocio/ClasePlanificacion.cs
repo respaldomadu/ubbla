@@ -55,6 +55,7 @@ namespace CapaNegocio
             String Mensaje = "";
             try
             {
+                lst.Add(new ClaseParametros("@COD_PLANI", codigo));
                 lst.Add(new ClaseParametros("@RUT_P", rut));
                 lst.Add(new ClaseParametros("@COD_RAMO", codigoR));
                 lst.Add(new ClaseParametros("@COD_CARRERA", codigoC));

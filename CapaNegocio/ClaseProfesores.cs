@@ -77,7 +77,7 @@ namespace CapaNegocio
                 lst.Add(new ClaseParametros("@SEXO", sexo));
                 lst.Add(new ClaseParametros("@CELULAR", celular));
                 lst.Add(new ClaseParametros("@N_CTA", num_cta));
-                lst.Add(new ClaseParametros("@COD_CUENTA", cod_cta));
+                lst.Add(new ClaseParametros("@COD_CTA", cod_cta));
                 lst.Add(new ClaseParametros("@COD_BANCO", cod_banco));
                 lst.Add(new ClaseParametros("@COD_COMUNA", cod_comuna));
                 lst.Add(new ClaseParametros("@MAIL", mail));

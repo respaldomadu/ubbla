@@ -69,14 +69,17 @@
             this.btn_limpiar = new System.Windows.Forms.Button();
             this.btn_eliminar = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.label_anio = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.labelperiodo = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.label_cod_plani = new System.Windows.Forms.ToolStripLabel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox5.SuspendLayout();
@@ -516,12 +519,20 @@
             this.label_anio,
             this.toolStripSeparator1,
             this.toolStripLabel3,
-            this.labelperiodo});
+            this.labelperiodo,
+            this.toolStripSeparator2,
+            this.toolStripLabel2,
+            this.label_cod_plani});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(532, 25);
             this.toolStrip1.TabIndex = 47;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // label_anio
+            // 
+            this.label_anio.Name = "label_anio";
+            this.label_anio.Size = new System.Drawing.Size(0, 22);
             // 
             // toolStripLabel1
             // 
@@ -529,26 +540,21 @@
             this.toolStripLabel1.Size = new System.Drawing.Size(36, 22);
             this.toolStripLabel1.Text = "AÑO:";
             // 
-            // label_anio
-            // 
-            this.label_anio.Name = "label_anio";
-            this.label_anio.Size = new System.Drawing.Size(0, 22);
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // labelperiodo
+            // 
+            this.labelperiodo.Name = "labelperiodo";
+            this.labelperiodo.Size = new System.Drawing.Size(0, 22);
             // 
             // toolStripLabel3
             // 
             this.toolStripLabel3.Name = "toolStripLabel3";
             this.toolStripLabel3.Size = new System.Drawing.Size(59, 22);
             this.toolStripLabel3.Text = "PERIODO:";
-            // 
-            // labelperiodo
-            // 
-            this.labelperiodo.Name = "labelperiodo";
-            this.labelperiodo.Size = new System.Drawing.Size(0, 22);
             // 
             // button3
             // 
@@ -587,6 +593,22 @@
             this.label5.Size = new System.Drawing.Size(48, 15);
             this.label5.TabIndex = 54;
             this.label5.Text = "Carrera";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(55, 22);
+            this.toolStripLabel2.Text = "CODIGO:";
+            // 
+            // label_cod_plani
+            // 
+            this.label_cod_plani.Name = "label_cod_plani";
+            this.label_cod_plani.Size = new System.Drawing.Size(0, 22);
             // 
             // Planificaciones
             // 
@@ -664,5 +686,8 @@
         private System.Windows.Forms.TextBox txt_horas;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txt_seccion;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripLabel label_cod_plani;
     }
 }
