@@ -51,6 +51,7 @@ namespace PROYECTO_UB
             txt_app.Text = "";
             txt_nom_carr.Text = "";
             txt_nom_asig.Text = "";
+            txt_seccion.Text = "";
         }
         private void ListarPlanificaciones()
         {
@@ -131,7 +132,7 @@ namespace PROYECTO_UB
             objPlan.rut = txt_rut.Text;
             objPlan.codigoC = txt_cod_carr.Text;
             objPlan.codigoR = txt_cod_asig.Text;
-            
+            objPlan.seccion = int.Parse(txt_seccion.Text );
             objPlan.anio = int.Parse(label_anio.Text);
             objPlan.periodo = int.Parse(labelperiodo.Text);
             MessageBox.Show(objPlan.RegistrarPlanificacion(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -139,9 +140,68 @@ namespace PROYECTO_UB
             Limpiar();
         }
 
-       
-       
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txt_rut.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+            txt_dv.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+            txt_nombre.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
+            txt_app.Text = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
+            txt_apm.Text = dataGridView1.SelectedRows[0].Cells[10].Value.ToString();
+            txt_cod_carr.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            txt_nom_carr.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            txt_cod_asig.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            txt_nom_asig.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+            txt_horas.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+            txt_seccion.Text = dataGridView1.SelectedRows[0].Cells[13].Value.ToString();
+            btn_actualizar.Enabled = true;
+            btn_eliminar.Enabled = true;
+            btn_guardar.Enabled = false;
+            btn_limpiar.Enabled = true;
+        }
 
-        
+        private void btn_actualizar_Click(object sender, EventArgs e)
+        {
+            if (txt_rut.Text == "" || txt_dv.Text == "")
+            {
+                MessageBox.Show("Ingrese el rut", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txt_rut.Focus();
+                return;
+            }
+
+            if (txt_nombre.Text == "")
+            {
+                MessageBox.Show("Ingrese el Nombre", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txt_nombre.Focus();
+                return;
+            }
+            if (this.txt_app.Text == "")
+            {
+                MessageBox.Show("Ingrese Apellido paterno", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txt_app.Focus();
+                return;
+            }
+
+            if (txt_apm.Text == "")
+            {
+                MessageBox.Show("Ingrese Apellido paterno", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txt_apm.Focus();
+                return;
+            }
+
+            objPlan.rut = txt_rut.Text;
+            objPlan.codigoC = txt_cod_carr.Text;
+            objPlan.codigoR = txt_cod_asig.Text;
+            objPlan.seccion = int.Parse(txt_seccion.Text);
+            objPlan.anio = int.Parse(label_anio.Text);
+            objPlan.periodo = int.Parse(labelperiodo.Text);
+
+            
+            
+            objPlan.ActualizarProfesores();
+            MessageBox.Show(objProfesor.ActualizarProfesores(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ListarProfesores();
+            Limpiar();
+        }
+
     }
 }
