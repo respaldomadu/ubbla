@@ -188,14 +188,13 @@ namespace PROYECTO_UB
                 txt_apm.Focus();
                 return;
             }
-
+            objPlan.codigo = int.Parse(label_cod_plani.Text);
             objPlan.rut = txt_rut.Text;
             objPlan.codigoC = txt_cod_carr.Text;
             objPlan.codigoR = txt_cod_asig.Text;
             objPlan.seccion = int.Parse(txt_seccion.Text);
             objPlan.anio = int.Parse(label_anio.Text);
             objPlan.periodo = int.Parse(labelperiodo.Text);
-
             objPlan.ActualizarPlanificacion();
             MessageBox.Show(objPlan.ActualizarPlanificacion(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ListarPlanificaciones();
