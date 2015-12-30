@@ -159,5 +159,49 @@ namespace PROYECTO_UB
             btn_limpiar.Enabled = true;
         }
 
+        private void btn_actualizar_Click(object sender, EventArgs e)
+        {
+            if (txt_rut.Text == "" || txt_dv.Text == "")
+            {
+                MessageBox.Show("Ingrese el rut", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txt_rut.Focus();
+                return;
+            }
+
+            if (txt_nombre.Text == "")
+            {
+                MessageBox.Show("Ingrese el Nombre", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txt_nombre.Focus();
+                return;
+            }
+            if (this.txt_app.Text == "")
+            {
+                MessageBox.Show("Ingrese Apellido paterno", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txt_app.Focus();
+                return;
+            }
+
+            if (txt_apm.Text == "")
+            {
+                MessageBox.Show("Ingrese Apellido paterno", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txt_apm.Focus();
+                return;
+            }
+
+            objPlan.rut = txt_rut.Text;
+            objPlan.codigoC = txt_cod_carr.Text;
+            objPlan.codigoR = txt_cod_asig.Text;
+            objPlan.seccion = int.Parse(txt_seccion.Text);
+            objPlan.anio = int.Parse(label_anio.Text);
+            objPlan.periodo = int.Parse(labelperiodo.Text);
+
+            
+            
+            objPlan.ActualizarProfesores();
+            MessageBox.Show(objProfesor.ActualizarProfesores(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ListarProfesores();
+            Limpiar();
+        }
+
     }
 }

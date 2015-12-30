@@ -49,7 +49,7 @@ namespace CapaNegocio
             }
             return Mensaje;
         }
-        public String ActualizarProfesores()
+        public String ActualizarPlanificacion()
         {
             List<ClaseParametros> lst = new List<ClaseParametros>();
             String Mensaje = "";

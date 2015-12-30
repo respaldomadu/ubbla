@@ -479,6 +479,7 @@
             this.btn_actualizar.Text = "Modificar";
             this.btn_actualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_actualizar.UseVisualStyleBackColor = true;
+            this.btn_actualizar.Click += new System.EventHandler(this.btn_actualizar_Click);
             // 
             // btn_limpiar
             // 
