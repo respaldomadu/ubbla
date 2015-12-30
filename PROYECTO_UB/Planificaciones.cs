@@ -197,10 +197,10 @@ namespace PROYECTO_UB
 
             
             
-            objPlan.ActualizarProfesores();
-            MessageBox.Show(objProfesor.ActualizarProfesores(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            ListarProfesores();
-            Limpiar();
+            //objPlan.ActualizarProfesores();
+            //MessageBox.Show(objProfesor.ActualizarProfesores(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //ListarProfesores();
+            //Limpiar();
         }
 
     }
