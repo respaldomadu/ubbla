@@ -72,7 +72,7 @@ namespace CapaNegocio
             }
             return Mensaje;
         }
-        public String EliminarProfesores()
+       /* public String EliminarProfesores()
         {
             List<ClaseParametros> lst = new List<ClaseParametros>();
             String Mensaje = "";
@@ -88,7 +88,7 @@ namespace CapaNegocio
                 throw;
             }
             return Mensaje;
-        }
+        }*/
         public DataTable Buscar(String nombre, String apellidoP, String materno)
         {
             DataTable dt = new DataTable();
