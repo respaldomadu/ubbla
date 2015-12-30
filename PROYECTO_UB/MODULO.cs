@@ -37,7 +37,7 @@ namespace PROYECTO_UB
 
             CB_INICIO.Items.Add("08:00");
             CB_INICIO.Items.Add("08:45");
-            CB_INICIO.Items.Add("00:40");
+            CB_INICIO.Items.Add("09:40");
             CB_INICIO.Items.Add("10:25");
             CB_INICIO.Items.Add("11:20");
             CB_INICIO.Items.Add("12:05");
