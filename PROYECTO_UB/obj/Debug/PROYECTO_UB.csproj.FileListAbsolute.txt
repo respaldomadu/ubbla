@@ -93,3 +93,4 @@ C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Busca
 C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Buscar_Ramos.resources
 C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.MODULO.resources
 C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.MODULO.resources
+C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.HORARIO.resources

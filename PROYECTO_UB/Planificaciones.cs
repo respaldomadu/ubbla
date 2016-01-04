@@ -12,17 +12,17 @@ namespace PROYECTO_UB
 {
     public partial class Planificaciones : Form
     {
-       private ClaseProfesores objPro = new ClaseProfesores();
-       private ClasePlanificacion objPlan = new ClasePlanificacion();
-       private ClaseCarreras objCa = new ClaseCarreras();
-       private ClaseRamos objRam = new ClaseRamos();
-     
-       
+        private ClaseProfesores objPro = new ClaseProfesores();
+        private ClasePlanificacion objPlan = new ClasePlanificacion();
+        private ClaseCarreras objCa = new ClaseCarreras();
+        private ClaseRamos objRam = new ClaseRamos();
+
+
         public Planificaciones()
         {
             InitializeComponent();
         }
-        
+
         private void btn_ag_pro_Click(object sender, EventArgs e)
         {
             Buscar_Profesor obj = new Buscar_Profesor();
@@ -40,7 +40,8 @@ namespace PROYECTO_UB
             }
 
         }
-        private void Limpiar() {
+        private void Limpiar()
+        {
             txt_rut.Text = "";
             txt_nombre.Text = "";
             txt_cod_asig.Text = "";
@@ -57,16 +58,16 @@ namespace PROYECTO_UB
         {
             dataGridView1.DataSource = objPlan.Listado();
         }
-      
+
         private void Planificaciones_Load(object sender, EventArgs e)
         {
             Configuracion.datos();
             ListarPlanificaciones();
-           
+
             label_anio.Text = Configuracion.anio.ToString();
             labelperiodo.Text = Configuracion.periodo.ToString();
         }
-         private void btn_ag_carre_Click(object sender, EventArgs e)
+        private void btn_ag_carre_Click(object sender, EventArgs e)
         {
             BuscarCarrera obj = new BuscarCarrera();
             obj.ShowDialog();
@@ -76,7 +77,7 @@ namespace PROYECTO_UB
 
             if (dt.Rows.Count == 1)
             {
-                txt_nom_carr.Text= dt.Rows[0].ItemArray[1].ToString();
+                txt_nom_carr.Text = dt.Rows[0].ItemArray[1].ToString();
             }
 
         }
@@ -85,7 +86,7 @@ namespace PROYECTO_UB
             Buscar_Ramos obj = new Buscar_Ramos();
             obj.ShowDialog();
             txt_cod_asig.Text = Buscar_Ramos.codigo;
-            
+
             DataTable dt = new DataTable();
             dt = objRam.Cargar(txt_cod_asig.Text);
 
@@ -95,9 +96,9 @@ namespace PROYECTO_UB
                 txt_nom_asig.Text = dt.Rows[0].ItemArray[1].ToString();
                 txt_horas.Text = dt.Rows[0].ItemArray[2].ToString();
             }
-          
+
         }
-        
+
 
         private void btn_guardar_Click_1(object sender, EventArgs e)
         {
@@ -127,12 +128,12 @@ namespace PROYECTO_UB
                 txt_apm.Focus();
                 return;
             }
-            
+
 
             objPlan.rut = txt_rut.Text;
             objPlan.codigoC = txt_cod_carr.Text;
             objPlan.codigoR = txt_cod_asig.Text;
-            objPlan.seccion = int.Parse(txt_seccion.Text );
+            objPlan.seccion = int.Parse(txt_seccion.Text);
             objPlan.anio = int.Parse(label_anio.Text);
             objPlan.periodo = int.Parse(labelperiodo.Text);
             MessageBox.Show(objPlan.RegistrarPlanificacion(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -200,6 +201,7 @@ namespace PROYECTO_UB
             ListarPlanificaciones();
             Limpiar();
         }
+
 
     }
 }
