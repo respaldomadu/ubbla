@@ -40,6 +40,7 @@ namespace PROYECTO_UB
         private void btn_limpiar_Click(object sender, EventArgs e)
         {
             Limpiar();
+            this.txt_codigo.Enabled = true;
         }
 
         private void btn_agregar_Click(object sender, EventArgs e)

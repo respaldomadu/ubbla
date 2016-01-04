@@ -146,28 +146,29 @@ namespace PROYECTO_UB
         }
         private void llenarCombobox()
         {
-            
-            cBox_comuna.DataSource = objComuna.Listado();
-            cBox_comuna.ValueMember = "CODIGO";
-            cBox_comuna.DisplayMember = "COMUNA";
+
+            cBox_comuna.DataSource = objProfesor.ListadoC();
+            cBox_comuna.ValueMember = "COD_COMUNA";
+            cBox_comuna.DisplayMember = "NOMBRE_COMUNA";
             //*********************************
-            cBox_cuenta.DataSource = objTipoCta.Listado();
-            cBox_cuenta.ValueMember = "CODIGO";
-            cBox_cuenta.DisplayMember = "TIPO CUENTA";
+            cBox_cuenta.DataSource = objProfesor.ListadoT();
+            cBox_cuenta.ValueMember = "COD_CUENTA";
+            cBox_cuenta.DisplayMember = "TIPO_CTA";
             //*********************************
-            cBox_banco.DataSource = objBanco.Listado();
-            cBox_banco.ValueMember = "CODIGO";
-            cBox_banco.DisplayMember="BANCO";
+            cBox_banco.DataSource = objProfesor.ListadoB();
+            cBox_banco.ValueMember = "COD_BANCO";
+            cBox_banco.DisplayMember="NOMBRE_BCO";
             //**********************************
-            cBoxNacionalidad.DataSource = objNacio.Listado();
-            cBoxNacionalidad.ValueMember = "CODIGO";
+            cBoxNacionalidad.DataSource = objProfesor.ListadoN();
+            cBoxNacionalidad.ValueMember = "COD_NACIONALIDAD";
             cBoxNacionalidad.DisplayMember = "NACIONALIDAD";
             //************************************
-           
+            cBox_est_civil.Items.Add("seleccionar");
             cBox_est_civil.Items.Add("Soltero");
             cBox_est_civil.Items.Add("Casado");
             cBox_est_civil.Items.Add("Viudo");
             cBox_est_civil.Items.Add("Divorciado");
+            cBox_est_civil.SelectedIndex = 0;
         }
         private void btn_agregar_Click(object sender, EventArgs e)
         {
@@ -203,13 +204,13 @@ namespace PROYECTO_UB
                 txt_celular.Focus();
                 return;
             }
-            if (this.cBox_comuna.Text == "")
+            if (this.cBox_comuna.Text == "seleccionar")
             {
                 MessageBox.Show("Seleccione Comuna", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 cBox_comuna.Focus();
                 return;
             }
-            if (this.cBox_banco.Text == "")
+            if (this.cBox_banco.Text == "seleccionar")
             {
                 MessageBox.Show("Seleccione Banco", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 cBox_banco.Focus();
@@ -221,7 +222,7 @@ namespace PROYECTO_UB
                 txt_Ncta.Focus();
                 return;
             }
-            if (this.cBox_cuenta.Text == "")
+            if (this.cBox_cuenta.Text == "seleccionar")
             {
                 MessageBox.Show("Seleccione el Tipo de Cuenta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 cBox_cuenta.Focus();
@@ -237,7 +238,7 @@ namespace PROYECTO_UB
                 groupBox4.Focus();
                 return;
             }
-            if (this.cBoxNacionalidad.Text == "")
+            if (this.cBoxNacionalidad.Text == "seleccionar")
             {
                 MessageBox.Show("Seleccione Nacionalidad", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 cBoxNacionalidad.Focus();
@@ -249,8 +250,8 @@ namespace PROYECTO_UB
                 txt_email.Focus();
                 return;
             }
-           
-            if (this.cBox_est_civil.Text == "")
+
+            if (this.cBox_est_civil.Text == "seleccionar")
             {
                 MessageBox.Show("Seleccione el Estado Civil", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 cBox_est_civil.Focus();

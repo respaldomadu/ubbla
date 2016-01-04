@@ -31,6 +31,25 @@ namespace CapaNegocio
         {
             return objconexion.Listado("SP_LISTAR_PROFESORES", null);
         }
+
+        public DataTable ListadoC()
+        {
+            return objconexion.Listado("SP_CARGAR_COMUNA", null);
+        }
+        public DataTable ListadoB()
+        {
+            return objconexion.Listado("SP_CARGAR_BANCO", null);
+        }
+
+        public DataTable ListadoN()
+        {
+            return objconexion.Listado("SP_CARGAR_NACIONALIDAD", null);
+        }
+        public DataTable ListadoT()
+        {
+            return objconexion.Listado("SP_CARGAR_TIPO_CTA", null);
+        }
+
         public String RegistrarProfesores()
         {
             List<ClaseParametros> lst = new List<ClaseParametros>();

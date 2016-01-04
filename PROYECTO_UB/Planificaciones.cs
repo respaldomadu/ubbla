@@ -202,6 +202,21 @@ namespace PROYECTO_UB
             Limpiar();
         }
 
+        private void txt_seccion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_seccion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) )
+            {
+                MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
 
     }
 }

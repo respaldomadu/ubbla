@@ -149,6 +149,7 @@ namespace PROYECTO_UB
         private void btn_limpiar_Click(object sender, EventArgs e)
         {
             Limpiar();
+            this.txt_codigo.Enabled = true;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -216,7 +216,7 @@
             this.dataGridView1.TabIndex = 12;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // COMUNAS
+            // Comunas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -227,7 +227,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
-            this.Name = "COMUNAS";
+            this.Name = "Comunas";
             this.Text = "Mantenedor Comunas";
             this.Load += new System.EventHandler(this.COMUNAS_Load);
             this.groupBox2.ResumeLayout(false);
