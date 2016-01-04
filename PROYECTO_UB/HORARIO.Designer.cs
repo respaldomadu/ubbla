@@ -44,10 +44,8 @@
             this.btn_ag_carre = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.fecha = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txt_sema = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txt_ru = new System.Windows.Forms.TextBox();
             this.txt_c = new System.Windows.Forms.TextBox();
@@ -241,14 +239,14 @@
             this.label13.TabIndex = 50;
             this.label13.Text = "Hora inicio ";
             // 
-            // dateTimePicker1
+            // fecha
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(25, 218);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(153, 26);
-            this.dateTimePicker1.TabIndex = 54;
+            this.fecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.fecha.Location = new System.Drawing.Point(25, 218);
+            this.fecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fecha.Name = "fecha";
+            this.fecha.Size = new System.Drawing.Size(153, 26);
+            this.fecha.TabIndex = 54;
             // 
             // label3
             // 
@@ -260,28 +258,6 @@
             this.label3.Size = new System.Drawing.Size(72, 15);
             this.label3.TabIndex = 56;
             this.label3.Text = "Hora Salida";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(213, 199);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 15);
-            this.label6.TabIndex = 58;
-            this.label6.Text = "Semanas";
-            // 
-            // txt_sema
-            // 
-            this.txt_sema.Enabled = false;
-            this.txt_sema.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_sema.Location = new System.Drawing.Point(216, 217);
-            this.txt_sema.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txt_sema.MaxLength = 8;
-            this.txt_sema.Name = "txt_sema";
-            this.txt_sema.Size = new System.Drawing.Size(140, 26);
-            this.txt_sema.TabIndex = 59;
             // 
             // groupBox1
             // 
@@ -297,10 +273,8 @@
             this.groupBox1.Controls.Add(this.txt_a);
             this.groupBox1.Controls.Add(this.txt_c);
             this.groupBox1.Controls.Add(this.txt_ru);
-            this.groupBox1.Controls.Add(this.txt_sema);
-            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.fecha);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.btn_ag_carre);
@@ -504,6 +478,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "HORARIO";
             this.Text = "HORARIO";
+            this.Load += new System.EventHandler(this.HORARIO_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -531,10 +506,8 @@
         private System.Windows.Forms.Button btn_ag_carre;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker fecha;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txt_sema;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;

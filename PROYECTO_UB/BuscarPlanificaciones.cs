@@ -15,7 +15,8 @@ namespace PROYECTO_UB
     {
         ClasePlanificacion objPlan = new ClasePlanificacion();
        
-        public static string rut = "";
+        public static string codp = "";
+       
         public BuscarPlanificaciones()
         {
             InitializeComponent();
@@ -24,11 +25,19 @@ namespace PROYECTO_UB
         private void BuscarPlanificaciones_Load(object sender, EventArgs e)
         {
             ListarPlanificaciones();
+            codp = "";
 
         }
         private void ListarPlanificaciones()
         {
             dataGridView1.DataSource = objPlan.Listado();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+           codp = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+
+            this.Close();
         }
     }
 }

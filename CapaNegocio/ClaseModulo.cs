@@ -108,7 +108,7 @@ namespace CapaNegocio
             try
             {
                 lst.Add(new ClaseParametros("@DIA", textoUsuario));
-                dt = objconexion.Listado("SP_BUSCAR_HORARIO", lst);
+                dt = objconexion.Listado("SP_BUSCAR_MODULO", lst);
             }
             catch (Exception ex)
             {
@@ -117,6 +117,22 @@ namespace CapaNegocio
             return dt;
         }
 
+        public DataTable Cargar(String textoUsuario)
+        {
+            DataTable dt = new DataTable();
+            List<ClaseParametros> lst = new List<ClaseParametros>();
+            try
+            {
+                lst.Add(new ClaseParametros("@COD_M", textoUsuario));
+
+                dt = objconexion.Listado("SP_CARGAR_MODULOS", lst);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return dt;
+        }
 
     }
 

@@ -33,7 +33,7 @@ namespace CapaNegocio
                 lst.Add(new ClaseParametros("@COD_M", codigo_mo));
                 lst.Add(new ClaseParametros("@FECHA", fecha));
                 lst.Add(new ClaseParametros("@H_I", hora_ing));
-                lst.Add(new ClaseParametros("@H_S", hora_sali));
+                lst.Add(new ClaseParametros("@H_F", hora_sali));
                 lst.Add(new ClaseParametros("@ESTADO", estado));
                 lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
                 objconexion.EjecutarSP("SP_INGRESAR_HORARIO", ref lst);
@@ -92,11 +92,11 @@ namespace CapaNegocio
             List<ClaseParametros> lst = new List<ClaseParametros>();
             try
             {
-                lst.Add(new ClaseParametros("@NOMBRE", nombre));
-                lst.Add(new ClaseParametros("@APELLIDO_P", apellidoP));
-                lst.Add(new ClaseParametros("@APELLIDO_M", materno));
+                 lst.Add(new ClaseParametros("@COD_P",codigo_pla ));
+                lst.Add(new ClaseParametros("@COD_M", codigo_mo));
+                lst.Add(new ClaseParametros("@FECHA", fecha));
 
-                dt = objconexion.Listado("SP_BUSCAR_PROFESOR", lst);
+                dt = objconexion.Listado("SP_BUSCAR_HORARIO", lst);
             }
             catch (Exception ex)
             {
