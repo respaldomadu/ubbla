@@ -116,6 +116,7 @@
             this.mantenedorHorarioToolStripMenuItem.Name = "mantenedorHorarioToolStripMenuItem";
             this.mantenedorHorarioToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.mantenedorHorarioToolStripMenuItem.Text = "Mantenedor Horario";
+            this.mantenedorHorarioToolStripMenuItem.Click += new System.EventHandler(this.mantenedorHorarioToolStripMenuItem_Click);
             // 
             // mantenedorModulosToolStripMenuItem
             // 

@@ -8,38 +8,36 @@ using System.Threading.Tasks;
 
 namespace CapaNegocio
 {
-    class ClaseHorario
+  public  class ClaseHorario
     {
         public ClaseConexion objconexion = new ClaseConexion();
 
         public int codigo_pla { get; set; }
         public int codigo_mo { get; set; }
-        public DateTime fecha { get; set; }
+        public string fecha { get; set; }
         public string hora_ing { get; set; }
-        public string hora_sali { get; set; }
         public string hora_sali { get; set; }
         public string estado { get; set; }
         
         public DataTable Listado()
         {
-            return objconexion.Listado("SP_LISTAR_PROFESORES", null);
+            return objconexion.Listado("SP_LISTAR_HORARIO", null);
         }
-        public String RegistrarProfesores()
+        public String RegistrarHorario()
         {
             List<ClaseParametros> lst = new List<ClaseParametros>();
             String Mensaje = "";
             try
             {
-                lst.Add(new ClaseParametros("@RUT", rut));
-                lst.Add(new ClaseParametros("@DV", dv));
-                lst.Add(new ClaseParametros("@NOMBRE_PROFESOR", nombre));
-                lst.Add(new ClaseParametros("@AP_PAT", apellido_p));
-                lst.Add(new ClaseParametros("@AP_MAT", apellido_m));
-                lst.Add(new ClaseParametros("@FECHA_NAC", fecha_ncto));
-                lst.Add(new ClaseParametros("@SEXO", sexo));
+                lst.Add(new ClaseParametros("@COD_P", codigo_pla));
+                lst.Add(new ClaseParametros("@COD_M", codigo_mo));
+                lst.Add(new ClaseParametros("@FECHA", fecha));
+                lst.Add(new ClaseParametros("@H_I", hora_ing));
+                lst.Add(new ClaseParametros("@H_S", hora_sali));
+                lst.Add(new ClaseParametros("@ESTADO", estado));
                 lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
-                objconexion.EjecutarSP("SP_INGRESAR_PROFESOR", ref lst);
-                Mensaje = lst[15].Valor.ToString();
+                objconexion.EjecutarSP("SP_INGRESAR_HORARIO", ref lst);
+                Mensaje = lst[6].Valor.ToString();
             }
             catch (Exception)
             {
@@ -47,18 +45,21 @@ namespace CapaNegocio
             }
             return Mensaje;
         }
-        public String ActualizarProfesores()
+        public String ActualizarHorario()
         {
             List<ClaseParametros> lst = new List<ClaseParametros>();
             String Mensaje = "";
             try
             {
-                lst.Add(new ClaseParametros("@RUT", rut));
-                lst.Add(new ClaseParametros("@DV", dv));
-                lst.Add(new ClaseParametros("@COD_NACI", cod_nacio));
+                lst.Add(new ClaseParametros("@COD_P", codigo_pla));
+                lst.Add(new ClaseParametros("@COD_M", codigo_mo));
+                lst.Add(new ClaseParametros("@FECHA", fecha));
+                lst.Add(new ClaseParametros("@H_I", hora_ing));
+                lst.Add(new ClaseParametros("@H_S", hora_sali));
+                lst.Add(new ClaseParametros("@ESTADO", estado));
                 lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
-                objconexion.EjecutarSP("SP_ACTUALIZAR_PROFESOR", ref lst);
-                Mensaje = lst[15].Valor.ToString();
+                objconexion.EjecutarSP("SP_ACTUALIZAR_HORARIO", ref lst);
+                Mensaje = lst[6].Valor.ToString();
             }
             catch (Exception)
             {
@@ -66,16 +67,18 @@ namespace CapaNegocio
             }
             return Mensaje;
         }
-        public String EliminarProfesores()
+        public String EliminarHorario()
         {
             List<ClaseParametros> lst = new List<ClaseParametros>();
             String Mensaje = "";
             try
             {
-                lst.Add(new ClaseParametros("@RUT", rut));
+                lst.Add(new ClaseParametros("@COD_P", codigo_pla));
+                lst.Add(new ClaseParametros("@COD_M", codigo_mo));
+                lst.Add(new ClaseParametros("@FECHA", fecha));
                 lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
                 objconexion.EjecutarSP("SP_ELIMINAR_PROFESOR", ref lst);
-                Mensaje = lst[1].Valor.ToString();
+                Mensaje = lst[3].Valor.ToString();
             }
             catch (Exception)
             {

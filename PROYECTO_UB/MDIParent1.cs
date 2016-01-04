@@ -163,5 +163,11 @@ namespace PROYECTO_UB
             MODULO obj = new MODULO();
             obj.ShowDialog();
         }
+
+        private void mantenedorHorarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HORARIO obj = new HORARIO();
+            obj.ShowDialog();
+        }
     }
 }
