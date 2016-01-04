@@ -91,6 +91,12 @@
       <DependentUpon>Configuraciones.cs</DependentUpon>
     </Compile>
     <Compile Include="global.cs" />
+    <Compile Include="HORARIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HORARIO.Designer.cs">
+      <DependentUpon>HORARIO.cs</DependentUpon>
+    </Compile>
     <Compile Include="MDIParent1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Configuraciones.resx">
       <DependentUpon>Configuraciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HORARIO.resx">
+      <DependentUpon>HORARIO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDIParent1.resx">
       <DependentUpon>MDIParent1.cs</DependentUpon>

@@ -55,6 +55,7 @@ namespace CapaNegocio
             String Mensaje = "";
             try
             {
+                lst.Add(new ClaseParametros("@COD_PLANI", codigo));
                 lst.Add(new ClaseParametros("@RUT_P", rut));
                 lst.Add(new ClaseParametros("@COD_RAMO", codigoR));
                 lst.Add(new ClaseParametros("@COD_CARRERA", codigoC));
@@ -71,7 +72,7 @@ namespace CapaNegocio
             }
             return Mensaje;
         }
-        public String EliminarProfesores()
+       /* public String EliminarProfesores()
         {
             List<ClaseParametros> lst = new List<ClaseParametros>();
             String Mensaje = "";
@@ -87,7 +88,7 @@ namespace CapaNegocio
                 throw;
             }
             return Mensaje;
-        }
+        }*/
         public DataTable Buscar(String nombre, String apellidoP, String materno)
         {
             DataTable dt = new DataTable();

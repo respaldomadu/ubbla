@@ -413,7 +413,7 @@ namespace PROYECTO_UB
                 objProfesor.sexo = radioButton2.Text;
             }
             objProfesor.mail = txt_email.Text;
-            objProfesor.estado_civil = cBox_est_civil.SelectedValue.ToString();
+            objProfesor.estado_civil = cBox_est_civil.Text;
             objProfesor.cod_nacio = int.Parse(cBoxNacionalidad.SelectedValue.ToString());
             objProfesor.cod_banco = int.Parse(cBox_banco.SelectedValue.ToString());
             objProfesor.num_cta = txt_Ncta.Text;

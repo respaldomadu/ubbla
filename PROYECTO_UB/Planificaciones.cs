@@ -142,6 +142,7 @@ namespace PROYECTO_UB
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            label_cod_plani.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             txt_rut.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
             txt_dv.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
             txt_nombre.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
@@ -187,20 +188,17 @@ namespace PROYECTO_UB
                 txt_apm.Focus();
                 return;
             }
-
+            objPlan.codigo = int.Parse(label_cod_plani.Text);
             objPlan.rut = txt_rut.Text;
             objPlan.codigoC = txt_cod_carr.Text;
             objPlan.codigoR = txt_cod_asig.Text;
             objPlan.seccion = int.Parse(txt_seccion.Text);
             objPlan.anio = int.Parse(label_anio.Text);
             objPlan.periodo = int.Parse(labelperiodo.Text);
-
-            
-            
-            //objPlan.ActualizarProfesores();
-            //MessageBox.Show(objProfesor.ActualizarProfesores(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //ListarProfesores();
-            //Limpiar();
+            objPlan.ActualizarPlanificacion();
+            MessageBox.Show(objPlan.ActualizarPlanificacion(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ListarPlanificaciones();
+            Limpiar();
         }
 
     }
