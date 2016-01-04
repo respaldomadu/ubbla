@@ -47,15 +47,15 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_sema = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txt_ru = new System.Windows.Forms.TextBox();
             this.txt_c = new System.Windows.Forms.TextBox();
             this.txt_a = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txt_se = new System.Windows.Forms.TextBox();
+            this.txt_h_i = new System.Windows.Forms.TextBox();
+            this.txt_h_s = new System.Windows.Forms.TextBox();
+            this.txt_d = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -272,16 +272,16 @@
             this.label6.TabIndex = 58;
             this.label6.Text = "Semanas";
             // 
-            // textBox1
+            // txt_sema
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(216, 217);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.MaxLength = 8;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(140, 26);
-            this.textBox1.TabIndex = 59;
+            this.txt_sema.Enabled = false;
+            this.txt_sema.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_sema.Location = new System.Drawing.Point(216, 217);
+            this.txt_sema.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_sema.MaxLength = 8;
+            this.txt_sema.Name = "txt_sema";
+            this.txt_sema.Size = new System.Drawing.Size(140, 26);
+            this.txt_sema.TabIndex = 59;
             // 
             // groupBox1
             // 
@@ -290,14 +290,14 @@
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.txt_d);
+            this.groupBox1.Controls.Add(this.txt_h_s);
+            this.groupBox1.Controls.Add(this.txt_h_i);
+            this.groupBox1.Controls.Add(this.txt_se);
             this.groupBox1.Controls.Add(this.txt_a);
             this.groupBox1.Controls.Add(this.txt_c);
             this.groupBox1.Controls.Add(this.txt_ru);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txt_sema);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
@@ -345,41 +345,41 @@
             this.txt_a.Size = new System.Drawing.Size(132, 26);
             this.txt_a.TabIndex = 62;
             // 
-            // textBox5
+            // txt_se
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(428, 102);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(40, 26);
-            this.textBox5.TabIndex = 63;
+            this.txt_se.Enabled = false;
+            this.txt_se.Location = new System.Drawing.Point(428, 102);
+            this.txt_se.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_se.Name = "txt_se";
+            this.txt_se.Size = new System.Drawing.Size(40, 26);
+            this.txt_se.TabIndex = 63;
             // 
-            // textBox6
+            // txt_h_i
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(26, 165);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(132, 26);
-            this.textBox6.TabIndex = 64;
+            this.txt_h_i.Enabled = false;
+            this.txt_h_i.Location = new System.Drawing.Point(26, 165);
+            this.txt_h_i.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_h_i.Name = "txt_h_i";
+            this.txt_h_i.Size = new System.Drawing.Size(132, 26);
+            this.txt_h_i.TabIndex = 64;
             // 
-            // textBox7
+            // txt_h_s
             // 
-            this.textBox7.Enabled = false;
-            this.textBox7.Location = new System.Drawing.Point(184, 165);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(132, 26);
-            this.textBox7.TabIndex = 65;
+            this.txt_h_s.Enabled = false;
+            this.txt_h_s.Location = new System.Drawing.Point(184, 165);
+            this.txt_h_s.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_h_s.Name = "txt_h_s";
+            this.txt_h_s.Size = new System.Drawing.Size(132, 26);
+            this.txt_h_s.TabIndex = 65;
             // 
-            // textBox8
+            // txt_d
             // 
-            this.textBox8.Enabled = false;
-            this.textBox8.Location = new System.Drawing.Point(338, 165);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(132, 26);
-            this.textBox8.TabIndex = 66;
+            this.txt_d.Enabled = false;
+            this.txt_d.Location = new System.Drawing.Point(338, 165);
+            this.txt_d.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_d.Name = "txt_d";
+            this.txt_d.Size = new System.Drawing.Size(132, 26);
+            this.txt_d.TabIndex = 66;
             // 
             // label7
             // 
@@ -534,17 +534,17 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_sema;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_d;
+        private System.Windows.Forms.TextBox txt_h_s;
+        private System.Windows.Forms.TextBox txt_h_i;
+        private System.Windows.Forms.TextBox txt_se;
         private System.Windows.Forms.TextBox txt_a;
         private System.Windows.Forms.TextBox txt_c;
         private System.Windows.Forms.TextBox txt_ru;
