@@ -88,13 +88,20 @@ namespace PROYECTO_UB
                 fecha.Focus();
                 return;
             }
-
+            if (this.d.Text == "")
+            {
+                MessageBox.Show("Ingrese semana", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                d.Focus();
+                return;
+            }
+            objh.codigo_h = int.Parse(label6.Text);
             objh.codigo_pla = int.Parse(txt_cod_pla.Text);
             objh.codigo_mo=int.Parse(txt_m.Text);
             objh.fecha = this.fecha.Text;
             objh.hora_ing = txt_h_i.Text;
             objh.hora_sali = txt_h_s.Text;
             objh.estado = "ACTIVO";
+            objh.semana = int.Parse(this.txt_sema.Text);
             MessageBox.Show(objh.RegistrarHorario(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ListarHorario();
             //Limpiar();
@@ -102,7 +109,63 @@ namespace PROYECTO_UB
 
         private void HORARIO_Load(object sender, EventArgs e)
         {
+            this.label6.Text = objh.MAYOR().ToString();
             ListarHorario();
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.txt_cod_pla.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            this.txt_m.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            this.txt_ru.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            this.txt_a.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+            this.txt_c.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            this.txt_se.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+            this.fecha.Text = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
+            this.txt_h_i.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+            this.txt_h_s.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+            this.txt_d.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
+
+            btn_actualizar.Enabled = true;
+            btn_eliminar.Enabled = true;
+            btn_agregar.Enabled = false;
+            btn_limpiar.Enabled = true;
+        }
+
+        private void btn_actualizar_Click(object sender, EventArgs e)
+        {
+
+            if (this.txt_cod_pla.Text == "")
+            {
+                MessageBox.Show("seleccione la planificacion", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txt_cod_pla.Focus();
+                return;
+            }
+
+            if (this.txt_m.Text == "")
+            {
+                MessageBox.Show("seleccione el modulo", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txt_m.Focus();
+                return;
+            }
+            if (this.fecha.Text == "")
+            {
+                MessageBox.Show("Ingrese Fecha", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                fecha.Focus();
+                return;
+            }
+
+            objh.codigo_pla = int.Parse(txt_cod_pla.Text);
+            objh.codigo_mo = int.Parse(txt_m.Text);
+            objh.fecha = this.fecha.Text;
+            objh.hora_ing = txt_h_i.Text;
+            objh.hora_sali = txt_h_s.Text;
+            objh.estado = "ACTIVO";
+            MessageBox.Show(objh.ActualizarHorario(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ListarHorario();
+            //Limpiar();
+        }
+
+        
     }
 }
