@@ -20,10 +20,7 @@ namespace PROYECTO_UB
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            label1.Text = "*" + this.textBox1.Text + "*";
-        }
+       
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -81,6 +78,16 @@ namespace PROYECTO_UB
         private void ListarPlanificaciones()
         {
             dataGridView1.DataSource = objPlan.Listado();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            label1.Text = "*" + this.textBox1.Text + "*";
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            textBox1.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
         }
     }
 }
