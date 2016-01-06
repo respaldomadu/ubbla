@@ -43,6 +43,7 @@
             this.mantenedorNacionalidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenedorConfiguracionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenedorAsistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.generadorCodigosDeBarraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.horasRealizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porProfesorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,7 +51,6 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.generadorCodigosDeBarraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -171,6 +171,13 @@
             this.mantenedorAsistenciaToolStripMenuItem.Text = "Mantenedor Asistencia";
             this.mantenedorAsistenciaToolStripMenuItem.Click += new System.EventHandler(this.mantenedorAsistenciaToolStripMenuItem_Click);
             // 
+            // generadorCodigosDeBarraToolStripMenuItem
+            // 
+            this.generadorCodigosDeBarraToolStripMenuItem.Name = "generadorCodigosDeBarraToolStripMenuItem";
+            this.generadorCodigosDeBarraToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.generadorCodigosDeBarraToolStripMenuItem.Text = "Generador codigos de barra";
+            this.generadorCodigosDeBarraToolStripMenuItem.Click += new System.EventHandler(this.generadorCodigosDeBarraToolStripMenuItem_Click);
+            // 
             // reportesToolStripMenuItem
             // 
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -215,12 +222,6 @@
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
-            // 
-            // generadorCodigosDeBarraToolStripMenuItem
-            // 
-            this.generadorCodigosDeBarraToolStripMenuItem.Name = "generadorCodigosDeBarraToolStripMenuItem";
-            this.generadorCodigosDeBarraToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
-            this.generadorCodigosDeBarraToolStripMenuItem.Text = "Generador codigos de barra";
             // 
             // MDIParent1
             // 

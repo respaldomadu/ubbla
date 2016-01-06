@@ -80,6 +80,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.labelcodp = new System.Windows.Forms.ToolStripLabel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox5.SuspendLayout();
@@ -525,7 +526,8 @@
             this.labelperiodo,
             this.toolStripSeparator2,
             this.toolStripLabel2,
-            this.label_cod_plani});
+            this.label_cod_plani,
+            this.labelcodp});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(532, 25);
@@ -613,6 +615,12 @@
             this.label5.TabIndex = 54;
             this.label5.Text = "Carrera";
             // 
+            // labelcodp
+            // 
+            this.labelcodp.Name = "labelcodp";
+            this.labelcodp.Size = new System.Drawing.Size(86, 22);
+            this.labelcodp.Text = "toolStripLabel4";
+            // 
             // Planificaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -692,5 +700,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripLabel label_cod_plani;
+        private System.Windows.Forms.ToolStripLabel labelcodp;
     }
 }

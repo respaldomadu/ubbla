@@ -175,5 +175,11 @@ namespace PROYECTO_UB
             Asistencia obj = new Asistencia();
             obj.ShowDialog();
         }
+
+        private void generadorCodigosDeBarraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Codigo_Barra obj = new Codigo_Barra();
+            obj.ShowDialog();
+        }
     }
 }

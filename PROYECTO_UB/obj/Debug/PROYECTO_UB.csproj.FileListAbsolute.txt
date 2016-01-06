@@ -129,3 +129,5 @@ C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Buscar
 C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Buscar_Modulo.resources
 C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.HORARIO.resources
 C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Asistencia.resources
+C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Asistencia.resources
+C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Codigo_Barra.resources

@@ -95,6 +95,12 @@
     <Compile Include="Carreras.Designer.cs">
       <DependentUpon>Carreras.cs</DependentUpon>
     </Compile>
+    <Compile Include="Codigo_Barra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Codigo_Barra.Designer.cs">
+      <DependentUpon>Codigo_Barra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Configuracion.cs" />
     <Compile Include="Comunas.cs">
       <SubType>Form</SubType>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Carreras.resx">
       <DependentUpon>Carreras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Codigo_Barra.resx">
+      <DependentUpon>Codigo_Barra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Comunas.resx">
       <DependentUpon>Comunas.cs</DependentUpon>
