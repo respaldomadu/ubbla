@@ -34,7 +34,7 @@ namespace PROYECTO_UB
         private void llenarCombobox()
         {
 
-
+            CB_INICIO.Items.Add("SELECCIONAR");
             CB_INICIO.Items.Add("08:00");
             CB_INICIO.Items.Add("08:45");
             CB_INICIO.Items.Add("09:40");
@@ -48,13 +48,18 @@ namespace PROYECTO_UB
             CB_INICIO.Items.Add("16:25");
             CB_INICIO.Items.Add("17:20");
             CB_INICIO.Items.Add("18:05");
+            CB_INICIO.Items.Add("18:30");
             CB_INICIO.Items.Add("19:00");
+            CB_INICIO.Items.Add("19:15");
             CB_INICIO.Items.Add("19:45");
+            CB_INICIO.Items.Add("20:10");
             CB_INICIO.Items.Add("20:40");
+            CB_INICIO.Items.Add("20:55");
             CB_INICIO.Items.Add("21:25");
+            CB_INICIO.Items.Add("21:40");
+            CB_INICIO.SelectedIndex = 0;
 
-
-
+            CB_FIN.Items.Add("SELECCIONAR");
             CB_FIN.Items.Add("08:45");
             CB_FIN.Items.Add("09:30");
             CB_FIN.Items.Add("10:25");
@@ -68,20 +73,26 @@ namespace PROYECTO_UB
             CB_FIN.Items.Add("17:10");
             CB_FIN.Items.Add("18:05");
             CB_FIN.Items.Add("18:50");
+            CB_FIN.Items.Add("19:15");
             CB_FIN.Items.Add("19:45");
+            CB_FIN.Items.Add("20:00");
             CB_FIN.Items.Add("20:30");
+            CB_FIN.Items.Add("20:55");
             CB_FIN.Items.Add("21:25");
+            CB_FIN.Items.Add("21:40");
             CB_FIN.Items.Add("22:10");
+            CB_FIN.Items.Add("22:25");
+            CB_FIN.SelectedIndex = 0;
 
 
-
-
+            CB_DIA.Items.Add("SELECCIONAR");
             CB_DIA.Items.Add("LUNES");
             CB_DIA.Items.Add("MARTES");
             CB_DIA.Items.Add("MIERCOLES");
             CB_DIA.Items.Add("JUEVES");
             CB_DIA.Items.Add("VIERNES");
             CB_DIA.Items.Add("SABADO");
+            CB_DIA.SelectedIndex = 0;
         }
 
         private void Limpiar() {
@@ -108,19 +119,19 @@ namespace PROYECTO_UB
         {
 
 
-            if (this.CB_INICIO.Text == "")
+            if (this.CB_INICIO.Text == "SELECCIONAR")
             {
                 MessageBox.Show("Ingrese el inicio", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.CB_INICIO.Focus();
                 return;
             }
-            if (this.CB_FIN.Text == "")
+            if (this.CB_FIN.Text  == "SELECCIONAR")
             {
                 MessageBox.Show("Ingrese el fin", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.CB_FIN.Focus();
                 return;
             }
-            if (this.CB_DIA.Text == "")
+            if (this.CB_DIA.Text == "SELECCIONAR")
             {
                 MessageBox.Show("Ingrese el DIA", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.CB_DIA.Focus();
