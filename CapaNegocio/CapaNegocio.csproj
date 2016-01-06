@@ -52,6 +52,7 @@
     <Compile Include="ClasePlanificacion.cs" />
     <Compile Include="ClaseProfesores.cs" />
     <Compile Include="ClaseRamos.cs" />
+    <Compile Include="ClasesAsistencia.cs" />
     <Compile Include="ClaseTipoCuenta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
