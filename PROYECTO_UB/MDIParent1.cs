@@ -169,5 +169,11 @@ namespace PROYECTO_UB
             HORARIO obj = new HORARIO();
             obj.ShowDialog();
         }
+
+        private void mantenedorAsistenciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Asistencia obj = new Asistencia();
+            obj.ShowDialog();
+        }
     }
 }
