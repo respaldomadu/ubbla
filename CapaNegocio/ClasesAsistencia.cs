@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 namespace CapaNegocio
 {
    public class ClasesAsistencia
-    {
+    {hosdllaskjdlkjasfldslkjf
+        ksdjfdjslfkjas
+        fdsfdsfsd
     }
 }
