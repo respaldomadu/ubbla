@@ -51,7 +51,7 @@ namespace CapaNegocio
                 lst.Add(new ClaseParametros("@SEMANA", semana));
                 lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
                 objconexion.EjecutarSP("SP_INGRESAR_HORARIO", ref lst);
-                Mensaje = lst[8].Valor.ToString();
+                Mensaje = lst[9].Valor.ToString();
             }
             catch (Exception)
             {
@@ -65,15 +65,17 @@ namespace CapaNegocio
             String Mensaje = "";
             try
             {
+                lst.Add(new ClaseParametros("@COD_H", codigo_h));
                 lst.Add(new ClaseParametros("@COD_P", codigo_pla));
                 lst.Add(new ClaseParametros("@COD_M", codigo_mo));
                 lst.Add(new ClaseParametros("@FECHA", fecha));
                 lst.Add(new ClaseParametros("@H_I", hora_ing));
                 lst.Add(new ClaseParametros("@H_F", hora_sali));
                 lst.Add(new ClaseParametros("@ESTADO", estado));
+                lst.Add(new ClaseParametros("@SEMANA", semana));
                 lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
                 objconexion.EjecutarSP("SP_ACTUALIZAR_HORARIO", ref lst);
-                Mensaje = lst[6].Valor.ToString();
+                Mensaje = lst[9].Valor.ToString();
             }
             catch (Exception)
             {
@@ -87,9 +89,7 @@ namespace CapaNegocio
             String Mensaje = "";
             try
             {
-                lst.Add(new ClaseParametros("@COD_P", codigo_pla));
-                lst.Add(new ClaseParametros("@COD_M", codigo_mo));
-                lst.Add(new ClaseParametros("@FECHA", fecha));
+                lst.Add(new ClaseParametros("@COD_H", codigo_h));
                 lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
                 objconexion.EjecutarSP("SP_ELIMINAR_PROFESOR", ref lst);
                 Mensaje = lst[3].Valor.ToString();

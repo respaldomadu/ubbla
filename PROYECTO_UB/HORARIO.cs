@@ -125,7 +125,7 @@ namespace PROYECTO_UB
             this.txt_h_i.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
             this.txt_h_s.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
             this.txt_d.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
-
+            this.label6.Text = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
             btn_actualizar.Enabled = true;
             btn_eliminar.Enabled = true;
             btn_agregar.Enabled = false;
@@ -154,13 +154,14 @@ namespace PROYECTO_UB
                 fecha.Focus();
                 return;
             }
-
+            objh.codigo_h = int.Parse(label6.Text);
             objh.codigo_pla = int.Parse(txt_cod_pla.Text);
             objh.codigo_mo = int.Parse(txt_m.Text);
             objh.fecha = this.fecha.Text;
             objh.hora_ing = txt_h_i.Text;
             objh.hora_sali = txt_h_s.Text;
             objh.estado = "ACTIVO";
+            objh.semana = int.Parse(txt_sema.Text);
             MessageBox.Show(objh.ActualizarHorario(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ListarHorario();
             //Limpiar();
