@@ -125,4 +125,7 @@ C:\Users\Ma Du\Desktop\PROYECTO_UB\ggg\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.P
 C:\Users\Ma Du\Desktop\PROYECTO_UB\ggg\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Ramos.resources
 C:\Users\Ma Du\Desktop\PROYECTO_UB\ggg\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.TIPO_CUENTAS.resources
 C:\Users\Ma Du\Desktop\PROYECTO_UB\ggg\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.csproj.GenerateResource.Cache
-C:\Users\Ma Du\Desktop\PROYECTO_UB\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Codigo_Barra.resources
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.BuscarPlanificaciones.resources
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Buscar_Modulo.resources
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.HORARIO.resources
+C:\Users\Barbara\Documents\GitHub\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Asistencia.resources

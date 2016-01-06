@@ -42,6 +42,7 @@
             this.mantenedorTipoCuentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenedorNacionalidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenedorConfiguracionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenedorAsistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.horasRealizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porProfesorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,6 +50,7 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.generadorCodigosDeBarraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -78,7 +80,9 @@
             this.mantenedorComunasToolStripMenuItem,
             this.mantenedorTipoCuentaToolStripMenuItem,
             this.mantenedorNacionalidadToolStripMenuItem,
-            this.mantenedorConfiguracionesToolStripMenuItem});
+            this.mantenedorConfiguracionesToolStripMenuItem,
+            this.mantenedorAsistenciaToolStripMenuItem,
+            this.generadorCodigosDeBarraToolStripMenuItem});
             this.mantenedoresToolStripMenuItem.Name = "mantenedoresToolStripMenuItem";
             this.mantenedoresToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.mantenedoresToolStripMenuItem.Text = "Mantenedores";
@@ -160,6 +164,13 @@
             this.mantenedorConfiguracionesToolStripMenuItem.Text = "Mantenedor Configuraciones";
             this.mantenedorConfiguracionesToolStripMenuItem.Click += new System.EventHandler(this.mantenedorConfiguracionesToolStripMenuItem_Click);
             // 
+            // mantenedorAsistenciaToolStripMenuItem
+            // 
+            this.mantenedorAsistenciaToolStripMenuItem.Name = "mantenedorAsistenciaToolStripMenuItem";
+            this.mantenedorAsistenciaToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.mantenedorAsistenciaToolStripMenuItem.Text = "Mantenedor Asistencia";
+            this.mantenedorAsistenciaToolStripMenuItem.Click += new System.EventHandler(this.mantenedorAsistenciaToolStripMenuItem_Click);
+            // 
             // reportesToolStripMenuItem
             // 
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -205,6 +216,12 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
             // 
+            // generadorCodigosDeBarraToolStripMenuItem
+            // 
+            this.generadorCodigosDeBarraToolStripMenuItem.Name = "generadorCodigosDeBarraToolStripMenuItem";
+            this.generadorCodigosDeBarraToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.generadorCodigosDeBarraToolStripMenuItem.Text = "Generador codigos de barra";
+            // 
             // MDIParent1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -247,6 +264,8 @@
         private System.Windows.Forms.ToolStripMenuItem mantenedorTipoCuentaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenedorNacionalidadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenedorConfiguracionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenedorAsistenciaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem generadorCodigosDeBarraToolStripMenuItem;
     }
 }
 

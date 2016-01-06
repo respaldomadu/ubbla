@@ -66,6 +66,8 @@ namespace PROYECTO_UB
 
             label_anio.Text = Configuracion.anio.ToString();
             labelperiodo.Text = Configuracion.periodo.ToString();
+          
+            
         }
         private void btn_ag_carre_Click(object sender, EventArgs e)
         {

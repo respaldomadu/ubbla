@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Asistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asistencia.Designer.cs">
+      <DependentUpon>Asistencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bancos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     <Compile Include="TIPO_CUENTAS.Designer.cs">
       <DependentUpon>TIPO_CUENTAS.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Asistencia.resx">
+      <DependentUpon>Asistencia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Bancos.resx">
       <DependentUpon>Bancos.cs</DependentUpon>
     </EmbeddedResource>
