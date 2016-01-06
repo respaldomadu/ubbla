@@ -50,16 +50,7 @@ namespace PROYECTO_UB
 
             this.txt_m.Text = Buscar_Modulo.codigo;
             DataTable dt = new DataTable();
-            dt = objM.Cargar(txt_m.Text);
-
-            if (dt.Rows.Count == 1)
-            {
-               
-                this.txt_h_i.Text = dt.Rows[0].ItemArray[1].ToString();
-                this.txt_h_s.Text = dt.Rows[0].ItemArray[2].ToString();
-                this.txt_d.Text = dt.Rows[0].ItemArray[3].ToString();
-               
-            }
+           
 
         }
         private void ListarHorario()
@@ -88,20 +79,14 @@ namespace PROYECTO_UB
                 fecha.Focus();
                 return;
             }
-            if (this.d.Text == "")
-            {
-                MessageBox.Show("Ingrese semana", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                d.Focus();
-                return;
-            }
+        
             objh.codigo_h = int.Parse(label6.Text);
             objh.codigo_pla = int.Parse(txt_cod_pla.Text);
             objh.codigo_mo=int.Parse(txt_m.Text);
             objh.fecha = this.fecha.Text;
-            objh.hora_ing = txt_h_i.Text;
-            objh.hora_sali = txt_h_s.Text;
+  
             objh.estado = "ACTIVO";
-            objh.semana = int.Parse(this.txt_sema.Text);
+
             MessageBox.Show(objh.RegistrarHorario(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ListarHorario();
             //Limpiar();
@@ -115,17 +100,14 @@ namespace PROYECTO_UB
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            this.txt_cod_pla.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            this.txt_m.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-            this.txt_ru.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            this.txt_cod_pla.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            this.txt_m.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            this.txt_ru.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
             this.txt_a.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
-            this.txt_c.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-            this.txt_se.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
-            this.fecha.Text = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
-            this.txt_h_i.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
-            this.txt_h_s.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
-            this.txt_d.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
-            this.label6.Text = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
+            this.txt_c.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+            this.txt_se.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+            this.fecha.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+           
             btn_actualizar.Enabled = true;
             btn_eliminar.Enabled = true;
             btn_agregar.Enabled = false;
@@ -158,10 +140,9 @@ namespace PROYECTO_UB
             objh.codigo_pla = int.Parse(txt_cod_pla.Text);
             objh.codigo_mo = int.Parse(txt_m.Text);
             objh.fecha = this.fecha.Text;
-            objh.hora_ing = txt_h_i.Text;
-            objh.hora_sali = txt_h_s.Text;
+
             objh.estado = "ACTIVO";
-            objh.semana = int.Parse(txt_sema.Text);
+
             MessageBox.Show(objh.ActualizarHorario(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ListarHorario();
             //Limpiar();

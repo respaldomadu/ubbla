@@ -15,10 +15,9 @@ namespace CapaNegocio
         public int codigo_pla { get; set; }
         public int codigo_mo { get; set; }
         public string fecha { get; set; }
-        public string hora_ing { get; set; }
-        public string hora_sali { get; set; }
+
         public string estado { get; set; }
-        public int semana { get; set; }
+
         public DataTable Listado()
         {
             return objconexion.Listado("SP_LISTAR_HORARIO", null);
@@ -45,13 +44,12 @@ namespace CapaNegocio
                 lst.Add(new ClaseParametros("@COD_P", codigo_pla));
                 lst.Add(new ClaseParametros("@COD_M", codigo_mo));
                 lst.Add(new ClaseParametros("@FECHA", fecha));
-                lst.Add(new ClaseParametros("@H_I", hora_ing));
-                lst.Add(new ClaseParametros("@H_F", hora_sali));
+
                 lst.Add(new ClaseParametros("@ESTADO", estado));
-                lst.Add(new ClaseParametros("@SEMANA", semana));
+
                 lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
                 objconexion.EjecutarSP("SP_INGRESAR_HORARIO", ref lst);
-                Mensaje = lst[9].Valor.ToString();
+                Mensaje = lst[5].Valor.ToString();
             }
             catch (Exception)
             {
@@ -69,13 +67,11 @@ namespace CapaNegocio
                 lst.Add(new ClaseParametros("@COD_P", codigo_pla));
                 lst.Add(new ClaseParametros("@COD_M", codigo_mo));
                 lst.Add(new ClaseParametros("@FECHA", fecha));
-                lst.Add(new ClaseParametros("@H_I", hora_ing));
-                lst.Add(new ClaseParametros("@H_F", hora_sali));
                 lst.Add(new ClaseParametros("@ESTADO", estado));
-                lst.Add(new ClaseParametros("@SEMANA", semana));
+           
                 lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
                 objconexion.EjecutarSP("SP_ACTUALIZAR_HORARIO", ref lst);
-                Mensaje = lst[9].Valor.ToString();
+                Mensaje = lst[5].Valor.ToString();
             }
             catch (Exception)
             {
@@ -92,7 +88,7 @@ namespace CapaNegocio
                 lst.Add(new ClaseParametros("@COD_H", codigo_h));
                 lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
                 objconexion.EjecutarSP("SP_ELIMINAR_PROFESOR", ref lst);
-                Mensaje = lst[3].Valor.ToString();
+                Mensaje = lst[1].Valor.ToString();
             }
             catch (Exception)
             {

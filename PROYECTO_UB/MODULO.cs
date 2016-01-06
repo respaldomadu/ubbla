@@ -97,10 +97,10 @@ namespace PROYECTO_UB
 
         private void Limpiar() {
 
-            TXT_COD.Text = "";
-            CB_INICIO.SelectedIndex = -1;
-            CB_FIN.SelectedIndex = -1;
-            CB_DIA.SelectedIndex = -1;
+            TXT_COD.Text = "SELECCIONAR";
+            CB_INICIO.SelectedIndex = 0;
+            CB_FIN.SelectedIndex = 0;
+            CB_DIA.SelectedIndex = 0;
             this.TXT_COD.Text = objmo.MAYOR().ToString();
             btn_actualizar.Enabled = false;
             btn_eliminar.Enabled = false;
@@ -125,7 +125,7 @@ namespace PROYECTO_UB
                 this.CB_INICIO.Focus();
                 return;
             }
-            if (this.CB_FIN.Text  == "SELECCIONAR")
+            if (this.CB_FIN.Text == "SELECCIONAR")
             {
                 MessageBox.Show("Ingrese el fin", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.CB_FIN.Focus();

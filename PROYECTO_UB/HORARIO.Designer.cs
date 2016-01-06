@@ -47,25 +47,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_ag_carre = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.fecha = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.d = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txt_d = new System.Windows.Forms.TextBox();
-            this.txt_h_s = new System.Windows.Forms.TextBox();
-            this.txt_h_i = new System.Windows.Forms.TextBox();
             this.txt_se = new System.Windows.Forms.TextBox();
             this.txt_a = new System.Windows.Forms.TextBox();
             this.txt_c = new System.Windows.Forms.TextBox();
             this.txt_ru = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.txt_sema = new System.Windows.Forms.TextBox();
-            this.d = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox5.SuspendLayout();
@@ -83,7 +77,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(397, 347);
+            this.groupBox2.Size = new System.Drawing.Size(397, 281);
             this.groupBox2.TabIndex = 55;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Listado";
@@ -94,7 +88,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(17, 80);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(364, 254);
+            this.dataGridView1.Size = new System.Drawing.Size(364, 194);
             this.dataGridView1.TabIndex = 55;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -147,7 +141,7 @@
             this.groupBox5.Controls.Add(this.btn_actualizar);
             this.groupBox5.Controls.Add(this.btn_limpiar);
             this.groupBox5.Controls.Add(this.btn_eliminar);
-            this.groupBox5.Location = new System.Drawing.Point(7, 276);
+            this.groupBox5.Location = new System.Drawing.Point(7, 235);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
@@ -282,64 +276,36 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(21, 199);
+            this.label4.Location = new System.Drawing.Point(20, 184);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 15);
             this.label4.TabIndex = 45;
             this.label4.Text = "Fecha Inicio";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(25, 146);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(69, 15);
-            this.label13.TabIndex = 50;
-            this.label13.Text = "Hora inicio ";
-            // 
             // fecha
             // 
             this.fecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.fecha.Location = new System.Drawing.Point(25, 218);
+            this.fecha.Location = new System.Drawing.Point(24, 203);
             this.fecha.Margin = new System.Windows.Forms.Padding(4);
             this.fecha.Name = "fecha";
             this.fecha.Size = new System.Drawing.Size(153, 26);
             this.fecha.TabIndex = 54;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(181, 146);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 15);
-            this.label3.TabIndex = 56;
-            this.label3.Text = "Hora Salida";
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.d);
             this.groupBox1.Controls.Add(this.txt_sema);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.txt_d);
-            this.groupBox1.Controls.Add(this.txt_h_s);
-            this.groupBox1.Controls.Add(this.txt_h_i);
             this.groupBox1.Controls.Add(this.txt_se);
             this.groupBox1.Controls.Add(this.txt_a);
             this.groupBox1.Controls.Add(this.txt_c);
             this.groupBox1.Controls.Add(this.txt_ru);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.fecha);
-            this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.btn_ag_carre);
             this.groupBox1.Controls.Add(this.label1);
@@ -352,26 +318,33 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(486, 267);
+            this.groupBox1.Size = new System.Drawing.Size(486, 233);
             this.groupBox1.TabIndex = 31;
             this.groupBox1.TabStop = false;
             // 
-            // label11
+            // d
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(335, 146);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(29, 16);
-            this.label11.TabIndex = 71;
-            this.label11.Text = "Dia";
+            this.d.AutoSize = true;
+            this.d.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d.Location = new System.Drawing.Point(192, 184);
+            this.d.Name = "d";
+            this.d.Size = new System.Drawing.Size(66, 16);
+            this.d.TabIndex = 74;
+            this.d.Text = "Semanas";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(8, 16);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 20);
+            this.label6.TabIndex = 72;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(425, 82);
+            this.label10.Location = new System.Drawing.Point(305, 133);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(57, 16);
@@ -393,7 +366,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(275, 82);
+            this.label8.Location = new System.Drawing.Point(155, 133);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(72, 16);
@@ -404,53 +377,26 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(140, 82);
+            this.label7.Location = new System.Drawing.Point(20, 133);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 16);
             this.label7.TabIndex = 67;
             this.label7.Text = "Carrera";
             // 
-            // txt_d
-            // 
-            this.txt_d.Enabled = false;
-            this.txt_d.Location = new System.Drawing.Point(338, 165);
-            this.txt_d.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_d.Name = "txt_d";
-            this.txt_d.Size = new System.Drawing.Size(132, 26);
-            this.txt_d.TabIndex = 66;
-            // 
-            // txt_h_s
-            // 
-            this.txt_h_s.Enabled = false;
-            this.txt_h_s.Location = new System.Drawing.Point(184, 165);
-            this.txt_h_s.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_h_s.Name = "txt_h_s";
-            this.txt_h_s.Size = new System.Drawing.Size(132, 26);
-            this.txt_h_s.TabIndex = 65;
-            // 
-            // txt_h_i
-            // 
-            this.txt_h_i.Enabled = false;
-            this.txt_h_i.Location = new System.Drawing.Point(26, 165);
-            this.txt_h_i.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_h_i.Name = "txt_h_i";
-            this.txt_h_i.Size = new System.Drawing.Size(132, 26);
-            this.txt_h_i.TabIndex = 64;
-            // 
             // txt_se
             // 
             this.txt_se.Enabled = false;
-            this.txt_se.Location = new System.Drawing.Point(428, 102);
+            this.txt_se.Location = new System.Drawing.Point(308, 153);
             this.txt_se.Margin = new System.Windows.Forms.Padding(4);
             this.txt_se.Name = "txt_se";
-            this.txt_se.Size = new System.Drawing.Size(40, 26);
+            this.txt_se.Size = new System.Drawing.Size(48, 26);
             this.txt_se.TabIndex = 63;
             // 
             // txt_a
             // 
             this.txt_a.Enabled = false;
-            this.txt_a.Location = new System.Drawing.Point(278, 102);
+            this.txt_a.Location = new System.Drawing.Point(158, 153);
             this.txt_a.Margin = new System.Windows.Forms.Padding(4);
             this.txt_a.Name = "txt_a";
             this.txt_a.Size = new System.Drawing.Size(132, 26);
@@ -459,7 +405,7 @@
             // txt_c
             // 
             this.txt_c.Enabled = false;
-            this.txt_c.Location = new System.Drawing.Point(143, 102);
+            this.txt_c.Location = new System.Drawing.Point(23, 153);
             this.txt_c.Margin = new System.Windows.Forms.Padding(4);
             this.txt_c.Name = "txt_c";
             this.txt_c.Size = new System.Drawing.Size(117, 26);
@@ -471,39 +417,21 @@
             this.txt_ru.Location = new System.Drawing.Point(25, 102);
             this.txt_ru.Margin = new System.Windows.Forms.Padding(4);
             this.txt_ru.Name = "txt_ru";
-            this.txt_ru.Size = new System.Drawing.Size(101, 26);
+            this.txt_ru.Size = new System.Drawing.Size(384, 26);
             this.txt_ru.TabIndex = 60;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(8, 16);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 20);
-            this.label6.TabIndex = 72;
             // 
             // txt_sema
             // 
-            this.txt_sema.Location = new System.Drawing.Point(193, 218);
+            this.txt_sema.Location = new System.Drawing.Point(192, 203);
             this.txt_sema.Name = "txt_sema";
             this.txt_sema.Size = new System.Drawing.Size(60, 26);
             this.txt_sema.TabIndex = 73;
-            // 
-            // d
-            // 
-            this.d.AutoSize = true;
-            this.d.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.d.Location = new System.Drawing.Point(193, 199);
-            this.d.Name = "d";
-            this.d.Size = new System.Drawing.Size(66, 16);
-            this.d.TabIndex = 74;
-            this.d.Text = "Semanas";
             // 
             // HORARIO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(906, 368);
+            this.ClientSize = new System.Drawing.Size(906, 336);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -537,18 +465,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_ag_carre;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.DateTimePicker fecha;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txt_d;
-        private System.Windows.Forms.TextBox txt_h_s;
-        private System.Windows.Forms.TextBox txt_h_i;
         private System.Windows.Forms.TextBox txt_se;
         private System.Windows.Forms.TextBox txt_a;
         private System.Windows.Forms.TextBox txt_c;
