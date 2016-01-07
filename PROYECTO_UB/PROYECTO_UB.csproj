@@ -95,6 +95,7 @@
     <Compile Include="Carreras.Designer.cs">
       <DependentUpon>Carreras.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClaseAsistencia.cs" />
     <Compile Include="Codigo_Barra.cs">
       <SubType>Form</SubType>
     </Compile>

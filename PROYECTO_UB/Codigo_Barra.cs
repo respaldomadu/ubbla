@@ -24,49 +24,60 @@ namespace PROYECTO_UB
 
         private void button2_Click(object sender, EventArgs e)
         {
-            System.Drawing.Printing.PaperSize Tamaño = default(System.Drawing.Printing.PaperSize);
-            Tamaño = new System.Drawing.Printing.PaperSize("tamaño", 850, 1100);//tamaño de hoja carta
-            PrintDocument printDoc = new PrintDocument();
-            printDoc.PrintPage += new PrintPageEventHandler(this.printDocument1_PrintPage);
-            PrintPreviewDialog verPapel = new PrintPreviewDialog();//creando objeto de vista previa
-            printDoc.DefaultPageSettings.PaperSize = Tamaño;
-            printDoc.DefaultPageSettings.Landscape = false;//que la hoja sea de tamaño vertical si le pongo verdadero cambia a horizaontal
-            verPapel.Document = printDoc;
-            ((Form)verPapel).WindowState = FormWindowState.Maximized;//cuando se despliegue la vista previa que sea maximizada
-            verPapel.PrintPreviewControl.Zoom = 1.3;//que el zoom sea de 1.3
-            verPapel.ShowDialog();
+           
+                System.Drawing.Printing.PaperSize Tamaño = default(System.Drawing.Printing.PaperSize);
+                Tamaño = new System.Drawing.Printing.PaperSize("tamaño", 850, 1100);//tamaño de hoja carta
+                PrintDocument printDoc = new PrintDocument();
+                printDoc.PrintPage += new PrintPageEventHandler(this.printDocument1_PrintPage);
+                PrintPreviewDialog verPapel = new PrintPreviewDialog();//creando objeto de vista previa
+                printDoc.DefaultPageSettings.PaperSize = Tamaño;
+                printDoc.DefaultPageSettings.Landscape = false;//que la hoja sea de tamaño vertical si le pongo verdadero cambia a horizaontal
+                verPapel.Document = printDoc;
+                ((Form)verPapel).WindowState = FormWindowState.Maximized;//cuando se despliegue la vista previa que sea maximizada
+                verPapel.PrintPreviewControl.Zoom = 1.3;//que el zoom sea de 1.3
+                verPapel.ShowDialog();
+            
         }
 
 
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
-            e.Graphics.DrawString(this.label1.Text, new Font("Bar-Code 39 lesbar", 26, FontStyle.Regular), Brushes.Black, 20, 30);
-            Pen blackPen = new Pen(Color.Black, 1);//
+            for (int i = 40; i < 44; i++)
+            {
+                e.Graphics.DrawString(this.label1.Text, new Font("Bar-Code 39 lesbar", 26, FontStyle.Regular), Brushes.Black, 20, 30);
+                Pen blackPen = new Pen(Color.Black, 1);//
 
-            e.Graphics.DrawRectangle(blackPen, 10, 95, 700, 20);
-            e.Graphics.DrawLine(blackPen, 80, 80, 80, 80);
-
-
-
-
-            Point point1 = new Point(100, 100);
-            Point point2 = new Point(500, 100);
-
-
-            e.Graphics.DrawLine(blackPen, point1, point2);
+                e.Graphics.DrawRectangle(blackPen, 10, 95, 700, 20);
+                e.Graphics.DrawLine(blackPen, 80, 80, 80, 80);
 
 
 
-            Rectangle destRect1 = new Rectangle(70, 1, 200, 200);
+
+                Point point1 = new Point(100, 100);
+                Point point2 = new Point(500, 100);
 
 
-            int x = 0;
-            int y = 0;
-            int width = 200;
-            int height = 200;
-            GraphicsUnit units = GraphicsUnit.Pixel;
+                e.Graphics.DrawLine(blackPen, point1, point2);
 
 
+
+                Rectangle destRect1 = new Rectangle(70, 1, 200, 200);
+
+
+                int x = 0;
+                int y = 0;
+                int width = 200;
+                int height = 200;
+                GraphicsUnit units = GraphicsUnit.Pixel;
+
+
+
+                /****************************************************************************/
+
+              
+
+
+            }
 
 
         }
