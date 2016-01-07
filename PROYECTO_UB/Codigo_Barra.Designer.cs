@@ -77,9 +77,8 @@
             this.label1.Font = new System.Drawing.Font("Bar-Code 39 lesbar", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(217, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 32);
+            this.label1.Size = new System.Drawing.Size(0, 32);
             this.label1.TabIndex = 6;
-            this.label1.Text = "label1";
             // 
             // button1
             // 
