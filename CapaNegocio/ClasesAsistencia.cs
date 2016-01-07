@@ -30,10 +30,12 @@ namespace CapaNegocio
            try
            {
                lst.Add(new ClaseParametros("@COD_PLA", cod_plani));
+               lst.Add(new ClaseParametros("@COD_ASIS", codigo_as));
+            
            
                lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
                objconexion.EjecutarSP("SP_INGRESAR_ASISTENCIA", ref lst);
-               Mensaje = lst[1].Valor.ToString();
+               Mensaje = lst[2].Valor.ToString();
            }
            catch (Exception)
            {
