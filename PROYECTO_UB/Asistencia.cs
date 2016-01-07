@@ -24,9 +24,12 @@ namespace PROYECTO_UB
             if (e.KeyChar == (char)Keys.Enter)
             {
                 objas.cod_plani = int.Parse(txt_cod_barra.Text);
-                ListarAsistencia();
-           //    MessageBox.Show(objas.RegistrarAsitencia(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 
+               MessageBox.Show(objas.RegistrarAsitencia(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               ListarAsistencia();
+               txt_cod_barra.Text = "";
+               //LABEL_COD_AS.Text = objas.codigo_as.ToString();
+                  
             }
         }
         private void ListarAsistencia()
@@ -36,6 +39,7 @@ namespace PROYECTO_UB
         private void Asistencia_Load(object sender, EventArgs e)
         {
             
+           
         }
     }
 }
