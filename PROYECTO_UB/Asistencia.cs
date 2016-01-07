@@ -25,7 +25,7 @@ namespace PROYECTO_UB
             {
                 objas.cod_plani = int.Parse(txt_cod_barra.Text);
                 ListarAsistencia();
-               MessageBox.Show(objas.RegistrarAsitencia(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+           //    MessageBox.Show(objas.RegistrarAsitencia(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 
             }
         }
