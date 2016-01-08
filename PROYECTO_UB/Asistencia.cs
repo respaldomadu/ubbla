@@ -28,7 +28,7 @@ namespace PROYECTO_UB
                MessageBox.Show(objas.RegistrarAsitencia(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                ListarAsistencia();
                txt_cod_barra.Text = "";
-               //LABEL_COD_AS.Text = objas.codigo_as.ToString();
+              
                   
             }
         }

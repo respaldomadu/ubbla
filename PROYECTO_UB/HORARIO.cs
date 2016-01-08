@@ -79,15 +79,28 @@ namespace PROYECTO_UB
                 fecha.Focus();
                 return;
             }
-        
+           
+            for (int i = 0; i > 17; i++)
+            {
+                objh.codigo_h = int.Parse(label6.Text);
+                objh.codigo_pla = int.Parse(txt_cod_pla.Text);
+                objh.codigo_mo = int.Parse(txt_m.Text);
+                DateTime s = Convert.ToDateTime(fecha.Text);
+                objh.fecha =s.AddDays(4).ToString();
+
+                objh.estado = "ACTIVO";
+           
+            MessageBox.Show(objh.RegistrarHorario(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+ }          
             objh.codigo_h = int.Parse(label6.Text);
             objh.codigo_pla = int.Parse(txt_cod_pla.Text);
-            objh.codigo_mo=int.Parse(txt_m.Text);
+            objh.codigo_mo = int.Parse(txt_m.Text);
             objh.fecha = this.fecha.Text;
-  
+
             objh.estado = "ACTIVO";
 
             MessageBox.Show(objh.RegistrarHorario(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             ListarHorario();
             //Limpiar();
         }
