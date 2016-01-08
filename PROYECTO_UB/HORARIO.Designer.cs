@@ -50,6 +50,7 @@
             this.fecha = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.d = new System.Windows.Forms.Label();
+            this.txt_sema = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -59,7 +60,6 @@
             this.txt_a = new System.Windows.Forms.TextBox();
             this.txt_c = new System.Windows.Forms.TextBox();
             this.txt_ru = new System.Windows.Forms.TextBox();
-            this.txt_sema = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox5.SuspendLayout();
@@ -117,6 +117,7 @@
             this.button3.Size = new System.Drawing.Size(43, 31);
             this.button3.TabIndex = 53;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // txt_buscar
             // 
@@ -335,12 +336,22 @@
             this.d.TabIndex = 74;
             this.d.Text = "Semanas";
             // 
+            // txt_sema
+            // 
+            this.txt_sema.Enabled = false;
+            this.txt_sema.Location = new System.Drawing.Point(192, 203);
+            this.txt_sema.Name = "txt_sema";
+            this.txt_sema.Size = new System.Drawing.Size(60, 26);
+            this.txt_sema.TabIndex = 73;
+            this.txt_sema.Text = "18";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(8, 16);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 20);
+            this.label6.Size = new System.Drawing.Size(0, 2);
             this.label6.TabIndex = 72;
             // 
             // label10
@@ -423,18 +434,11 @@
             this.txt_ru.Size = new System.Drawing.Size(384, 26);
             this.txt_ru.TabIndex = 60;
             // 
-            // txt_sema
-            // 
-            this.txt_sema.Location = new System.Drawing.Point(192, 203);
-            this.txt_sema.Name = "txt_sema";
-            this.txt_sema.Size = new System.Drawing.Size(60, 26);
-            this.txt_sema.TabIndex = 73;
-            // 
             // HORARIO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(906, 320);
+            this.ClientSize = new System.Drawing.Size(906, 323);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

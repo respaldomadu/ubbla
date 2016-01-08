@@ -14,7 +14,7 @@ namespace PROYECTO_UB
     public partial class HORARIO : Form
     {
         ClaseHorario objh = new ClaseHorario();
-     
+        DateTime h = new DateTime(); 
         private ClasePlanificacion objPlan = new ClasePlanificacion();
         private ClaseModulo objM = new ClaseModulo();
         public HORARIO()
@@ -80,28 +80,26 @@ namespace PROYECTO_UB
                 return;
             }
            
-            for (int i = 0; i > 17; i++)
+            
+            for (int i = 0; i< 18; i++)
             {
+                objh.fecha = this.fecha.Text;
                 objh.codigo_h = int.Parse(label6.Text);
                 objh.codigo_pla = int.Parse(txt_cod_pla.Text);
                 objh.codigo_mo = int.Parse(txt_m.Text);
                 DateTime s = Convert.ToDateTime(fecha.Text);
-                objh.fecha =s.AddDays(4).ToString();
-
+                
+                fecha.Text = s.AddDays(7).ToString();
+               
                 objh.estado = "ACTIVO";
+                objh.RegistrarHorario();         
            
-            MessageBox.Show(objh.RegistrarHorario(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               
+                this.label6.Text = objh.MAYOR().ToString();
  }          
-            objh.codigo_h = int.Parse(label6.Text);
-            objh.codigo_pla = int.Parse(txt_cod_pla.Text);
-            objh.codigo_mo = int.Parse(txt_m.Text);
-            objh.fecha = this.fecha.Text;
-
-            objh.estado = "ACTIVO";
-
-            MessageBox.Show(objh.RegistrarHorario(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+            
             ListarHorario();
+            MessageBox.Show("REGISTRO EXITOSO", "", MessageBoxButtons.OK);
             //Limpiar();
         }
 
@@ -159,6 +157,12 @@ namespace PROYECTO_UB
             MessageBox.Show(objh.ActualizarHorario(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ListarHorario();
             //Limpiar();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            global.GridAExcel(dataGridView1);
+
         }
 
         
