@@ -147,6 +147,8 @@ namespace PROYECTO_UB
                 fecha.Focus();
                 return;
             }
+            for(int i=; i<18; i++)
+            {
             objh.codigo_h = int.Parse(label6.Text);
             objh.codigo_pla = int.Parse(txt_cod_pla.Text);
             objh.codigo_mo = int.Parse(txt_m.Text);
@@ -157,6 +159,7 @@ namespace PROYECTO_UB
             MessageBox.Show(objh.ActualizarHorario(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ListarHorario();
             //Limpiar();
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
