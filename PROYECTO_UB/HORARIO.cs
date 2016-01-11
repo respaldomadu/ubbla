@@ -79,8 +79,9 @@ namespace PROYECTO_UB
                 fecha.Focus();
                 return;
             }
-        
-            objh.codigo_h = int.Parse(label6.Text);
+            
+            
+                objh.codigo_h = int.Parse(label6.Text);
             objh.codigo_pla = int.Parse(txt_cod_pla.Text);
             objh.codigo_mo=int.Parse(txt_m.Text);
             objh.fecha = this.fecha.Text;
@@ -90,6 +91,7 @@ namespace PROYECTO_UB
             MessageBox.Show(objh.RegistrarHorario(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ListarHorario();
             //Limpiar();
+        
         }
 
         private void HORARIO_Load(object sender, EventArgs e)

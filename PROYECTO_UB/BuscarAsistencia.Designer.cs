@@ -94,7 +94,7 @@
             // txt_busapp
             // 
             this.txt_busapp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_busapp.Location = new System.Drawing.Point(176, 35);
+            this.txt_busapp.Location = new System.Drawing.Point(165, 35);
             this.txt_busapp.Name = "txt_busapp";
             this.txt_busapp.Size = new System.Drawing.Size(128, 26);
             this.txt_busapp.TabIndex = 41;
@@ -104,7 +104,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(348, 15);
+            this.label14.Location = new System.Drawing.Point(323, 21);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(100, 15);
             this.label14.TabIndex = 40;
@@ -114,7 +114,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(176, 20);
+            this.label3.Location = new System.Drawing.Point(162, 21);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 15);
             this.label3.TabIndex = 39;
