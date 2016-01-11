@@ -59,6 +59,12 @@
     <Compile Include="Bancos.Designer.cs">
       <DependentUpon>Bancos.cs</DependentUpon>
     </Compile>
+    <Compile Include="BuscarAsistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarAsistencia.Designer.cs">
+      <DependentUpon>BuscarAsistencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="BuscarCarrera.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Bancos.resx">
       <DependentUpon>Bancos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarAsistencia.resx">
+      <DependentUpon>BuscarAsistencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarCarrera.resx">
       <DependentUpon>BuscarCarrera.cs</DependentUpon>

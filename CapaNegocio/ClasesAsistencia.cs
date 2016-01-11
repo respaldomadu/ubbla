@@ -30,18 +30,34 @@ namespace CapaNegocio
            try
            {
                lst.Add(new ClaseParametros("@COD_PLA", cod_plani));
-               lst.Add(new ClaseParametros("@COD_ASIS", codigo_as));
-            
-           
+               
                lst.Add(new ClaseParametros("@MENSAJE", "", SqlDbType.VarChar, ParameterDirection.Output, 150));
                objconexion.EjecutarSP("SP_INGRESAR_ASISTENCIA", ref lst);
-               Mensaje = lst[2].Valor.ToString();
+               Mensaje = lst[1].Valor.ToString();
            }
            catch (Exception)
            {
                throw;
            }
            return Mensaje;
+       }
+       public DataTable Buscar(String nombre, String apellidoP, String materno)
+       {
+           DataTable dt = new DataTable();
+           List<ClaseParametros> lst = new List<ClaseParametros>();
+           try
+           {
+               lst.Add(new ClaseParametros("@NOMBRE", nombre));
+               lst.Add(new ClaseParametros("@APELLIDO_P", apellidoP));
+               lst.Add(new ClaseParametros("@APELLIDO_M", materno));
+
+               dt = objconexion.Listado("SP_BUSCAR_ASISTENCIA", lst);
+           }
+           catch (Exception ex)
+           {
+               throw ex;
+           }
+           return dt;
        }
 
     }

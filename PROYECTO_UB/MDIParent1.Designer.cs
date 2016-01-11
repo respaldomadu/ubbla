@@ -51,6 +51,7 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.buscarAsistenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -82,7 +83,8 @@
             this.mantenedorNacionalidadToolStripMenuItem,
             this.mantenedorConfiguracionesToolStripMenuItem,
             this.mantenedorAsistenciaToolStripMenuItem,
-            this.generadorCodigosDeBarraToolStripMenuItem});
+            this.generadorCodigosDeBarraToolStripMenuItem,
+            this.buscarAsistenciaToolStripMenuItem});
             this.mantenedoresToolStripMenuItem.Name = "mantenedoresToolStripMenuItem";
             this.mantenedoresToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
             this.mantenedoresToolStripMenuItem.Text = "Mantenedores";
@@ -223,6 +225,13 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
             // 
+            // buscarAsistenciaToolStripMenuItem
+            // 
+            this.buscarAsistenciaToolStripMenuItem.Name = "buscarAsistenciaToolStripMenuItem";
+            this.buscarAsistenciaToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.buscarAsistenciaToolStripMenuItem.Text = "Buscar Asistencia ";
+            this.buscarAsistenciaToolStripMenuItem.Click += new System.EventHandler(this.buscarAsistenciaToolStripMenuItem_Click);
+            // 
             // MDIParent1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,6 +276,7 @@
         private System.Windows.Forms.ToolStripMenuItem mantenedorConfiguracionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenedorAsistenciaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generadorCodigosDeBarraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem buscarAsistenciaToolStripMenuItem;
     }
 }
 
