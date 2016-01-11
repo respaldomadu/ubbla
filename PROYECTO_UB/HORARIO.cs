@@ -111,18 +111,18 @@ namespace PROYECTO_UB
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            //this.txt_cod_pla.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-            //this.txt_m.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-            //this.txt_ru.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-            //this.txt_a.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
-            //this.txt_c.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
-            //this.txt_se.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
-            //this.fecha.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
-           
-            //btn_actualizar.Enabled = true;
-            //btn_eliminar.Enabled = true;
-            //btn_agregar.Enabled = false;
-            //btn_limpiar.Enabled = true;
+            this.txt_cod_pla.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            this.txt_m.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+            this.txt_ru.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            this.txt_a.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+            this.txt_c.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+            this.txt_se.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+            this.fecha.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+
+            btn_actualizar.Enabled = true;
+            btn_eliminar.Enabled = true;
+            btn_agregar.Enabled = false;
+            btn_limpiar.Enabled = true;
         }
 
         private void btn_actualizar_Click(object sender, EventArgs e)
