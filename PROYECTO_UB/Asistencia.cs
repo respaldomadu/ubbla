@@ -28,8 +28,7 @@ namespace PROYECTO_UB
                MessageBox.Show(objas.RegistrarAsitencia(), "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                ListarAsistencia();
                txt_cod_barra.Text = "";
-              
-                  
+   
             }
         }
         private void ListarAsistencia()
@@ -41,5 +40,7 @@ namespace PROYECTO_UB
             
            
         }
+
+       
     }
 }

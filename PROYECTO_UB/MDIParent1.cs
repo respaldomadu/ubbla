@@ -181,5 +181,11 @@ namespace PROYECTO_UB
             Codigo_Barra obj = new Codigo_Barra();
             obj.ShowDialog();
         }
+
+        private void buscarAsistenciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BuscarAsistencia obj = new BuscarAsistencia();
+            obj.ShowDialog();
+        }
     }
 }

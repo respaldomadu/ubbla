@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Asistencia));
             this.txt_cod_barra = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -59,27 +57,14 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txt_cod_barra);
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Location = new System.Drawing.Point(2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(994, 715);
+            this.groupBox1.Size = new System.Drawing.Size(1040, 612);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(949, 51);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(38, 27);
-            this.button3.TabIndex = 54;
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -89,14 +74,14 @@
             this.dataGridView1.Location = new System.Drawing.Point(6, 85);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(982, 624);
+            this.dataGridView1.Size = new System.Drawing.Size(1028, 500);
             this.dataGridView1.TabIndex = 19;
             // 
             // Asistencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ClientSize = new System.Drawing.Size(1054, 634);
             this.Controls.Add(this.groupBox1);
             this.Name = "Asistencia";
             this.Text = "Asistencia";
@@ -114,6 +99,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button3;
     }
 }
