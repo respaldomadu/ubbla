@@ -81,7 +81,7 @@ namespace PROYECTO_UB
             }
            
             
-            for (int i = 0; i< 18; i++)
+            for (int i = 0; i<int.Parse(txt_sema.Text); i++)
             {
                 objh.fecha = this.fecha.Text;
                 objh.codigo_h = int.Parse(label6.Text);
