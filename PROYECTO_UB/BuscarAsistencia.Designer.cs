@@ -37,6 +37,8 @@
             this.txt_busapp = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.txt_asignatura = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,7 +87,7 @@
             // txt_busapm
             // 
             this.txt_busapm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_busapm.Location = new System.Drawing.Point(351, 35);
+            this.txt_busapm.Location = new System.Drawing.Point(326, 35);
             this.txt_busapm.Name = "txt_busapm";
             this.txt_busapm.Size = new System.Drawing.Size(128, 26);
             this.txt_busapm.TabIndex = 42;
@@ -120,11 +122,32 @@
             this.label3.TabIndex = 39;
             this.label3.Text = "Apellido Paterno";
             // 
+            // txt_asignatura
+            // 
+            this.txt_asignatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_asignatura.Location = new System.Drawing.Point(498, 35);
+            this.txt_asignatura.Name = "txt_asignatura";
+            this.txt_asignatura.Size = new System.Drawing.Size(128, 26);
+            this.txt_asignatura.TabIndex = 43;
+            this.txt_asignatura.TextChanged += new System.EventHandler(this.txt_asignatura_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(496, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 15);
+            this.label1.TabIndex = 44;
+            this.label1.Text = "Asignatura";
+            // 
             // BuscarAsistencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 360);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txt_asignatura);
             this.Controls.Add(this.txt_busapm);
             this.Controls.Add(this.txt_busapp);
             this.Controls.Add(this.label14);
@@ -152,5 +175,7 @@
         private System.Windows.Forms.TextBox txt_busapp;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txt_asignatura;
+        private System.Windows.Forms.Label label1;
     }
 }

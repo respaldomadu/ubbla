@@ -41,7 +41,7 @@ namespace CapaNegocio
            }
            return Mensaje;
        }
-       public DataTable Buscar(String nombre, String apellidoP, String materno)
+       public DataTable Buscar(String nombre, String apellidoP, String materno, String asignatura)
        {
            DataTable dt = new DataTable();
            List<ClaseParametros> lst = new List<ClaseParametros>();
@@ -50,6 +50,8 @@ namespace CapaNegocio
                lst.Add(new ClaseParametros("@NOMBRE", nombre));
                lst.Add(new ClaseParametros("@APELLIDO_P", apellidoP));
                lst.Add(new ClaseParametros("@APELLIDO_M", materno));
+               lst.Add(new ClaseParametros("@ASIGNATURA", asignatura));
+
 
                dt = objconexion.Listado("SP_BUSCAR_ASISTENCIA", lst);
            }

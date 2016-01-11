@@ -29,17 +29,22 @@ namespace PROYECTO_UB
 
         private void txt_buscar_TextChanged(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = objAs.Buscar(txt_buscar.Text, txt_busapp.Text, txt_busapm.Text);
+            dataGridView1.DataSource = objAs.Buscar(txt_buscar.Text, txt_busapp.Text, txt_busapm.Text,txt_asignatura.Text);
         }
 
         private void txt_busapp_TextChanged(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = objAs.Buscar(txt_buscar.Text, txt_busapp.Text, txt_busapm.Text);
+            dataGridView1.DataSource = objAs.Buscar(txt_buscar.Text, txt_busapp.Text, txt_busapm.Text,txt_asignatura.Text);
         }
 
         private void txt_busapm_TextChanged(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = objAs.Buscar(txt_buscar.Text, txt_busapp.Text, txt_busapm.Text);
+            dataGridView1.DataSource = objAs.Buscar(txt_buscar.Text, txt_busapp.Text, txt_busapm.Text,txt_asignatura.Text);
+        }
+
+        private void txt_asignatura_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = objAs.Buscar(txt_buscar.Text, txt_busapp.Text, txt_busapm.Text, txt_asignatura.Text);
         }
     }
 }
