@@ -308,12 +308,8 @@ namespace PROYECTO_UB
         private void button1_Click_1(object sender, EventArgs e)
         {
             int i = 0;
-         /*  if (this.textBox1.Text == "")
-            {
-              MessageBox.Show("Seleccione Planificacion para convertit ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-           else {label1.Text = "*" + this.textBox1.Text + "*"; }
-           /**********************/
+
+            /**********************/
             
             
             DataTable dt=new DataTable();
@@ -324,6 +320,11 @@ namespace PROYECTO_UB
                 label1.Text = "*" + dt.Rows[i].ItemArray[0].ToString() + "*";
               
             }
+            if (this.textBox1.Text == "")
+            {
+                MessageBox.Show("Seleccione Planificacion para convertit ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else { label1.Text = "*" + this.textBox1.Text + "*"; }
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -349,11 +350,6 @@ namespace PROYECTO_UB
         private void button3_Click(object sender, EventArgs e)
         {
             global.GridAExcel(dataGridView1);
-        }
-
-        private void txt_cantidad_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
