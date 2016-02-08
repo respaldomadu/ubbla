@@ -350,5 +350,10 @@ namespace PROYECTO_UB
         {
             global.GridAExcel(dataGridView1);
         }
+
+        private void txt_cantidad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
