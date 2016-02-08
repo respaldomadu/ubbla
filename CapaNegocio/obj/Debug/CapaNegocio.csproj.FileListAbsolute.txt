@@ -26,3 +26,10 @@ C:\Users\Barbara\Documents\GitHub\ubbla\CapaNegocio\bin\Debug\CapaDatos.pdb
 C:\Users\Barbara\Documents\GitHub\ubbla\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
 C:\Users\Barbara\Documents\GitHub\ubbla\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\Barbara\Documents\GitHub\ubbla\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Felipe\Desktop\praactica\ubbla\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Felipe\Desktop\praactica\ubbla\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Felipe\Desktop\praactica\ubbla\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Felipe\Desktop\praactica\ubbla\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Felipe\Desktop\praactica\ubbla\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Felipe\Desktop\praactica\ubbla\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Felipe\Desktop\praactica\ubbla\CapaNegocio\obj\Debug\CapaNegocio.pdb
