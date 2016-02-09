@@ -37,7 +37,7 @@ namespace PROYECTO_UB
         }
         private void Asistencia_Load(object sender, EventArgs e)
         {
-            
+            ListarAsistencia();
            
         }
 

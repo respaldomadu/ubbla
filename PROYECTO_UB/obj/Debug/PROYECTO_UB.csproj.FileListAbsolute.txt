@@ -169,3 +169,35 @@ C:\Users\Hector\Desktop\PROYECTO UBB 08-02-2015\ubbla\PROYECTO_UB\obj\Debug\PROY
 C:\Users\Hector\Desktop\PROYECTO UBB 08-02-2015\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Ramos.resources
 C:\Users\Hector\Desktop\PROYECTO UBB 08-02-2015\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.TIPO_CUENTAS.resources
 C:\Users\Hector\Desktop\PROYECTO UBB 08-02-2015\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.csproj.GenerateResource.Cache
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\bin\Debug\PROYECTO_UB.exe.config
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.exe
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.pdb
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\bin\Debug\PROYECTO_UB.exe
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\bin\Debug\PROYECTO_UB.pdb
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\bin\Debug\CapaNegocio.dll
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\bin\Debug\CapaDatos.dll
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\bin\Debug\CapaNegocio.pdb
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\bin\Debug\CapaDatos.pdb
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.csprojResolveAssemblyReference.cache
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Asistencia.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Bancos.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.BuscarAsistencia.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.BuscarCarrera.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.BuscarPlanificaciones.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Buscar_Modulo.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Buscar_Profesor.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Buscar_Ramos.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Carreras.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Codigo_Barra.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Comunas.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Configuraciones.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.HORARIO.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.MDIParent1.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.MODULO.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Nacionalidad.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Planificaciones.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Profesores.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Properties.Resources.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.Ramos.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.TIPO_CUENTAS.resources
+C:\Users\Felipe\Desktop\praactica\ubbla\PROYECTO_UB\obj\Debug\PROYECTO_UB.csproj.GenerateResource.Cache
